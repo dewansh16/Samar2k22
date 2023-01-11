@@ -10,96 +10,157 @@ const Ul = styled.div`
   padding: 0px 40px;
     justify-content: space-around;
   @media (max-width: 768px) {
+      padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color:#E5A022;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
     top: 0;
     left: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    border-radius: 0px 70px 70px 0px;
   }
 `;
 
 const NavLink = styled(Link)`
-height: 60%;
-    width: 10%;
+/* height: 60%;
+    width: 10%; */
     font-weight:800;
     color: #FFFFFF;
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
+    /* border-radius: 30px 30px 0px 0px; */
+    /* padding-top: 14px; */
+  /* @media (max-width: 768px) {
+      width: 100%;
+    color: #fff;
+    border-radius: 0px 30px 30px 0px;
+  } */
+`;
+
+const NavLinkDiv = styled.div`
+    height: 60%;
+    width: 10%;
+    text-align: center;
     border-radius: 30px 30px 0px 0px;
     padding-top: 14px;
   @media (max-width: 768px) {
-    color: #fff;
+    width: 100%;
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
   }
-`;
+`
+
+const NavLinkContainer = styled.div`
+align-items: flex-end;
+display: flex;
+flex-flow: row nowrap;
+width: 100%;
+height: 100%;
+padding: 0px 40px;
+justify-content: space-around;
+@media (max-width: 768px) {
+    height: 60%;
+      padding: 0px;
+    margin-top: 0px;
+    flex-flow: column nowrap;
+  }
+`
 
 const RightNav = ({ open }) => {
     const [activeLink, setActiveLink] = useState(0);
-  return (
-    <Ul open={open}>
-          <NavLink
-              to = '/'
-              onClick={() => { setActiveLink(0) }}
-              style={activeLink === 0 ? { background: 'red' } : {}}
-          >
-              Home
-          </NavLink>
-          <NavLink
-              to='/event'
-              onClick={() => { setActiveLink(1) }}
-              style={activeLink === 1 ? { background: 'red' } : {}}
-          >
-              Event
-          </NavLink>
-          <NavLink
-              to='/schedule'
-              onClick={() => { setActiveLink(2) }}
-              style={activeLink === 2 ? { background: 'red' } : {}}
-          >
-              Schedule
-          </NavLink>
-          <NavLink
-              to='/sponsors'
-              onClick={() => { setActiveLink(3) }}
-              style={activeLink === 3 ? { background: 'red' } : {}}
-          >
-              Sponsors
-          </NavLink>
-          <NavLink
-              to='/gallery'
-              onClick={() => { setActiveLink(4) }}
-              style={activeLink === 4 ? { background: 'red' } : {}}
-          >
-              Gallery
-          </NavLink>
-          <NavLink
-              to='/ourTeam'
-              onClick={() => { setActiveLink(5) }}
-              style={activeLink === 5 ? { background: 'red' } : {}}
-          >
-              Our Team
-          </NavLink>
-          <NavLink
-              to='/contactUs'
-              onClick={() => { setActiveLink(6) }}
-              style={activeLink === 6 ? { background: 'red' } : {}}
-          >
-              Contact Us
-          </NavLink>
-          <NavLink
-              to='/aboutUs'
-              onClick={() => { setActiveLink(7) }}
-              style={activeLink === 7 ? { background: 'red' } : {}}
-          >
-              About Us
-          </NavLink>
-    </Ul>
+    return (
+        <Ul open={open}>
+            <NavLinkContainer>
+            <NavLinkDiv
+                style={activeLink === 0 ? { background: 'red' } : {}}
+            >
+                <NavLink
+                    to = '/'
+                    onClick={() => { setActiveLink(0) }}
+                >
+                    Home
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                style={activeLink === 1 ? { background: 'red' } : {}}
+            >
+                <NavLink
+                    to='/event'
+                    onClick={() => { setActiveLink(1) }}
+                >
+                    Event
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                style={activeLink === 2 ? { background: 'red' } : {}}
+                >
+                <NavLink
+                    to='/schedule'
+                    onClick={() => { setActiveLink(2) }}
+                >
+                    Schedule
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                style={activeLink === 3 ? { background: 'red' } : {}}
+                >
+                <NavLink
+                    to='/sponsors'
+                    onClick={() => { setActiveLink(3) }}
+                >
+                Sponsors
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                style={activeLink === 4 ? { background: 'red' } : {}}
+                >
+                <NavLink
+                    to='/gallery'
+                    onClick={() => { setActiveLink(4) }}
+                >
+                    Gallery
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                    style={activeLink === 5 ? { background: 'red' } : {}}
+                >
+                <NavLink
+                    to='/ourTeam'
+                    onClick={() => { setActiveLink(5) }}
+                >
+                    Our Team
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                    style={activeLink === 6 ? { background: 'red' } : {}}
+                >
+                <NavLink
+                    to='/contactUs'
+                    onClick={() => { setActiveLink(6) }}
+                >
+                    Contact Us
+                </NavLink>
+            </NavLinkDiv>
+            <NavLinkDiv
+                    style={activeLink === 7 ? { background: 'red' } : {}}
+                >
+                <NavLink
+                    to='/aboutUs'
+                    onClick={() => { setActiveLink(7) }}
+                >
+                    About Us
+                </NavLink>
+                    </NavLinkDiv>
+            </NavLinkContainer>
+        </Ul>
   )
 }
 

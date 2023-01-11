@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes,Route } from "react-router-dom";
 
-function App() {
+import Home from "./routes/home/home.component";
+import Event from "./routes/event/event.component";
+import Schedule from "./routes/schedule/schedule.component";
+import Sponsors from "./routes/sponsors/sponsors.component";
+import Gallery from "./routes/gallery/gallery.component";
+import OurTeam from "./routes/ourTeam/ourTeam.component";
+import ContactUs from "./routes/contactUs/contactUs.component";
+import AboutUs from "./routes/aboutUs/aboutUs.component";
+import Navigation from "./routes/navigation/navigation.component";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route index element={<Home />} />
+        <Route path='event' element={<Event/>} />
+        <Route path='schedule' element={<Schedule/>} />
+        <Route path='sponsors' element={<Sponsors/>} />
+        <Route path='gallery' element={<Gallery/>} />
+        <Route path='ourTeam' element={<OurTeam/>} />
+        <Route path='contactUs' element={<ContactUs/>} />
+        <Route path='aboutUs' element={<AboutUs/>} />
+      </Route>
+    </Routes>
   );
 }
 

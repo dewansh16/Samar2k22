@@ -1,8 +1,9 @@
 import { Outlet } from "react-router-dom"
-import React, { Fragment,useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Burger from './burger.component';
 import RightNav from "./rightNav.component";
+import Footer from "../../Components/footer/footer.component";
 
 const Nav = styled.nav`
   height: 70px;
@@ -17,7 +18,7 @@ const Nav = styled.nav`
   }
 `
 
-const BodyDiv = styled.div`
+const NavDiv = styled.div`
     margin: 50px;
 
     @media (max-width: 768px) {
@@ -25,19 +26,26 @@ const BodyDiv = styled.div`
   }
 `
 
+const BodyDiv = styled.div`
+display: flex;
+flex-direction: column;
+min-height: 100%;
+width: 100%;
+`
+
 function Navigation() {
     const [open, setOpen] = useState(false)
     return (
-        <Fragment>
-            <BodyDiv>
+        <BodyDiv>
+            <NavDiv>
                 <Burger open={open} setOpen={setOpen}/>
-                
                 <Nav>
                     <RightNav open={open} setOpen={setOpen}/>
                 </Nav>
-                <Outlet/>
-            </BodyDiv>
-        </Fragment>
+            </NavDiv>
+            <Outlet />
+            <Footer/>
+        </BodyDiv>
     )
 }
 

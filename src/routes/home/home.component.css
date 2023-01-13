@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+.card {
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 10rem;
+    height: 10rem;
+    background-color: #f49d11;
+    border-radius: 20px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(255, 255, 255, 0.304);
+   }
+
+
+
+.flex{
+    display: flex;
+}
+
+
+/* container */
+.container{
+    text-align: center;
+    padding: 0 1rem 0;
+}
+
+/* page banner */
+
+.page-banner{
+    text-align: center;
+}
+
+.page-banner img{
+    width: 80%;
+}
+
+.page-banner h2{
+    background-color: #f49d11;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    padding: 1rem 0;
+}
+
+/* Countdown */
+
+.count-down{
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 1rem 0;
+}
+
+.count-down-div{
+    display: flex;
+    margin: 0 1rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.count-div-item-1{
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Samar Youtube */
+
+.embadded-video iframe{
+    width: 80%;
+    height: auto;
+}
+
+/* speakers, schedule, sponsers, gallary */
+
+.sssg-container{
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.sssg{
+    margin: 0 0 0.5rem 0;
+}
+
+.sssg:hover .sssg-item{
+    transform: scale(1.05);
+}
+
+.sssg-item{
+    background-image: linear-gradient(163deg, #0f1010 0%, #13024e 100%);
+    border-radius: 30px;
+    margin: 0 1rem 1rem;
+    transition: all .3s;
+}
+
+.sssg-item img{
+    width: 30%;
+}
+
+.sssg-item-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 376px) {
+
+    .container{
+        display: flex;
+        text-align: center;
+        padding: 0 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .count-div-item-1{
+        /* color: #00ff75; */
+        color: #fcdcfc;
+        padding: 0.4rem 0;
+        width: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .count-down{
+        justify-content: space-between;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .count-down-div{
+        margin: 0 0.2rem;
+    }
+  }

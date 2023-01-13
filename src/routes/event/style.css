@@ -1,0 +1,30 @@
+.base{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.event{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: red;
+    text-align: center;
+    min-width: 20%;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font: normal normal 600 40px/49px Montserrat;
+    font-weight: bold;
+}
+
+#att{
+    align-self: start;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+}

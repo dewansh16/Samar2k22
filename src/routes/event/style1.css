@@ -1,0 +1,58 @@
+.basee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.evente{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: red;
+    text-align: center;
+    min-width: 20%;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font: normal normal 600 40px/49px Montserrat;
+    font-weight: bold;
+}
+
+#atte{
+    align-self: start;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.imagee{
+    width: 100%;
+}
+
+
+.flex-containere {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.righte{
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+   border-radius: 50px 0px 0px 50px;
+   width:45%;
+   display:flex;
+   justify-content: center;
+   font: normal normal medium 28px/34px Montserrat;
+  }
+.lefte{
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius:0px 50px 50px 0px ;
+    width:45%;
+   display:flex;
+   justify-content: center;
+   font: normal normal medium 28px/34px Montserrat;
+    
+  }

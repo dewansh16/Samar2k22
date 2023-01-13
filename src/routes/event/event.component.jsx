@@ -1,23 +1,25 @@
 import BasketBallImg from "../../Assets/Images/basketBallImg.png";
-import "./style.css"
+import "./style1.css"
 function Event() {
     return (
-        <div className="base">
-            <div className="event">Event</div>
-            <div className="event" id="att">Major Attractoins</div>
-            <div className="image">
-                <div><img src={BasketBallImg} alt="" /></div>
-                <div><img src={BasketBallImg} alt="" /></div>
+        <div className="basee">
+            <div className="evente">Event</div>
+            <div className="evente" id="atte">Major Attractoins</div>
+            <div className="imagee">
+            <div className='flex-containere'>
+                        <div className='lefte'><img src={BasketBallImg} alt="" /></div>
+                        <div className='righte'><img src={BasketBallImg} alt="" /></div>      
             </div>
-            <div class="section">INTERBRACH SPORTS</div>
-            <div className="games">
-                <div className="left"><p>carron</p></div>
-                <div className="right"><p>kabaddi</p></div>
             </div>
-            <div className="other">OTHERS</div>
-            <div className="oevent">
-                <div className="right">night camping</div>
-                <div className="left">archery</div>
+            <div class="sectione">INTERBRACH SPORTS</div>
+            <div className="gamese">
+                <div className="lefte"><p>carron</p></div>
+                <div className="righte"><p>kabaddi</p></div>
+            </div>
+            <div className="othere">OTHERS</div>
+            <div className="oevente">
+                <div className="righte">night camping</div>
+                <div className="lefte">archery</div>
             </div>
             <div>REGISTER FOR EVENT</div>
         </div>

@@ -25,7 +25,7 @@
    }
    
    .card:hover {
-    box-shadow: 0px 0px 30px 1px rgba(255, 255, 255, 0.304);
+    box-shadow: 0px 0px 30px 1px rgba(110, 247, 18, 0.304);
    }
 
 
@@ -48,14 +48,17 @@
 }
 
 .page-banner img{
-    width: 80%;
+    width: 100%;
+    aspect-ratio: 5/2;
+    border: 1px solid white;
+    border-radius: 8rem;
 }
 
 .page-banner h2{
     background-color: #f49d11;
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
-    padding: 1rem 0;
+    padding: 0.6rem 0;
 }
 
 /* Countdown */
@@ -63,8 +66,7 @@
 .count-down{
     justify-content: center;
     align-items: center;
-    margin: 3rem;
-    padding: 1rem 0;
+    margin: 6rem 0 3rem 0;
 }
 
 .count-down-div{
@@ -85,23 +87,27 @@
 }
 
 /* Samar Youtube */
-
+.embadded-video{
+    width: 70%;
+    margin: 0 auto;
+}
 .embadded-video iframe{
-    width: 80%;
+    width: 100%;
     height: auto;
+    aspect-ratio: 16/9;
 }
 
 /* speakers, schedule, sponsers, gallary */
 
 .sssg-container{
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 2rem 0;
+    margin: 8rem 0 4rem 0;
     flex-wrap: wrap;
 }
 
 .sssg{
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .sssg:hover .sssg-item{
@@ -139,7 +145,6 @@
         align-items: center;
     }
     .count-div-item-1{
-        /* color: #00ff75; */
         color: #fcdcfc;
         padding: 0.4rem 0;
         width: 2rem;
@@ -148,11 +153,39 @@
 
     .count-down{
         justify-content: space-between;
-        margin: 0;
+        margin: 2rem 0 3rem 0;
         font-size: 12px;
     }
 
     .count-down-div{
         margin: 0 0.2rem;
+    }
+
+    .card2{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .sssg {
+        margin: 0rem 1rem 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .page-banner h2{
+        padding: 0.3rem 0;
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 501px){
+    .count-down{
+        font-size: 2rem;
+    }
+  }
+
+  @media screen  and (max-width: 799px) and (min-width: 608px){
+    .sssg {
+        margin: 0rem 3rem 3.5rem
     }
   }

@@ -1,58 +1,126 @@
+.flex-containere {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+.righte{
+   background: #E5A022;
+    margin: 10px;
+    padding: 20px;
+    /* font-size: 30px; */
+   border-radius: 50px 0px 0px 50px;
+   width:45%;
+   display:flex;
+   justify-content: center;
+   align-self: right;
+   font: normal normal medium 28px/34px Montserrat;
+  }
+.lefte{
+    background: #E5A022;
+    margin: 10px;
+    padding: 20px;
+    /* font-size: 30px; */
+    border-radius:0px 50px 50px 0px ;
+    width:45%;
+    display:flex;
+    justify-content: center;
+    align-self: left;
+   
+  }
+
+@media (max-width:800px){
+    .flex-containere{
+        flex-direction: column;
+    }
+    .lefte{
+        width: 80%;
+    }
+    .righte{
+        width: 80%;
+        align-self: flex-end;
+    }
+}
+
+
+.content{
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.head{
+    background: red;
+    margin: 10px;
+    padding: 20px;
+    border-radius:0px 50px 50px 0px ;
+    width: calc(35% - 10px);    
+    /* change width */
+   display:flex;
+   justify-content: center;
+   align-self: flex-start;
+   /* font: normal normal medium 28px/34px Montserrat; */
+  }
+
 .basee{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-.evente{
+.cen{
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: red;
+    width: 20%;
     text-align: center;
-    min-width: 20%;
     border-radius: 30px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font: normal normal 600 40px/49px Montserrat;
+    /* font: normal normal 600 40px/49px Montserrat; */
     font-weight: bold;
 }
 
-#atte{
-    align-self: start;
-    border-radius: 0px 50px 50px 0px;
+.content .lefte img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius:0px 50px 50px 0px;
 }
-
-.imagee{
-    width: 100%;
-}
-
-
-.flex-containere {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-.righte{
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-   border-radius: 50px 0px 0px 50px;
-   width:45%;
-   display:flex;
-   justify-content: center;
-   font: normal normal medium 28px/34px Montserrat;
-  }
-.lefte{
-
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+.content .righte img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
     border-radius:0px 50px 50px 0px ;
-    width:45%;
-   display:flex;
-   justify-content: center;
-   font: normal normal medium 28px/34px Montserrat;
-    
-  }
+    border-radius: 50px 0px 0px 50px;
+}
+
+#image .lefte{
+    transition: 1s;
+}
+
+
+#image .lefte:hover{
+        transform: scale(1.3);
+        box-shadow: 2px 2px 2px #000;
+}
+#image .righte{
+    transition: 1s;
+}
+
+
+#image .righte:hover{
+        transform: scale(1.3);
+        box-shadow: 2px 2px 2px #000;
+}
+
+
+#image div{
+    padding: 0;
+}
+
+

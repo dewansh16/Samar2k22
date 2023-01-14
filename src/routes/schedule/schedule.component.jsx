@@ -54,7 +54,7 @@ function Schedule() {
                             <div className='left'>basketball</div>
                             <div className='right'>9:00 AM - 10:00 AM</div>      
                 </div>
-                <div className='flex-container'>
+                <div className='flex-container'>  
                             <div className='left'>basketball</div>
                             <div className='right'>9:00 AM - 10:00 AM</div>      
                 </div>

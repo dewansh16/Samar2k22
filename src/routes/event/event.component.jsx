@@ -2,26 +2,103 @@ import BasketBallImg from "../../Assets/Images/basketBallImg.png";
 import "./style1.css"
 function Event() {
     return (
-        <div className="basee">
-            <div className="evente">Event</div>
-            <div className="evente" id="atte">Major Attractoins</div>
-            <div className="imagee">
-            <div className='flex-containere'>
-                        <div className='lefte'><img src={BasketBallImg} alt="" /></div>
-                        <div className='righte'><img src={BasketBallImg} alt="" /></div>      
+        <div className='basee'>
+            <div className="cen">Events</div>
+            <div className="head">head 1</div>
+            <div className="content" id="image">
+{/* comment */}
+                <div className='flex-containere'>
+                            <div className='lefte'>
+                                {/* hover */}
+                                <img src={BasketBallImg} alt="" />
+                                {/* hover */}
+                                </div>
+                            <div className='righte'><img src={BasketBallImg} alt="" /></div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'><img src={BasketBallImg} alt="" /></div>
+                            <div className='righte'><img src={BasketBallImg} alt="" /></div>      
+                </div>
+                
+                
+                
+                
+                
+
+{/* comment */}
             </div>
+            <div className="head">head 1</div>
+            <div className="content">
+{/* comment */}
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>  
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+
+{/* comment */}
             </div>
-            <div class="sectione">INTERBRACH SPORTS</div>
-            <div className="gamese">
-                <div className="lefte"><p>carron</p></div>
-                <div className="righte"><p>kabaddi</p></div>
+            <div className="head">head 1</div>
+            <div className="content">
+{/* comment */}
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+                <div className='flex-containere'>
+                            <div className='lefte'>basketball</div>
+                            <div className='righte'>9:00 AM - 10:00 AM</div>      
+                </div>
+
+{/* comment */}
             </div>
-            <div className="othere">OTHERS</div>
-            <div className="oevente">
-                <div className="righte">night camping</div>
-                <div className="lefte">archery</div>
-            </div>
-            <div>REGISTER FOR EVENT</div>
+            
+            <div className="cen">REGISTER NOW</div>
+
+
         </div>
     )
 }

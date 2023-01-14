@@ -1,6 +1,8 @@
-import {useState} from 'react';
+import {useContext} from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
+import { NavbarContext } from '../../contexts/navbar.context';
 
 const Ul = styled.div`
     align-items: flex-end;
@@ -26,20 +28,10 @@ const Ul = styled.div`
 `;
 
 const NavLink = styled(Link)`
-/* height: 60%;
-    width: 10%; */
     font-weight:800;
     color: #FFFFFF;
     text-decoration: none;
-    /* text-align: center; */
     font-size: 18px;
-    /* border-radius: 30px 30px 0px 0px; */
-    /* padding-top: 14px; */
-  /* @media (max-width: 768px) {
-      width: 100%;
-    color: #fff;
-    border-radius: 0px 30px 30px 0px;
-  } */
 `;
 
 const NavLinkDiv = styled.div`
@@ -75,7 +67,7 @@ justify-content: space-around;
 `
 
 const RightNav = ({ open }) => {
-    const [activeLink, setActiveLink] = useState(0);
+    const { activeLink, setActiveLink } = useContext(NavbarContext)
     return (
         <Ul open={open}>
             <NavLinkContainer>

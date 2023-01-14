@@ -88,7 +88,7 @@
 
 /* Samar Youtube */
 .embadded-video{
-    width: 70%;
+    width: 64%;
     margin: 0 auto;
 }
 .embadded-video iframe{
@@ -134,7 +134,7 @@
 
 /* media queries */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px) {
 
     .container{
         display: flex;
@@ -167,8 +167,13 @@
     }
 
     .sssg {
-        margin: 0rem 1rem 2.5rem;
+        margin: 0rem 0.3rem 2.5rem;
     }
+
+    .sssg-item{
+        margin: 0;
+    }
+
   }
 
   @media screen and (max-width: 500px){
@@ -189,3 +194,4 @@
         margin: 0rem 3rem 3.5rem
     }
   }
+

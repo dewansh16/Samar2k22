@@ -170,10 +170,17 @@
         margin: 0rem 0.3rem 2.5rem;
     }
 
+    .sssg-container{
+        margin: 4rem 0 0rem 0;
+    }
+
     .sssg-item{
         margin: 0;
     }
 
+    .embadded-video{
+        width: 80%;
+    }
   }
 
   @media screen and (max-width: 500px){

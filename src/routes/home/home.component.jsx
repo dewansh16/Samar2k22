@@ -21,11 +21,18 @@ function Home() {
     const [currDate, setDate] = useState(date.getDate());
 
     setInterval(() => {
-        const currTime = new Date();
-        setSeconds(new Date().getSeconds());
-        setMinutes(new Date().getMinutes());
-        setHours(new Date().getHours());
-        setDate(new Date().getDate());
+        const countDownDate = new Date("Jan 26, 2023").getTime();
+
+        const currTime = new Date().getTime();
+        var timeleft = countDownDate - currTime;
+        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        setSeconds(seconds);
+        setMinutes(minutes);
+        setHours(hours);
+        setDate(days);
     }, 1000)
     
     return (

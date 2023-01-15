@@ -2,17 +2,16 @@ import React from 'react'
 import "./style2.css"
 
 
+
+
+
 function Schedule() {
     return (
         <div className='base'>
             <div className="event">SCHEDULE</div>
-
-
-            
             <div className="day">DAY 1</div>
             <div className="games">
 {/* comment */}
-    
 
                 <div className='flex-container'>
                             <div className='left'>basketball</div>

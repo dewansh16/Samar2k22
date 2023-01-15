@@ -203,9 +203,6 @@ button {
     justify-content: center;
 }
 
-iframe {
-    border-radius: 10%;
-}
 
 .map {
     height: 90%;
@@ -246,6 +243,8 @@ input {
     background-color: black;
     border-radius: 30px;
     height: 3.5em;
+    color:white;
+    text-align: center;
 }
 
 ::placeholder {
@@ -298,11 +297,12 @@ textarea {
 
     .message-us {
         display: flex;
+        height: 100%;
     }
 
     .heading-container {
         display: flex;
-        height: 8%;
+        height: 10%;
         margin-top: 5em;
         align-content: center;
         justify-content: center;
@@ -315,7 +315,7 @@ textarea {
         justify-content: center;
         align-items: center;
         width: 50%;
-        height: 50%;
+        height: 70%;
     }
 
     .icons-container {

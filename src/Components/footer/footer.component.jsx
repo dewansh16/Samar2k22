@@ -1,7 +1,9 @@
-import React from 'react'
+import {useContext} from 'react'
 import { Link } from 'react-router-dom';
 import './footer.component.css'
 import styled from 'styled-components';
+
+import { NavbarContext } from '../../contexts/navbar.context';
 
 import {ReactComponent as InstaLogo} from '../../Assets/Icons/insta.svg'
 import {ReactComponent as FacebookLogo} from '../../Assets/Icons/facebook.svg'
@@ -20,6 +22,8 @@ const NavLink = styled(Link)`
 `;
 
 function Footer() {
+    const {setActiveLink } = useContext(NavbarContext)
+
     return (
         <div className='footer'>
             <div className="footer-content-div">
@@ -51,17 +55,26 @@ function Footer() {
                 <div className="footer-links-div">
                     <div className="footer-links-inner-div">
                         <NavLink
+                            onClick={() => {
+                                setActiveLink(5)
+                            }}
                             to='/ourTeam'
                         >
                             Our Team
                         </NavLink>
                         <NavLink
-                            to='/contactUs'
+                            onClick={() => {
+                                setActiveLink(6)
+                            }}
+                                to='/contactUs'
                         >
                             Contact Us
                         </NavLink>
                         <NavLink
-                            to='/aboutUs'
+                            onClick={() => {
+                                setActiveLink(7)
+                            }}
+                                to='/aboutUs'
                         >
                             About Us
                         </NavLink>

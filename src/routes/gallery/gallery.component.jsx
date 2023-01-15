@@ -5,14 +5,19 @@ import chess from "../../Assets/Images/chess.jpg";
 
 function Gallery() {
   return (
-    <div>
+    <div className="gallery-page">
       <div className="container">
         <div className="section1">
-          <div className="heading">
-            <p>GALLERY</p> </div>
+            <div className="heading-container">
+                <div className="heading">
+                    <h3> Gallery</h3>
+                </div>
+            </div>
         </div>
-        <div >
-         <div className="sideHeading">2021</div>
+        <div className="find-us">
+            <div className="heading">
+                <h3>2021</h3>
+            </div>
         </div>
       </div>
       
@@ -29,7 +34,11 @@ function Gallery() {
         <img alt="basketBallImage" src={basketImg} className="img2" />
       </div>
       <div >
-      <div className="sideHeading">2020</div>
+      <div className="find-us">
+            <div className="heading">
+                <h3>2021</h3>
+            </div>
+        </div>
       </div>
 
       <div className="section3" id="image">

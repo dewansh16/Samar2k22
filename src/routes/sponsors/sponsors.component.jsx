@@ -5,15 +5,14 @@ import sponsor from "../../Assets/Images/sponsors.jpg";
 
 function Sponsors() {
   return (
-    <div>
+    <div className = "sponsors-page">
       
       <div className="container">
-        <div className="section1">
-            
-        <div className="heading">
-          <p>SPONSORS</p> </div>
-        
-        </div> 
+          <div className="heading-container" style={{marginBottom:'3%'}}>
+              <div className="heading">
+                  <h3>SPONSORS</h3>
+              </div>
+          </div>
       </div>
 
       <div className="sponsimage">

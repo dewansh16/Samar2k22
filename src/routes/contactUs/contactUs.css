@@ -244,6 +244,7 @@ input {
     border-radius: 30px;
     height: 3.5em;
     color:white;
+    text-align: center;
 }
 
 ::placeholder {

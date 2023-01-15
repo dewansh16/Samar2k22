@@ -40,20 +40,20 @@ function AboutUs() {
       </div>
       <p className="samar">SHAURYA</p>
       <div className="second">
-      <p>
-        Apart from educational knowledge institute promotes lot of other
-        activities and ideas in order to overall development of its students.
-        Team SHAURYA provides such a platform to its students interested in
-        sports where they are provided with the best equipment and training.
-      </p>
-      <p>
-        Presents to you the most awaited sports fest of Central India, SAMAR
-        2k22. With tons of enthusiasm and pounds of thrilling experiences, with
-        hundreds of winners and thousands of learners, with sports ranging from
-        mind-wrenching chess to breath taking athletics we bring you a platform
-        to expose your hidden sportsperson and let it take over you at this
-        mind-blowing fest in from of an incredible audience.
-      </p>
+        <p>
+          Apart from educational knowledge institute promotes lot of other
+          activities and ideas in order to overall development of its students.
+          Team SHAURYA provides such a platform to its students interested in
+          sports where they are provided with the best equipment and training.
+        </p>
+        <p>
+          Presents to you the most awaited sports fest of Central India, SAMAR
+          2k22. With tons of enthusiasm and pounds of thrilling experiences, with
+          hundreds of winners and thousands of learners, with sports ranging from
+          mind-wrenching chess to breath taking athletics we bring you a platform
+          to expose your hidden sportsperson and let it take over you at this
+          mind-blowing fest in from of an incredible audience.
+        </p>
       </div>
     </div>
   );

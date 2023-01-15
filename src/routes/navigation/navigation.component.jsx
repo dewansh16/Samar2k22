@@ -1,9 +1,12 @@
-import { Outlet } from "react-router-dom"
-import React, { useState } from 'react';
+import { Outlet} from "react-router-dom"
+import React, { useState,useEffect } from 'react';
 import styled from 'styled-components';
 import Burger from './burger.component';
 import RightNav from "./rightNav.component";
 import Footer from "../../Components/footer/footer.component";
+import './navigation.component.css';
+
+import LandingLoader from "../../Components/animationPage/landingLoader.component";
 
 const Nav = styled.nav`
   height: 70px;
@@ -33,19 +36,34 @@ min-height: 100%;
 width: 100%;
 `
 
+
 function Navigation() {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+
+    const [isLoading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        },4000)
+    },[])
+
     return (
-        <BodyDiv>
-            <NavDiv>
-                <Burger open={open} setOpen={setOpen}/>
-                <Nav>
-                    <RightNav open={open} setOpen={setOpen}/>
-                </Nav>
-            </NavDiv>
-            <Outlet />
-            <Footer/>
-        </BodyDiv>
+        <>
+            {isLoading ?<LandingLoader isLoading={isLoading} />:
+                <BodyDiv>
+                    <NavDiv>
+                        <Burger open={open} setOpen={setOpen}/>
+                        <Nav>
+                            <RightNav open={open} setOpen={setOpen}/>
+                        </Nav>
+                    </NavDiv>
+                    <Outlet />
+                    <Footer/>
+                </BodyDiv>
+            }
+        </>
     )
 }
 

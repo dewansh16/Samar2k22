@@ -1,5 +1,10 @@
 import React from 'react'
+import {useContext} from 'react'
+import { Link } from 'react-router-dom';
 import './home.component.css'
+
+import { NavbarContext } from '../../contexts/navbar.context'
+
 let date = new Date();
 // let naya = new Date("Mar 6 08:16:20 2023 GMT");
 // const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -9,6 +14,7 @@ let date = new Date();
 // }, 1000);
 
 function Home() {
+    const {setActiveLink } = useContext(NavbarContext)
     return (
         <>
         <div className='container'>
@@ -59,30 +65,51 @@ function Home() {
             </div>
                 
             <div className="sssg schedule">
-                <div className='card sssg-item'>
-                    <div class="card2 sssg-item-child">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3176/3176395.png" alt="" />
+                <Link
+                    onClick={() => {
+                                setActiveLink(2)
+                            }}
+                            to='/schedule'
+                >
+                    <div className='card sssg-item'>
+                        <div class="card2 sssg-item-child">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176395.png" alt="" />
+                        </div>
                     </div>
-                </div>
-                <p>Schedule</p>
+                    <p>Schedule</p>
+                </Link>
             </div>
 
             <div className="sssg sponsers">
-                <div className='card sssg-item'>
-                    <div class="card2 sssg-item-child">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3349/3349234.png" alt="" />
+                <Link
+                    onClick={() => {
+                                setActiveLink(3)
+                            }}
+                            to='/sponsors'
+                >
+                    <div className='card sssg-item'>
+                        <div class="card2 sssg-item-child">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3349/3349234.png" alt="" />
+                        </div>
                     </div>
-                </div>
-                <p>Sponsers</p>
+                    <p>Sponsers</p>
+                </Link>
             </div>
 
             <div className="sssg gallery">
-                <div className='card sssg-item'>
-                    <div class="card2 sssg-item-child">
-                        <img src="https://cdn-icons-png.flaticon.com/128/1040/1040241.png" alt="" />
+                <Link
+                    onClick={() => {
+                                setActiveLink(4)
+                            }}
+                            to='/gallery'
+                >
+                    <div className='card sssg-item'>
+                        <div class="card2 sssg-item-child">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1040/1040241.png" alt="" />
+                        </div>
                     </div>
-                </div>
-                <p>Gallary</p>
+                    <p>Gallary</p>
+                </Link>
             </div>
             </div>
         </div>

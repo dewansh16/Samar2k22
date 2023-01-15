@@ -1,11 +1,9 @@
-import React from 'react'
-import {useContext} from 'react'
+import {useContext,useEffect,useState} from 'react'
 import { Link } from 'react-router-dom';
 import './home.component.css'
 
 import { NavbarContext } from '../../contexts/navbar.context'
 
-let date = new Date();
 // let naya = new Date("Mar 6 08:16:20 2023 GMT");
 // const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
@@ -14,7 +12,22 @@ let date = new Date();
 // }, 1000);
 
 function Home() {
-    const {setActiveLink } = useContext(NavbarContext)
+    const { setActiveLink } = useContext(NavbarContext);
+    let date = new Date();
+
+    const [seconds, setSeconds] = useState(date.getSeconds());
+    const [minutes, setMinutes] = useState(date.getMinutes());
+    const [hours, setHours] = useState(date.getHours());
+    const [currDate, setDate] = useState(date.getDate());
+
+    setInterval(() => {
+        const currTime = new Date();
+        setSeconds(new Date().getSeconds());
+        setMinutes(new Date().getMinutes());
+        setHours(new Date().getHours());
+        setDate(new Date().getDate());
+    }, 1000)
+    
     return (
         <>
         <div className='container'>
@@ -31,19 +44,19 @@ function Home() {
             {/* Samar Countdown */}
             <div className="count-down flex">
                 <div className='count-down-div'>
-                    <p className='count-div-item-1'>{date.getDate()}</p>
+                    <p className='count-div-item-1'>{currDate}</p>
                     <p>Days</p>
                 </div>
                 <div className='count-down-div'>
-                    <p className='count-div-item-1'>{date.getHours()}</p>
+                    <p className='count-div-item-1'>{hours}</p>
                     <p>Hours</p>
                 </div>
                 <div className='count-down-div'>
-                    <p className='count-div-item-1'>{date.getMinutes()}</p>
+                    <p className='count-div-item-1'>{minutes}</p>
                     <p>Minutes</p>                    
                 </div>
                 <div className='count-down-div'>
-                <p className='count-div-item-1'>{date.getSeconds()}</p>
+                <p className='count-div-item-1'>{seconds}</p>
                 <p>Seconds</p>
                 </div>
             </div>

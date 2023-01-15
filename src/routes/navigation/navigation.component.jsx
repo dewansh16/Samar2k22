@@ -51,17 +51,18 @@ function Navigation() {
 
     return (
         <>
-            <LandingLoader isLoading={ isLoading}/>
-            <BodyDiv>
-                <NavDiv>
-                    <Burger open={open} setOpen={setOpen}/>
-                    <Nav>
-                        <RightNav open={open} setOpen={setOpen}/>
-                    </Nav>
-                </NavDiv>
-                <Outlet />
-                <Footer/>
-            </BodyDiv>
+            {isLoading ?<LandingLoader isLoading={isLoading} />:
+                <BodyDiv>
+                    <NavDiv>
+                        <Burger open={open} setOpen={setOpen}/>
+                        <Nav>
+                            <RightNav open={open} setOpen={setOpen}/>
+                        </Nav>
+                    </NavDiv>
+                    <Outlet />
+                    <Footer/>
+                </BodyDiv>
+            }
         </>
     )
 }

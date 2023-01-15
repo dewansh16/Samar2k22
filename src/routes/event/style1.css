@@ -100,12 +100,15 @@
         border-radius:0px 50px 50px 0px ;
     }
     #image .righte{
-        height: 30em;
+        height: 20em;
+        align-self: center;
+        border-radius: 50px;
     }
     #image .lefte{
-        height: 30em;
+        height: 20em;
+        align-self: center;
+        border-radius: 50px;
     }
-
 }
 
 

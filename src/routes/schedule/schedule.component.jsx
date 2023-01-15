@@ -2,9 +2,6 @@ import React from 'react'
 import "./style2.css"
 
 
-
-
-
 function Schedule() {
     return (
         <div className='base'>
@@ -146,13 +143,6 @@ function Schedule() {
 
 {/* comment */}
             </div>
-
-
-            
-
-
-
-
         </div>
     )
 }

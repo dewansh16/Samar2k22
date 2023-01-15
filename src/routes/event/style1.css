@@ -1,0 +1,153 @@
+.flex-containere {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+.righte{
+   background: #E5A022;
+   margin-top: 10px;
+   margin-bottom: 10px;
+    padding: 20px;
+    /* font-size: 30px; */
+   border-radius: 50px 0px 0px 50px;
+   width:42%;
+   display:flex;
+   justify-content: center;
+   align-self: right;
+   /* font: normal normal medium 28px/34px Montserrat; */
+  }
+.lefte{
+    background: #E5A022;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    /* font-size: 30px; */
+    border-radius:0px 50px 50px 0px ;
+    width:42%;
+    display:flex;
+    justify-content: center;
+    align-self: left;
+   
+  }
+
+  #image .lefte{
+    
+    background-size: 100em;
+    background-position: center;
+    height: 40em; 
+    /* width: 40%; */
+}
+
+
+#image .lefte:hover{
+    transition: 2.5s;
+    background-size: 120em;
+    background-position: center;
+}
+#image .righte{
+    
+    background-size: 100em;
+    background-position: center;
+    height: 40em;
+
+}
+
+#image .righte:hover{
+    transition: 2.5s;
+    background-size: 120em;
+    background-position: center;
+}
+#image div{
+    padding: 0;
+}
+
+#firstimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+#secoundimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+#thirdimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+#fourthimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+
+
+@media (max-width:800px){
+    .flex-containere{
+        flex-direction: column;
+    }
+    .lefte{
+        width: 80%;
+        margin-bottom: 40px;
+        /* height: 200px; */
+    }
+    .righte{
+        width: 80%;
+        /* height: 200px; */
+        align-self: flex-start;
+        border-radius:0px 50px 50px 0px ;
+    }
+    #image .righte{
+        height: 20em;
+        align-self: center;
+        border-radius: 50px;
+    }
+    #image .lefte{
+        height: 20em;
+        align-self: center;
+        border-radius: 50px;
+    }
+}
+
+
+.content{
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.head{
+    background: red;
+    margin-top: 1rem;
+    margin-bottom: 1px;
+    padding: 20px;
+    border-radius:0px 50px 50px 0px ;
+    min-width: 40%;    
+    /* change width */
+   display:flex;
+   justify-content: center;
+   align-self: flex-start;
+   /* font: normal normal medium 28px/34px Montserrat; */
+  }
+
+.basee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cen{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: red;
+    min-width: 20%;
+    text-align: center;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* font: normal normal 600 40px/49px Montserrat; */
+    font-weight: bold;
+}
+
+
+

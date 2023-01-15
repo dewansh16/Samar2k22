@@ -1,0 +1,35 @@
+.img1{
+    border-radius: 30%;
+    width:  210px;
+    height: 180px;
+    max-width: 100%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    transition: transform .2s;
+}
+
+.img1:hover{
+    transform: scale(1.2);
+}
+
+div{
+    text-align: center;
+}
+
+.sponsimage{
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+    font-weight:bold;
+}
+@media(max-width: 768px){
+   .img1{
+    margin-bottom: 25px;
+    margin-top: 1px;
+    width: fit-content;
+   }
+    
+}

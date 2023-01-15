@@ -32,6 +32,58 @@
    
   }
 
+  #image .lefte{
+    
+    background-size: 100em;
+    background-position: center;
+    height: 40em; 
+    /* width: 40%; */
+}
+
+
+#image .lefte:hover{
+    transition: 2.5s;
+    background-size: 120em;
+    background-position: center;
+}
+#image .righte{
+    
+    background-size: 100em;
+    background-position: center;
+    height: 40em;
+    /* width: 40%; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background: no-repeat;  */
+}
+
+#image .righte:hover{
+    transition: 2.5s;
+    background-size: 120em;
+    background-position: center;
+}
+#image div{
+    padding: 0;
+}
+
+#firstimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+#secoundimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+#thirdimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+#fourthimage{
+    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
+}
+
+
+
 @media (max-width:800px){
     .flex-containere{
         flex-direction: column;
@@ -47,6 +99,13 @@
         align-self: flex-start;
         border-radius:0px 50px 50px 0px ;
     }
+    #image .righte{
+        height: 30em;
+    }
+    #image .lefte{
+        height: 30em;
+    }
+
 }
 
 
@@ -62,7 +121,7 @@
     margin-bottom: 1px;
     padding: 20px;
     border-radius:0px 50px 50px 0px ;
-    width: calc(35% - 10px);    
+    min-width: 40%;    
     /* change width */
    display:flex;
    justify-content: center;
@@ -77,10 +136,10 @@
     justify-content: space-around;
 }
 .cen{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: red;
-    width: 20%;
+    min-width: 20%;
     text-align: center;
     border-radius: 30px;
     padding-left: 2rem;
@@ -106,60 +165,7 @@
     border-radius: 50px 0px 0px 50px;
 } */
 
-#image .lefte{
-    
-    background-size: 100em;
-    background-position: center;
-    height: 40em; 
-    /* width: 40%; */
-}
 
-
-#image .lefte:hover{
-    transition: 2.5s;
-    background-size: 120em;
-    background-position: center;
-}
-#image .righte{
-    
-    background-size: 100em;
-    background-position: center;
-    height: 40em;
-    /* width: 40%; */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background: no-repeat;  */
-}
-
-
-
-#image .righte:hover{
-    transition: 2.5s;
-    background-size: 120em;
-    background-position: center;
-}
-
-
-#image div{
-    padding: 0;
-}
-
-
-#firstimage{
-    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
-}
-
-#secoundimage{
-    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
-}
-
-#thirdimage{
-    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
-}
-
-#fourthimage{
-    background-image: url('C:\Users\Ekant Sahu\OneDrive\Documents\Final\Samar2k22\src\Assets\Images\basketBallImg.png');
-}
 
 /* carousel */
 

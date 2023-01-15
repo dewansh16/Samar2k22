@@ -1,0 +1,98 @@
+.animationDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* @media (max-width: 768px) {
+  .animationDiv {
+    display: none;
+  }
+} */
+
+.stripes-box {
+  height: 60%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  transform: skewY(-34deg) scaleY(1.8) translateY(-17%);
+}
+
+.greyStripe {
+  width: 100%;
+  /* transform: skewY(-37deg); */
+  transform-origin: center;
+  background: linear-gradient(to right, #3f3f3f 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: kallu 3s infinite 0ms;
+}
+
+.yellowStripe1 {
+  width: 100%;
+  /* transform: skewY(-37deg); */
+  transform-origin: center;
+  background: linear-gradient(to right, #e5a022 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: kallu 3s infinite 200ms;
+}
+
+.yellowStripe2 {
+  width: 100%;
+  /* transform: skewY(-37deg); */
+  transform-origin: center;
+  background: linear-gradient(to right, #e5a022 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: kallu 3s infinite 300ms;
+}
+
+.redStripe1 {
+  width: 100%;
+  /* transform: skewY(-37deg); */
+  transform-origin: center;
+  background: linear-gradient(to right, #fc0a18 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: kallu 3s infinite 500ms;
+}
+
+.redStripe2 {
+  width: 100%;
+  /* transform: skewY(-37deg); */
+  transform-origin: center;
+  background: linear-gradient(to right, #fc0a18 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: kallu 3s infinite 600ms;
+}
+
+.redStripe3 {
+  width: 100%;
+  /* transform: skewY(-37deg); */
+  transform-origin: center;
+  background: linear-gradient(to right, #fc0a18 50%, black 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: kallu 3s infinite 700ms;
+}
+
+@keyframes kallu {
+  0% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}

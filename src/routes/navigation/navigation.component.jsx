@@ -6,7 +6,7 @@ import RightNav from "./rightNav.component";
 import Footer from "../../Components/footer/footer.component";
 import './navigation.component.css';
 
-import SamarImg from "../../Assets/Images/samar21 (1).png";
+import LandingLoader from "../../Components/animationPage/landingLoader.component";
 
 const Nav = styled.nav`
   height: 70px;
@@ -46,19 +46,12 @@ function Navigation() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        },2000)
+        },40000)
     },[])
 
     return (
         <>
-            <div style={isLoading?{}:{display:'none'}} className="animationDiv">
-                <div>
-                    <img
-                        alt="samarImage"
-                        src={SamarImg}
-                    />
-                </div>
-            </div>
+            <LandingLoader isLoading={ isLoading}/>
             <BodyDiv>
                 <NavDiv>
                     <Burger open={open} setOpen={setOpen}/>

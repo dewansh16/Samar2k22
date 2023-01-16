@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contactUs.css';
 import { ReactComponent as InstaLogo } from '../../Assets/Icons/insta.svg';
 import { ReactComponent as FacebookLogo } from '../../Assets/Icons/facebook.svg';
@@ -9,6 +9,56 @@ import { ReactComponent as LocationPinLogo } from '../../Assets/Icons/locationPi
 import { ReactComponent as SmartPhoneLogo } from '../../Assets/Icons/smartphone.svg'
 
 function ContactUs() {
+    const [userData, setUserData] = 
+    useState({
+        username: "",
+        Email: "",
+        subject: "",
+        message: ""
+    });
+    let name,value;
+      const postUserData = (event) => {
+        name=event.target.name;
+        value=event.target.value;
+        setUserData({ ...userData, [name]:value});
+      }
+      //connecting with firebase
+      const submitData = async (event) =>{
+        event.preventDefault();
+        const{
+            username , Email, subject,message
+        }=userData;
+        if(username && Email && subject && message)
+        {
+            const res=fetch(
+                "https://reactfirebasewebsite-16dfe-default-rtdb.firebaseio.com/userDataRecords.json"
+                , {method:"POST",
+                headers: {
+                    "Content-Type": "application/json",
+
+                },
+            body:JSON.stringify({
+                username , Email, subject,message
+            }),
+        }
+         );
+         if(res)
+         {
+            setUserData({
+                username: "",
+                Email: "",
+                subject: "",
+                message: ""
+            });
+            alert("WE WILL REACH OUT TO YOU SOON!")
+         }
+         else{
+            alert("Please fill the form");
+         }
+        }
+
+
+      }
     return (
         <div className='main-container'>
             <div className="heading-container">
@@ -120,23 +170,29 @@ function ContactUs() {
                                     type="text"
                                     name="username"
                                     placeholder="username"
+                                    
                                     autoComplete="off"
                                     required
+                                    value = {userData.username} onChange= {postUserData}
                                 />
 
                                 <input
                                     type="email"
                                     name="Email"
                                     placeholder="Email"
+                                   
                                     autoComplete="off"
                                     required
+                                    value = {userData.Email} onChange= {postUserData}
                                 />
                                 <input
                                     type="text"
-                                    name="Subject"
+                                    name="subject"
                                     placeholder="Subject"
+                                  
                                     autoComplete="off"
                                     required
+                                    value={userData.subject} onChange={postUserData}
                                 />
 
                                 <textarea
@@ -144,10 +200,12 @@ function ContactUs() {
                                     cols="30"
                                     rows="6"
                                     placeholder="Message"
+                                  
                                     autoComplete="off"
-                                    required></textarea>
+                                    required
+                                    value={userData.message} onChange={postUserData}></textarea>
 
-                                <button className='send-button'>SEND</button>
+                                <button className='send-button' onClick={submitData}>SEND</button>
                             </form>
                         </div>
                     </div>

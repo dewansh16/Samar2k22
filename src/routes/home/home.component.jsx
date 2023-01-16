@@ -37,7 +37,7 @@ function Home() {
     
     return (
         <>
-        <div className='container'>
+        <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
                 

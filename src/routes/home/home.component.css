@@ -33,7 +33,7 @@
 }
 
 /* container */
-.container {
+.home-container {
   text-align: center;
   padding: 0 1rem 0;
 }
@@ -133,7 +133,7 @@
 /* media queries */
 
 @media screen and (max-width: 415px) {
-  .container {
+  .home-container {
     display: flex;
     text-align: center;
     padding: 0 1rem 0;

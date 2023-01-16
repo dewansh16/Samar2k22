@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './contactUs.css';
-import { ReactComponent as InstaLogo } from '../../Assets/Icons/insta.svg';
+
 import { ReactComponent as FacebookLogo } from '../../Assets/Icons/facebook.svg';
 import { ReactComponent as LinkedInLogo } from '../../Assets/Icons/linkedIn.svg';
 import { ReactComponent as YoutubeLogo } from '../../Assets/Icons/youtube.svg';
 import { ReactComponent as LetterLogo } from '../../Assets/Icons/letterIcon.svg'
 import { ReactComponent as LocationPinLogo } from '../../Assets/Icons/locationPin.svg'
 import { ReactComponent as SmartPhoneLogo } from '../../Assets/Icons/smartphone.svg'
-
+import { ReactComponent as InstagramLogo } from '../../Assets/Icons/instaiconmobile.svg'
 function ContactUs() {
     const [userData, setUserData] = 
     useState({
@@ -67,11 +67,18 @@ function ContactUs() {
                 </div>
             </div>
             <div className="icons-container">
-                <div className="icons instagram">
+            <div className="icons instagram">
+            <a
+                                href="https://www.instagram.com/samar.nitrr/?hl=en"
+                            >
+                                <InstagramLogo  style={{ height: '4.3em', width: '140%', margin: 0, padding: 0 }}></InstagramLogo> 
+                            </a>
+                </div>
+                 {/* <div className="icons instagram">
                     <a href="https://www.instagram.com/samar.nitrr/?hl=en">
                         <InstaLogo style={{ height: '4em', width: '100%', margin: 0, padding: 0 }}></InstaLogo>
                     </a>
-                </div>
+                </div>  */}
                 <div className="icons facebook">
                     <a
                         href="https://www.facebook.com/shaurya.nitrr/"

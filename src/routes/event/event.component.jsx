@@ -9,16 +9,16 @@ function Event() {
             <div className="content" id="image">
 {/* comment */}
                 <div className='flex-containere'>
-                            <div className='lefte' id="firstimage">
+                            <div className='lefte' style={{backgroundImage:`url(${BasketBallImg})`}} id="firstimage">
                                 {/* hover */}
                                 {/* <img src={BasketBallImg} alt="" /> */}
                                 {/* hover */}
                                 </div>
-                            <div className='righte' id="secoundimage"></div>      
+                            <div className='righte' style={{backgroundImage:`url(${BasketBallImg})`}}   id="secoundimage"></div>      
                 </div>
                 <div className='flex-containere'>
-                            <div className='lefte' id="thirdimage"></div>
-                            <div className='righte' id="fourthimage"></div>      
+                            <div className='lefte' style={{backgroundImage:`url(${BasketBallImg})`}}  id="thirdimage"></div>
+                            <div className='righte' style={{backgroundImage:`url(${BasketBallImg})`}}  id="fourthimage"></div>      
                 </div>
 {/* comment */}
             </div>
@@ -78,5 +78,4 @@ function Event() {
         </div>
     )
 }
-
 export default Event

@@ -11,20 +11,21 @@ import LandingLoader from "../../Components/animationPage/landingLoader.componen
 const Nav = styled.nav`
   height: 70px;
   border: 2px solid black;
-  border-radius: 50px;
+  border-radius: 30px;
   background: #E5A022 0% 0% no-repeat padding-box;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
   display: flex;
   justify-content: space-between;
-
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
       position: absolute;
   }
 `
 
 const NavDiv = styled.div`
     margin: 50px;
-
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
     margin: 0px;
   }
 `

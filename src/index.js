@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
+
+//fonts
+import "./fonts/HouseOfTheDragon_PERSONAL_USE_ONLY.otf"
+import "./fonts/HouseOfTheDragonBold_PERSONAL_USE_ONLY.otf"
+import "./fonts/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf"
+import "./fonts/HouseOfTheDragonOutline_PERSONAL_USE_ONLY.otf"
+
 import App from './App';
 import { NavbarProvider } from './contexts/navbar.context';
 

@@ -24,3 +24,31 @@ a {
   text-decoration: none;
   color: white;
 }
+
+@font-face {
+  font-family: "Dragon";
+  src: local("Lato"),
+    url(./fonts/HouseOfTheDragon_PERSONAL_USE_ONLY.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "DragonBold";
+  font-weight: 900;
+  src: local("Lato"),
+    url(./fonts/HouseOfTheDragonBold_PERSONAL_USE_ONLY.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "DragonDeco";
+  font-weight: 900;
+  src: local("Lato"),
+    url(./fonts/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "DragonOutline";
+  font-weight: 900;
+  src: local("Lato"),
+    url(./fonts/HouseOfTheDragonOutline_PERSONAL_USE_ONLY.otf)
+      format("opentype");
+}

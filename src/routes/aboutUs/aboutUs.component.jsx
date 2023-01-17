@@ -3,7 +3,7 @@ import "./aboutUs.css";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="about-us-container">
       <p className="head-text">ABOUT US</p>
       <p className="samar">SAMAR</p>
       <div className=" ">

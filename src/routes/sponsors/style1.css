@@ -60,6 +60,18 @@
   height: 18rem;
 }
 
+.sponsor-first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.sponsor-first h1 {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .spo-sidebar {
     margin-left: 0;

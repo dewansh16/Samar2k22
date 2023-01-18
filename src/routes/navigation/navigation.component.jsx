@@ -10,16 +10,24 @@ import LandingLoader from "../../Components/animationPage/landingLoader.componen
 
 const Nav = styled.nav`
   height: 70px;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
   border: 2px solid black;
-  border-radius: 30px;
-  background: #E5A022 0% 0% no-repeat padding-box;
-  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  margin-top:0;
+  background: rgb(240,248,255,0.2) 0% 0% no-repeat padding-box;
+  box-shadow: 0 0.5px 15px rgb(240,248,255,0.5);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
   display: flex;
   justify-content: space-between;
   @media (max-width: 800px) {
       position: absolute;
+      backdrop-filter:none;
+      background:none;
+      border:none;
+      box-shadow:none;
   }
 `
 

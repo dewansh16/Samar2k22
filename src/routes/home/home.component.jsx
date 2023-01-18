@@ -44,33 +44,43 @@ function Home() {
         <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
-            {
-                // <div style={{backgroundImage:`url(${BasketBallImg})`}} className='page-banner-bg'/>
-                }
-            {
-                // <div className="page-banner-carousal-div">
-                //     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                //         <div class="carousel-inner">
-                //             <div class="carousel-item active">
+                    <div style={{ backgroundImage: `url(${BasketBallImg})` }} className='page-banner-bg' />
+                        <div className="carousal-page">
+                            <div className="carousal-page-heading">
+                                <h1>Day-1</h1>
+                            </div>
+                            <div className="carousal-page-content">
+                                <div className="carousal-page-content-gameName">
+                                    <p>basketball</p>
+                                </div>
+                                <div className="carousal-page-content-gameTime">
+                                    <p>9:00 AM - 10:00 AM</p>
+                                </div>
+                            </div>
+                        </div>
+                    {
+                        // <div className="page-banner-carousal-div">
+                        //     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        //         <div class="carousel-inner">
+                        //             <div class="carousel-item active">
                             
-                //             </div>
-                //             <div class="carousel-item">
-                //             </div>
-                //             <div class="carousel-item">
-                //             </div>
-                //         </div>
-                //         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                //             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                //             <span class="sr-only">Previous</span>
-                //         </a>
-                //         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                //             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                //             <span class="sr-only">Next</span>
-                //         </a>
-                //     </div>
-                // </div>
-            }
-                
+                        //             </div>
+                        //             <div class="carousel-item">
+                        //             </div>
+                        //             <div class="carousel-item">
+                        //             </div>
+                        //         </div>
+                        //         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        //             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        //             <span class="sr-only">Previous</span>
+                        //         </a>
+                        //         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        //             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        //             <span class="sr-only">Next</span>
+                        //         </a>
+                        //     </div>
+                        // </div>
+                    }
             </div>
 
             {/* Samar Countdown */}

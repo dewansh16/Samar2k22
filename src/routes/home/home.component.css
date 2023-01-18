@@ -47,6 +47,7 @@
   text-align: center;
   border: 1px solid white;
   border-radius: 8rem;
+  z-index: -1;
 }
 
 /* .page-banner img {

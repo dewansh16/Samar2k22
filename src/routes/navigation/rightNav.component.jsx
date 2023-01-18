@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import logo from "../../Assets/Images/home_logo.png";
 import { NavbarContext } from "../../contexts/navbar.context";
+// import { hover } from "@testing-library/user-event/dist/hover";
 
 const Ul = styled.div`
   align-items: center;
@@ -14,15 +15,18 @@ const Ul = styled.div`
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
-    background-color: #e5a022;
+    background: rgb(240,248,255,0.2) 0% 0% no-repeat padding-box;
+    box-shadow: 0 0.5px 15px rgb(240,248,255,0.5);
+    backdrop-filter: blur(6.5px);
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-108%)")};
+    transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(108%)")};
     top: 0;
-    left: 0;
+   right: 0;
+   z-index:99;
     height: 100vh;
     width: 300px;
     transition: transform 0.3s ease-in-out;
-    border-radius: 0px 70px 70px 0px;
+    border-radius: 70px 0px 0px 70px;
   }
 `;
 
@@ -32,12 +36,14 @@ const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 18px;
 `;
-
 const NavLinkDiv = styled.div`
   text-align: center;
   border-radius: 10px;
   margin: 7px 0;
   padding: 7px 10px;
+  a:hover{
+    color:#e5a022;
+  }
   @media (max-width: 800px) {
     width: 100%;
     border-radius: 0px 30px 30px 0px;
@@ -47,7 +53,6 @@ const NavLinkDiv = styled.div`
     align-items: center;
   }
 `;
-
 const NavLinkContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -60,15 +65,16 @@ const NavLinkContainer = styled.div`
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
+  
   }
 `;
 
-const RightNav = ({ open,setOpen }) => {
+const RightNav = ({ open,setOpen,hover }) => {
   const { activeLink, setActiveLink } = useContext(NavbarContext);
   return (
     <Ul open={open}>
       <NavLinkContainer>
-        <NavLinkDiv style={activeLink === 0 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
             to="/"
             onClick={() => {
@@ -76,16 +82,17 @@ const RightNav = ({ open,setOpen }) => {
               setOpen(false);
             }}
           >
-            Home
+          <img src={logo} alt="Samar logo" height="80px" width="auto" margin-left="10px"/>
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 1 ? { background: "red" } : {}}>
+        <NavLinkDiv style={activeLink === 1 ? { background: "red" } : {}} >
           <NavLink
             to="/event"
             onClick={() => {
               setActiveLink(1);
               setOpen(false);
             }}
+
           >
             Event
           </NavLink>
@@ -171,5 +178,4 @@ const RightNav = ({ open,setOpen }) => {
     </Ul>
   );
 };
-
 export default RightNav;

@@ -148,6 +148,16 @@ const RightNav = ({ open }) => {
             About Us
           </NavLink>
         </NavLinkDiv>
+        <NavLinkDiv style={activeLink === 8 ? { background: "red" } : {}}>
+          <NavLink
+            to="/Merchandise"
+            onClick={() => {
+              setActiveLink(8);
+            }}
+          >
+            Merchandise
+          </NavLink>
+        </NavLinkDiv>
       </NavLinkContainer>
     </Ul>
   );

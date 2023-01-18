@@ -1,18 +1,22 @@
 import {useContext,useEffect,useState} from 'react'
 import { Link } from 'react-router-dom';
+import BasketBallImg from "../../Assets/Images/basketBallImg.png";
 import './home.component.css'
 
 import { NavbarContext } from '../../contexts/navbar.context'
 
-// let naya = new Date("Mar 6 08:16:20 2023 GMT");
-// const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-
-// const timerId = setInterval( ()=>{
-    
-// }, 1000);
-
 function Home() {
     const { setActiveLink } = useContext(NavbarContext);
+
+    const [isLoading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        },4000)
+    },[])
+
     let date = new Date();
 
     const [seconds, setSeconds] = useState(date.getSeconds());
@@ -40,12 +44,32 @@ function Home() {
         <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
+                <div style={{backgroundImage:`url(${BasketBallImg})`}} className='page-banner-bg'/>
                 
-                    <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+            {
+                // <div className="page-banner-carousal-div">
+                //     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                //         <div class="carousel-inner">
+                //             <div class="carousel-item active">
+                            
+                //             </div>
+                //             <div class="carousel-item">
+                //             </div>
+                //             <div class="carousel-item">
+                //             </div>
+                //         </div>
+                //         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                //             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                //             <span class="sr-only">Previous</span>
+                //         </a>
+                //         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                //             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                //             <span class="sr-only">Next</span>
+                //         </a>
+                //     </div>
+                // </div>
+            }
                 
-                
-                    <h2>13th-14th Decemeber 2021</h2>
-            
             </div>
 
             {/* Samar Countdown */}

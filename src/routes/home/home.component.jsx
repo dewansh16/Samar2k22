@@ -44,8 +44,9 @@ function Home() {
         <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
-                <div style={{backgroundImage:`url(${BasketBallImg})`}} className='page-banner-bg'/>
-                
+            {
+                // <div style={{backgroundImage:`url(${BasketBallImg})`}} className='page-banner-bg'/>
+                }
             {
                 // <div className="page-banner-carousal-div">
                 //     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

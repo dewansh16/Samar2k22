@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,500&display=swap");
+
+/* .about-us-container {
+  font-family: "DragonBold";
+} */
+
+.first {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.second {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 80px;
+}
+.head-text {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 750;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid red;
+  border-radius: 40px;
+  background: red;
+  width: 20%;
+  margin-left: 38%;
+}
+.samar {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding: 9px;
+  border: 2px solid red;
+  background: red;
+  width: 20%;
+  margin-left: 0px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  border-radius: 0px 40px 40px 0;
+}
+
+@media (max-width: 768px) {
+  .head-text {
+    font-size: 25px;
+    font-weight: 750;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid red;
+    background: red;
+    width: 50%;
+    margin-left: 0px;
+    margin-top: 80px;
+    border-radius: 0px 40px 40px 0;
+  }
+  .samar {
+    width: 50%;
+  }
+}
+
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

@@ -62,7 +62,7 @@ const NavLinkContainer = styled.div`
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open,setOpen }) => {
   const { activeLink, setActiveLink } = useContext(NavbarContext);
   return (
     <Ul open={open}>
@@ -72,6 +72,7 @@ const RightNav = ({ open }) => {
             to="/"
             onClick={() => {
               setActiveLink(0);
+              setOpen(false);
             }}
           >
             Home
@@ -82,6 +83,7 @@ const RightNav = ({ open }) => {
             to="/event"
             onClick={() => {
               setActiveLink(1);
+              setOpen(false);
             }}
           >
             Event
@@ -92,6 +94,7 @@ const RightNav = ({ open }) => {
             to="/schedule"
             onClick={() => {
               setActiveLink(2);
+              setOpen(false);
             }}
           >
             Schedule
@@ -102,6 +105,7 @@ const RightNav = ({ open }) => {
             to="/sponsors"
             onClick={() => {
               setActiveLink(3);
+              setOpen(false);
             }}
           >
             Sponsors
@@ -112,6 +116,7 @@ const RightNav = ({ open }) => {
             to="/gallery"
             onClick={() => {
               setActiveLink(4);
+              setOpen(false);
             }}
           >
             Gallery
@@ -122,6 +127,7 @@ const RightNav = ({ open }) => {
             to="/ourTeam"
             onClick={() => {
               setActiveLink(5);
+              setOpen(false);
             }}
           >
             Our Team
@@ -132,6 +138,7 @@ const RightNav = ({ open }) => {
             to="/contactUs"
             onClick={() => {
               setActiveLink(6);
+              setOpen(false);
             }}
           >
             Contact Us
@@ -142,9 +149,21 @@ const RightNav = ({ open }) => {
             to="/aboutUs"
             onClick={() => {
               setActiveLink(7);
+              setOpen(false);
             }}
           >
             About Us
+          </NavLink>
+        </NavLinkDiv>
+        <NavLinkDiv style={activeLink === 8 ? { background: "red" } : {}}>
+          <NavLink
+            to="/Merchandise"
+            onClick={() => {
+              setActiveLink(8);
+              setOpen(false);
+            }}
+          >
+            Merchandise
           </NavLink>
         </NavLinkDiv>
       </NavLinkContainer>

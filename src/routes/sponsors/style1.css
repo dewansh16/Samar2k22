@@ -10,13 +10,12 @@
 }
 
 .spo-main {
-  width: 60%;
+  width: 50%;
   height: 100%;
   margin-right: 2rem;
   margin-bottom: 2rem;
   background-color: black;
   overflow: scroll;
-  
 }
 
 .spo-main::-webkit-scrollbar {
@@ -36,8 +35,6 @@
   margin-left: 2rem;
 }
 
-
-
 .spo-heading1 {
   font-weight: 800;
   text-align: center;
@@ -48,15 +45,14 @@
 }
 
 .spo-heading {
-    font-weight: 800;
-  }
+  font-weight: 800;
+}
 
 .spo-text {
   text-align: justify;
   padding-left: 1rem;
   font-size: larger;
   padding-top: 1.5rem;
-  
 }
 
 .spo-img {
@@ -65,34 +61,34 @@
 }
 
 @media (max-width: 768px) {
-    .spo-sidebar{
-        margin-left: 0;
-        width: 100%;
-        float: none;
-        margin-bottom: 2rem;
-        position: relative;
-    }
-    .spo-main{
-        width: 100%;
-        margin-top: 6rem;
-    }
+  .spo-sidebar {
+    margin-left: 0;
+    width: 100%;
+    float: none;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .spo-main {
+    width: 100%;
+    margin-top: 6rem;
+  }
 
-    .spo-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+  .spo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-      .spo-text {
-        text-align: justify;
-        padding-left: 1rem;
-        padding-right: 3rem;
-        font-size: larger;
-        padding-top: 1.5rem;
-      }
+  .spo-text {
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    font-size: larger;
+    padding-top: 1.5rem;
+  }
 
-      .spo-img {
-        width:fit-content;
-        height: 18rem;
-      }
+  .spo-img {
+    width: fit-content;
+    height: 18rem;
+  }
 }

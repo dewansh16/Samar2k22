@@ -1,0 +1,52 @@
+
+@font-face{
+    font-family: "houseofdragon";
+    src: url("C:\Users\palag\Desktop\Samar2k22\src\fonts\HouseOfTheDragon_PERSONAL_USE_ONLY.otf");
+}
+.merchandise_image img{
+    width: 500px;
+    padding-bottom: 50px;
+    /* height: 500px; */
+}
+.merchandise_data h3{
+    font-family:"houseofdragon",sans-serif;
+    font-size: 40px;
+}
+.merchandise_data h2{
+    font-family: "Trirong", serif;
+    font-size: 100px;
+    font-weight: bold;
+}
+.containermar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    justify-content: space-around;
+    margin: 5px;
+
+}
+
+.merchandise_data{
+text-align: center;
+padding: 40px;
+}
+
+@media screen and (max-width:800px) {
+    .merchandise_image img{
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+        align-items: center;
+        /* height: 500px; */
+    }
+    .merchandise_data h3{
+        font-size: 180%;
+        padding-top:100px;
+    }
+    .merchandise_data h2{
+        font-size: 420%;
+        
+    }
+    
+}

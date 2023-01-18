@@ -1,71 +1,230 @@
-.gallery-page .heading {
-  width: 12.5rem;
-  /* margin: auto; */
-  background-color: red;
-  border-radius: 2rem;
-  max-width: 100%;
-  margin-bottom: 30px;
-  height: 4rem;
+.gallery-page .gallery-heading {
+  padding: 1rem;
+}
+
+.gallery-heading h3{
+  font-size: 1.8rem;
+  font-weight: 600;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid white;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.gallery-heading-container{
+  margin-bottom: 4rem;
+}
+
+#gallery-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#gallery-text {
+	text-align: center;
+	background: radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+
+	background-size: 200%;
+
+	font-size: 4rem;
+	font-weight: bolder;
+	color: transparent;
+	background-clip: text;
+	animation: animation 1.7s linear infinite;
+}
+
+@keyframes animation {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.gallery-section1{
+  margin-bottom: 4rem;
+}
+
+.gallery-section2{
+  margin-bottom: 4rem;
+}
+.gallery-heading-container .gallery-heading{
+  margin: auto;
+}
+
+.gallery-find-us{
+    margin: 0 0 2rem 0;
 }
 
 .gallery-page p {
   text-align: center;
-}
-.gallery-page .sideHeading {
-  text-align: left;
-  background-color: red;
-  width: 8.5rem;
-  padding: 1rem 1rem 1rem 1rem;
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  padding-left: 7rem;
-  margin-top: 2rem;
-}
-
-.gallery-page img {
-  padding: 30px 20px;
-  margin-left: 3px;
-  height: 18rem;
-  width: 32rem;
-  max-width: 100%;
-  border-radius: 0%;
-  align-items: center;
-  transition: transform 2s;
-  overflow: hidden;
-}
-
-.gallery-page .img2:hover {
-  transform: scale(1.1);
 }
 
 .gallery-page div {
   text-align: center;
 }
 
-.gallery-page .section3 {
+.gallery-page .section2 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .gallery-page .heading {
-    margin-top: 2rem;
-    margin-left: 0px;
-    border-radius: 0%;
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-    height: 100px;
-    width: 250px;
+
+
+/* flip animation */
+
+.gallery-flip {
+  position: relative;
+}
+
+.gallery-flip >.gallery-front, .gallery-flip >.gallery-back {
+        display: block;
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-duration: .5s;
+        transition-property: transform, opacity;
   }
 
-  .gallery-page .img2 {
-    height: 174px;
-    width: 340px;
-    margin-top: 5px;
-    margin-bottom: 2px;
-    padding-bottom: 10px;
+.gallery-flip >.gallery-front {
+      transform: rotateY(0deg);
+  }
+
+.gallery-flip >.gallery-back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+
+.gallery-flip:hover >.gallery-front {
+  transform: rotateY(180deg);
+}
+.gallery-flip:hover >.gallery-back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+
+.gallery-flip {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  margin: 1rem;
+}
+  .gallery-flip >.gallery-front,
+  .gallery-flip >.gallery-back {
+    color: white;
+    background-size: cover!important;
+    background-position: center!important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+  }
+
+  .gallery-flip > .gallery-front p, .gallery-flip > .gallery-back p {
+      font-size: 0.9125rem;
+      line-height: 160%;
+      color: #999;
+  }
+ 
+
+.gallery-text-shadow {
+text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+
+.gallery-flip .img1{
+  background: url('../../Assets/Images/basketBallImg.png');
+}
+
+.gallery-flip .img2{
+  background: url('../../Assets/Images/gallery-images/blue-car.jpeg');
+}
+
+.gallery-flip .img3{
+  background: url('../../Assets/Images/gallery-images/born-fire.jpeg');
+}.gallery-flip .img4{
+  background: url('../../Assets/Images/gallery-images/DJ\ Night.jpeg');
+}.gallery-flip .img5{
+  background: url('../../Assets/Images/gallery-images/Field.jpeg');
+}.gallery-flip .img6{
+  background: url('../../Assets/Images/gallery-images/pickel.JPG');
+}.gallery-flip .img7{
+  background: url('../../Assets/Images/gallery-images/pickel\ ball.JPG');
+}.gallery-flip .img8{
+  background: url('../../Assets/Images/gallery-images/sports-day\ tug\ of\ war.jpg');
+}.gallery-flip .img9{
+  background: url('../../Assets/Images/gallery-images/SportsDay-10.jpg');
+}.gallery-flip .img10{
+  background: url('../../Assets/Images/gallery-images/SportsDay-11.jpg');
+}.gallery-flip .img11{
+  background: url('../../Assets/Images/gallery-images/SportsDay-12.jpg');
+}.gallery-flip .img12{
+  background: url('../../Assets/Images/gallery-images/SportsDay-3.jpg');
+}
+.gallery-flip .img13{
+  background: url('../../Assets/Images/gallery-images/SportsDay-7.jpg');
+}
+.gallery-flip .img14{
+  background: url('../../Assets/Images/gallery-images/tug\ of\ war.jpg');
+}
+.gallery-flip .img15{
+  background: url('../../Assets/Images/gallery-images/tug\ of\ war\ \(sd-2\).jpg');
+}
+.gallery-flip .img16{
+  background: url('../../Assets/Images/gallery-images/SportsDay-15.jpg');
+}
+.gallery-flip .img17{
+  background: url('../../Assets/Images/gallery-images/spider.jpg');
+}
+
+
+.gallery-flip > .gallery-back{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Media queries */
+
+/* Mobile view */
+
+@media(max-width: 432px) {
+   .gallery-flip{
+    width: 75%;
+   }
+
+  .gallery-text-shadow{
+    font-size: 1.3rem;
+  }
+
+}
+
+
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .gallery-heading-container{
+    margin-top: 4rem;
   }
 }
+
+@media (min-width: 726px) and (max-width: 860px){
+  .gallery-flip{
+    width: 45%;
+  }
+  .gallery-flip >.gallery-front,
+  .gallery-flip >.gallery-back{
+    height: 190px;
+  }
+}
+
+

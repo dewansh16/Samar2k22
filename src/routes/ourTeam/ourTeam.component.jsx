@@ -13,10 +13,10 @@ function ourTeam() {
               <img
                 className="team-img "
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
-              <p className="text-blk name">Binay Kumar Sethi</p>
+              <p className="text-blk name">Binay Kumar</p>
               <p className="text-blk position dest">8th | BME</p>
               <p className="text-blk position number">+91-6371394745</p>
             </div>
@@ -29,7 +29,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Prajwal Sharma</p>
@@ -44,7 +44,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="tetx-blk name">Chelsy Gangwar</p>
@@ -59,7 +59,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Rishabh Chouhan</p>
@@ -77,7 +77,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Aman Sukhdave</p>
@@ -92,7 +92,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Prabhav Gautam</p>
@@ -107,7 +107,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Sachin Malve</p>
@@ -122,7 +122,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Rahul Kumar</p>
@@ -137,7 +137,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Palash Banchhor</p>
@@ -152,7 +152,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Anupam Banjare</p>
@@ -170,7 +170,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Priyanshu Gupta </p>
@@ -185,7 +185,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Anushka Ahire</p>
@@ -203,7 +203,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Dev Kumar Tirkey</p>
@@ -218,7 +218,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Ajay Kumar Sahu</p>
@@ -233,7 +233,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Prachi Soni </p>
@@ -248,7 +248,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Rudronil Dey  </p>
@@ -266,7 +266,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Devesh Kumar</p>
@@ -281,7 +281,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Divyansh Diwan</p>
@@ -296,7 +296,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Nitin Verma</p>
@@ -311,7 +311,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Aman Churendra</p>
@@ -326,7 +326,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Mohit Prasad </p>
@@ -341,7 +341,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Mohit Prasad </p>
@@ -356,7 +356,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Dhara Painkra</p>
@@ -374,7 +374,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Karishma Dahariya </p>
@@ -389,7 +389,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Dewansh Patle </p>
@@ -404,7 +404,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Anjani Banjare </p>
@@ -422,7 +422,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Sachin kannoriya </p>
@@ -437,7 +437,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft13.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Aakash Agrawal</p>
@@ -452,7 +452,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Devasya K Mishra </p>
@@ -467,7 +467,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Ayushi Yadav </p>
@@ -482,7 +482,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Ishika Jain</p>
@@ -497,7 +497,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft14.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Jiya Goyal </p>
@@ -515,7 +515,7 @@ function ourTeam() {
               <img
                 className="team-img"
                 src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ft12.svg"
-              />
+                alt=""    />
             </div>
             <div className="team-card-content">
               <p className="text-blk name">Anikesh Jhadi</p>

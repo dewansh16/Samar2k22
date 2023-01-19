@@ -1,9 +1,10 @@
 import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import BasketBallImg from "../../Assets/Images/basketBallImg.png";
+import bg_video from "../../Assets/Images/bg_home.mp4";
 import Merchandise from "../../Assets/Images/Merchandise.jpg";
 import './home.component.css'
-// import bgvedio from "../../Assets/Images/bg_home.mp4";
+
 import { NavbarContext } from '../../contexts/navbar.context'
 
 // import Swiper core and required modules
@@ -47,19 +48,9 @@ function Home() {
         <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
-                    <div style={{ backgroundImage: `url(${BasketBallImg})` }} className='page-banner-bg' />
-<<<<<<< HEAD
-                    <div className='bg_video'>
-                    {/* <video src={bgvedio} autoPlay muted loop  className='bg_vedio_in' /> */}
-                    </div>
-                        <div className="carousal-page">
-                            <div className="carousal-page-heading">
-                                <h1>Day-1</h1>
-                            </div>
-                            <div className="carousal-page-content">
-                                <div className="carousal-page-content-gameName">
-                                    <p>basketball</p>
-=======
+                    <div style={{backgroundImage:`url(${BasketBallImg})`}} className='page-banner-bg'/>
+                       
+                      
                         <Swiper
                         modules={[Autoplay, Navigation, Pagination]}
                         spaceBetween={50}
@@ -77,21 +68,338 @@ function Home() {
                             <div className="carousal-page">
                                 <div className="carousal-page-heading">
                                     <h1>Day-1</h1>
->>>>>>> 974ef4ea5e716c4f4cf3d74d6bb68fa93e374b6e
                                 </div>
                                 <div className="carousal-page-content">
-                                    <div className="carousal-page-content-gameName">
-                                        <p>basketball</p>
-                                    </div>
-                                    <div className="carousal-page-content-gameTime">
-                                        <p>9:00 AM - 10:00 AM</p>
+                                    <div className='carousal_tabledata'>
+                                        <div className="carousal-page-content-gameName">
+                                         <table className='info_table'>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            
+                                         </table> 
+                                        </div>
+                                        <div className="carousal-page-content-gameName">
+                                         <table>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>                                           
+                                         </table>                                         
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
+                        <SwiperSlide>
+                        <div className="carousal-page">
+                                <div className="carousal-page-heading">
+                                    <h1>Day-2</h1>
+                                </div>
+                                <div className="carousal-page-content">
+                                    <div className='carousal_tabledata'>
+                                        <div className="carousal-page-content-gameName">
+                                         <table className='info_table'>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            
+                                         </table> 
+                                        </div>
+                                        <div className="carousal-page-content-gameName">
+                                         <table>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>                                           
+                                         </table>                                         
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <div className="carousal-page">
+                                <div className="carousal-page-heading">
+                                    <h1>Day-3</h1>
+                                </div>
+                                <div className="carousal-page-content">
+                                    <div className='carousal_tabledata'>
+                                        <div className="carousal-page-content-gameName">
+                                         <table className='info_table'>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            
+                                         </table> 
+                                        </div>
+                                        <div className="carousal-page-content-gameName">
+                                         <table>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>                                           
+                                         </table>                                         
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <div className="carousal-page">
+                                <div className="carousal-page-heading">
+                                    <h1>Day-4</h1>
+                                </div>
+                                <div className="carousal-page-content">
+                                    <div className='carousal_tabledata'>
+                                        <div className="carousal-page-content-gameName">
+                                         <table className='info_table'>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            
+                                         </table> 
+                                        </div>
+                                        <div className="carousal-page-content-gameName">
+                                         <table>
+                                            {/* <tr>
+                                                <th>game</th>
+                                                <th>time</th>
+                                            </tr> */}
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cricket</td>
+                                                <td>10:00 am</td>
+                                            </tr>                                           
+                                         </table>                                         
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                       </Swiper>
             </div>
 

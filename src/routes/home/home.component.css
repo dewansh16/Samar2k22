@@ -113,7 +113,7 @@
     -webkit-filter: blur(0px);
   }
   100% {
-    opacity: 0.2;
+    opacity: 0.5;
     -webkit-filter: blur(8px);
   }
 }
@@ -200,7 +200,7 @@ iframe {
   transform: scale(1.05);
 }
 .gallery {
-  display: ;
+  /* display: flex; */
 }
 .sssg-item-1 {
   background-image: url("https://live.staticflickr.com/65535/52395640653_0ba071af3a_c.jpg");
@@ -422,4 +422,37 @@ iframe {
   .heading-container-cards {
     margin-top: 2em;
   }
+}
+
+
+
+/* --------------------new styles by shankar ---------------- */
+.carousal-page-content-gameName table td
+{
+  padding:8px 40px 8px 40px;
+}
+/* .carousal-page-content-gameName table th{
+  background-color: rgba(193, 201, 205, 0.2);
+  border-radius: 70px;
+} */
+.carousal-page-heading{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px;
+
+}
+.carousal_tabledata
+{
+  display:flex;
+ align-items: center;
+ justify-content: space-around;
+}
+@media screen and (max-width:700px) {
+  .info_table{
+    display: none;
+  }
+  .carousal_tabledata
+{
+ justify-content: center;
+}
 }

@@ -69,7 +69,6 @@ function AboutUs() {
         </p>
         </div>
 
-
       </div>
     </div>
   );

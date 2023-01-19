@@ -80,6 +80,7 @@ const NavLinkContainer = styled.div`
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
+  
   }
 `;
 
@@ -106,7 +107,6 @@ const RightNav = ({ open,setOpen,hover }) => {
               setActiveLink(1);
               setOpen(false);
             }}
-
           >
             Event
           </NavLink>

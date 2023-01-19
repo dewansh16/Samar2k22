@@ -79,21 +79,21 @@ function ourTeam() {
         </div>
         <div class="card" style={{ backgroundImage: `url(${dhara})` }}>
           <div class="content">
-            <h2 class="title">Dhara Painkra</h2>
+            <h2 class="title">DHARE PAINKRA</h2>
             <p class="copy">4th year</p>
 
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${divyansh})` }}>
           <div class="content">
-            <h2 class="title">Divyansh Diwan</h2>
+            <h2 class="title">DIVYANSH DIWAN</h2>
             <p class="copy">4th year</p>
 
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${mohit})` }}>
           <div class="content">
-            <h2 class="title">Mohit Prasad</h2>
+            <h2 class="title">MOHIT PRASAD</h2>
             <p class="copy">4th year</p>
 
           </div>
@@ -107,7 +107,7 @@ function ourTeam() {
         </div>
         <div class="card" style={{ backgroundImage: `url(${nitin})` }}>
           <div class="content">
-            <h2 class="title">Nitin Kumar Verma</h2>
+            <h2 class="title">NITIN KUMAR VERMA</h2>
             <p class="copy">4th year</p>
 
           </div>
@@ -185,14 +185,14 @@ function ourTeam() {
       <main class="page-content">
         <div class="card" style={{ backgroundImage: `url(${aman})` }}>
           <div class="content">
-            <h2 class="title">Anupam Banjare</h2>
+            <h2 class="title">AMAN KHANDWE</h2>
             <p class="copy">4th year</p>
 
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${anupam})` }}>
           <div class="content">
-            <h2 class="title">ANUPAM Vikas Banjare</h2>
+            <h2 class="title">ANUPAM VIKAS BANJARE</h2>
             <p class="copy">4th year</p>
 
           </div>

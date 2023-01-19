@@ -62,7 +62,8 @@ function Home() {
                         modules={[Autoplay, Navigation, Pagination]}
                         spaceBetween={50}
                         slidesPerView={1}
-                        style={{height:'100%'}}
+                        // style={{ height: '100%' }}
+                        className="samar-swiper-class"
                         navigation
                         autoplay={{
                             delay: 5000,

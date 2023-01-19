@@ -35,28 +35,28 @@ function ourTeam() {
           <div class="content">
             <h2 class="title">PRAJWAL SHARMA</h2>
             <p class="copy">3rd Biomed</p>
-            <p class="copy">+91-987654310</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${binay})` }}>
           <div class="content">
             <h2 class="title">BINAY KUMAR SETHI</h2>
-            <p class="copy">3rd Biomed</p>
-            <p class="copy">+91-987654310</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${rishabh})` }}>
           <div class="content">
             <h2 class="title">RISHABH</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${chelsy})` }}>
           <div class="content">
             <h2 class="title">CHELSY GANGWAR</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
       </main>
@@ -66,57 +66,57 @@ function ourTeam() {
         <div class="card" style={{ backgroundImage: `url(${devesh})` }}>
           <div class="content">
             <h2 class="title">DEVESH KUMAR</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${abhiyash})` }}>
           <div class="content">
             <h2 class="title">ABHIYASH RAJ SONA</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${dhara})` }}>
           <div class="content">
             <h2 class="title">Dhara Painkra</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${divyansh})` }}>
           <div class="content">
             <h2 class="title">Divyansh Diwan</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${mohit})` }}>
           <div class="content">
             <h2 class="title">Mohit Prasad</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${navdeep})` }}>
           <div class="content">
             <h2 class="title">NAVDEEP VAISHNAW</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${nitin})` }}>
           <div class="content">
             <h2 class="title">Nitin Kumar Verma</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${vijay})` }}>
           <div class="content">
             <h2 class="title">VIJAY KOSHALE</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
       </main>
@@ -127,15 +127,15 @@ function ourTeam() {
         <div class="card" style={{ backgroundImage: `url(${anushka})` }}>
           <div class="content">
             <h2 class="title">ANUSHKA AHIRE</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${priyansh})` }}>
           <div class="content">
             <h2 class="title">PRIYANSH</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
       </main>
@@ -147,35 +147,35 @@ function ourTeam() {
         <div class="card" style={{ backgroundImage: `url(${aakash})` }}>
           <div class="content">
             <h2 class="title">AAKASH AGRAWAL</h2>
-            <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+            <p class="copy">4th year</p>
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${ayushi})` }}>
           <div class="content">
             <h2 class="title">AYUSHI YADAV</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${ishika})` }}>
           <div class="content">
             <h2 class="title">ISHIKA JAIN</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${jiya})` }}>
           <div class="content">
             <h2 class="title">JIYA GOYAL</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${malays})` }}>
           <div class="content">
             <h2 class="title">MALAYA JHANWAR</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
       </main>
@@ -194,14 +194,11 @@ function ourTeam() {
         <div class="card" style={{ backgroundImage: `url(${anupam})` }}>
           <div class="content">
             <h2 class="title">ANUPAM Vikas Banjare</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
       </main>
-
-
-
 
       <p className="overall" id="webd">WEB DEVELOPER</p>
 
@@ -209,21 +206,18 @@ function ourTeam() {
         <div class="card" style={{ backgroundImage: `url(${dewansh})` }}>
           <div class="content">
             <h2 class="title">DEWANSH PATLE</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${karishma})` }}>
           <div class="content">
             <h2 class="title">KARISHMA DAHARIYA</h2>
-            <p class="copy">year branch</p>
-            <p class="copy">number</p>
+            <p class="copy">4th year</p>
+
           </div>
         </div>
-
-
       </main>
-
     </div>
   );
 }

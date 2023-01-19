@@ -4,6 +4,8 @@
   margin-top: auto;
   display: flex;
   flex-direction: column;
+  /* added margin top */
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 768px) {

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 /* Utility Classes */
@@ -9,14 +10,18 @@
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
   transition: all 0.3s;
+  height:100%;
 }
 
-.card2 {
-  width: 10rem;
-  height: 10rem;
+.card2, .card3 {
+  width: 15rem;
+  height: 20rem;
   background-color: #f49d11;
   border-radius: 20px;
   transition: all 0.2s;
+}
+.card3{
+
 }
 
 .card2:hover {
@@ -123,10 +128,28 @@
 
 /* Samar Youtube */
 .embadded-video {
-  width: 64%;
+  width: 80%;
   margin: 0 auto;
+  display:flex;
+  /* background-color:blue; */
+  flex-direction:row;
+
+
+
+
 }
-.embadded-video iframe {
+.video-1,.video-2,.video-3{
+height:100%;
+ width:30%;
+ margin:1rem;
+ margin-right:2rem;
+ display:flex;
+ height:fit-content;
+}
+.video-2{
+ 
+}
+ iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
@@ -139,6 +162,12 @@
   align-items: center;
   margin: 8rem 0 4rem 0;
   flex-wrap: wrap;
+  background-color:red;
+  width:80%;
+  margin:auto;
+   margin-top:3rem;
+   margin-bottom:3rem;
+   
 }
 
 .sssg {
@@ -148,12 +177,16 @@
 .sssg:hover .sssg-item {
   transform: scale(1.05);
 }
-
-.sssg-item {
-  background-image: linear-gradient(163deg, #0f1010 0%, #13024e 100%);
+.gallery{
+  display:
+}
+.sssg-item-1 {
+  background-image: url('https://live.staticflickr.com/65535/52395640653_0ba071af3a_c.jpg');
   border-radius: 30px;
   margin: 0 1rem 1rem;
   transition: all 0.3s;
+  height:2rem;
+  width:2rem;
 }
 
 .sssg-item img {
@@ -164,6 +197,77 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cards-container{
+  display:flex;
+  height:fit-content;
+  width:80%;
+  align-items:space-evenly;
+  justify-items:space-between;
+  /* background-color:red; */
+  margin:auto;
+  margin-top:4rem;
+  margin-bottom:4rem;
+  flex-direction:row;
+  /* flex-wrap:wrap; */
+
+}
+.gallery-container{
+ /* background-color:yellow; */
+ height:100%;
+ width:30%;
+ margin:1rem;
+ margin-right:2rem;
+ display:flex;
+ flex-direction:column;
+
+
+}
+.heading-container{
+
+  align-items:center;
+  margin:0;
+  margin-bottom:1em;
+  margin-top:2em;
+
+}
+.heading-container-cards h2{
+font-weight:1000;
+text-align:center;
+text-transform:uppercase;
+font-size:1.5em;
+align-item:center;
+justify-item:center;
+
+}
+.image-container{
+
+  margin-top:1rem;
+}
+ .image-container img{
+  transition: all 0.3s;
+    
+}
+.merchandise-conatiner .image-container img{
+  height:200.28px;
+  width:321.2px;
+}
+.image-container img:hover{
+  transform:scale(1.05);
+}
+.events-container{
+  /* background-color:blue; */
+ height:100%;
+ width:30%;
+
+}
+.merchandise-conatiner{
+  /* background-color:black; */
+  height:100%;
+ width:30%;
+ margin:1rem;
+ margin-left:2rem;
 }
 
 /* media queries */
@@ -233,4 +337,81 @@
   .sssg {
     margin: 0rem 3rem 3.5rem;
   }
+}
+@media screen and (max-width: 940px)
+{
+  .embadded-video {
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+ 
+    flex-direction:column;
+  
+  
+  
+  
+  }
+  .video-1,.video-2,.video-3{
+height:100%;
+width:100%;
+margin:0;
+margin-top:2em;
+
+
+  }
+.image-container{
+  margin-left:1em;
+  margin-right:1em;
+}
+  .cards-container{
+    display: flex;
+    margin:auto;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 4em; */
+
+  }
+  .gallery-container{
+    /* background-color:yellow; */
+    height:100%;
+    width:100%;
+  margin:auto;
+margin:1rem;
+    
+   
+   
+   }
+   .merchandise-conatiner .image-container img{
+    height:100%;
+    width:100%;
+  }
+   .events-container{
+   
+    width:100%;
+  margin:auto;
+
+    display:flex;
+    flex-direction:column;
+   }
+   .merchandise-conatiner{
+    height:100%;
+    width:100%;
+  margin:auto;
+  margin-top:1em;
+
+    display:flex;
+    flex-direction:column;
+   }
+   iframe{
+    width:80%;
+    margin:auto;
+   }
+   .heading-container-cards{
+   margin-top:2em;
+   }
+
 }

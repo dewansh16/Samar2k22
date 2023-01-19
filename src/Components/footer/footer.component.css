@@ -1,9 +1,11 @@
 .footer {
-  background: #e5a022;
+  background: rgb(240, 248, 255, 0.2);
   min-height: 208px;
   margin-top: auto;
   display: flex;
   flex-direction: column;
+  /* added margin top */
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 880px) {

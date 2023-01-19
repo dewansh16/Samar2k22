@@ -1,12 +1,11 @@
 import styled from "styled-components";
-
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
   top: 15px;
   right: 20px;
-  z-index: 100;
+  z-index: 101;
   display: none;
   @media (max-width: 800px) {
     display: flex;
@@ -32,7 +31,6 @@ const StyledBurger = styled.div`
     }
   }
 `;
-
 const Burger = ({ open, setOpen }) => {
   return (
     <>
@@ -44,5 +42,4 @@ const Burger = ({ open, setOpen }) => {
     </>
   );
 };
-
 export default Burger;

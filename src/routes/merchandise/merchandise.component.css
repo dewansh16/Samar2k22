@@ -1,7 +1,6 @@
 /* .about-us-container {
   font-family: "DragonBold";
 } */
-
 .merchandise_image img {
   width: 500px;
   padding-bottom: 50px;
@@ -23,11 +22,15 @@
   flex-shrink: 2;
   justify-content: space-around;
   margin: 5px;
+  padding-top: 40px;
 }
 
 .merchandise_data {
   text-align: center;
   padding: 40px;
+}
+.mar_button {
+  background-color: rgb(222, 16, 16);
 }
 
 @media screen and (max-width: 800px) {

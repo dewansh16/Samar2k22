@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/Images/home_logo.png";
+import logo1 from "../../Assets/Images/home_logo.png";
 import { NavbarContext } from "../../contexts/navbar.context";
+import "./navigation.component.css";
 // import { hover } from "@testing-library/user-event/dist/hover";
 
 const Ul = styled.div`
-  align-items: center;
-  display: flex;
+display: flex;
+align-items: center;
   flex-flow: row nowrap;
   width: 100%;
   justify-content: space-around;
@@ -26,19 +27,28 @@ const Ul = styled.div`
     height: 100vh;
     width: 300px;
     transition: transform 0.3s ease-in-out;
-    border-radius: 70px 0px 0px 70px;
+    border-radius: 60px 0px 0px 60px;
   }
 `;
-
 const NavLink = styled(Link)`
   font-weight: 800;
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
+    @media (max-width: 800px) {
+    width: 100%;
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+  }
+ 
 `;
 const NavLinkDiv = styled.div`
   text-align: center;
   border-radius: 10px;
+  
   margin: 7px 0;
   padding: 7px 10px;
   a:hover{
@@ -56,10 +66,13 @@ const NavLinkDiv = styled.div`
 const NavLinkContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
+  
+  flex-shrink:3;
+  font-size:100%;
   align-items: center;
   padding: 0px 10px;
-  width: 90%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
   @media (max-width: 800px) {
     height: 60%;
     padding: 0px;
@@ -68,7 +81,6 @@ const NavLinkContainer = styled.div`
   
   }
 `;
-
 const RightNav = ({ open,setOpen,hover }) => {
   const { activeLink, setActiveLink } = useContext(NavbarContext);
   return (
@@ -82,34 +94,38 @@ const RightNav = ({ open,setOpen,hover }) => {
               setOpen(false);
             }}
           >
-          <img src={logo} alt="Samar logo" height="80px" width="auto" margin-left="10px"/>
+          <img src={logo1} className="mar_image" alt="Samar logo" height="22vh" width="auto" margin-left="5px"/>
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 1 ? { background: "red" } : {}} >
+        <NavLinkDiv  >
           <NavLink
+            style={activeLink === 1 ? { color: "red" } : {}}
             to="/event"
             onClick={() => {
               setActiveLink(1);
               setOpen(false);
             }}
-
           >
             Event
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 2 ? { background: "red" } : {}}>
+{
+        // <NavLinkDiv>
+        //   <NavLink
+        //     style={activeLink === 2 ? { color: "red" } : {}}
+        //     to="/schedule"
+        //     onClick={() => {
+        //       setActiveLink(2);
+        //       setOpen(false);
+        //     }}
+        //   >
+        //     Schedule
+        //   </NavLink>
+        // </NavLinkDiv>
+        }
+        <NavLinkDiv>
           <NavLink
-            to="/schedule"
-            onClick={() => {
-              setActiveLink(2);
-              setOpen(false);
-            }}
-          >
-            Schedule
-          </NavLink>
-        </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 3 ? { background: "red" } : {}}>
-          <NavLink
+            style={activeLink === 3 ? { color: "red" } : {}}
             to="/sponsors"
             onClick={() => {
               setActiveLink(3);
@@ -119,8 +135,9 @@ const RightNav = ({ open,setOpen,hover }) => {
             Sponsors
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 4 ? { background: "red" } : {}}>
+        <NavLinkDiv >
           <NavLink
+            style={activeLink === 4 ? { color: "red" } : {}}
             to="/gallery"
             onClick={() => {
               setActiveLink(4);
@@ -130,41 +147,45 @@ const RightNav = ({ open,setOpen,hover }) => {
             Gallery
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 5 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 5 ? { color: "red" } : {}}
             to="/ourTeam"
             onClick={() => {
               setActiveLink(5);
               setOpen(false);
             }}
           >
-            Our Team
+           Team
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 6 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 6 ? { color: "red" } : {}}
             to="/contactUs"
             onClick={() => {
               setActiveLink(6);
               setOpen(false);
             }}
           >
-            Contact Us
+            Contact
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 7 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 7 ? { color: "red" } : {}}
             to="/aboutUs"
             onClick={() => {
               setActiveLink(7);
               setOpen(false);
             }}
           >
-            About Us
+            About
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 8 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 8 ? { color: "red" } : {}}
             to="/Merchandise"
             onClick={() => {
               setActiveLink(8);

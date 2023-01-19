@@ -70,9 +70,9 @@
 }
 
 .page-content {
-  /* display: grid; */
-  grid-gap: 1rem;
+  grid-gap: 8vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
   /* change width here */
@@ -99,9 +99,9 @@
   display: flex;
   -webkit-box-align: end;
   align-items: flex-end;
+  /* try baseline */
   overflow: hidden;
-  height: 400px;
-  min-height: 250px;
+  height: 350px;
   padding: 1rem;
   width: 80%;
   margin: 0 auto;
@@ -109,6 +109,9 @@
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
@@ -223,6 +226,7 @@
   align-items: center;
   width: 100%;
   padding: 1rem;
+  padding-top: 7rem;
   -webkit-transition: -webkit-transform var(--d) var(--e);
   transition: -webkit-transform var(--d) var(--e);
   transition: transform var(--d) var(--e);

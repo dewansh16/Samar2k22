@@ -1,4 +1,27 @@
 import React from "react";
+import chelsy from "../../Assets/Images/team/OC/ChelsyGangwar.jpeg";
+import prajjwal from "../../Assets/Images/team/OC/prajjwal.jpg";
+import rishabh from "../../Assets/Images/team/OC/Rishabh.jpg";
+import binay from "../../Assets/Images/team/OC/binay.jpg";
+import aman from "../../Assets/Images/team/SPONS/AmanKhandwe.jpg";
+import anupam from "../../Assets/Images/team/SPONS/AnupamVikasBanjare.jpg";
+import anushka from "../../Assets/Images/team/DESIGN/AnushkaAhire.jpeg";
+import priyansh from "../../Assets/Images/team/DESIGN/PRIYANSH.jpg";
+import devesh from "../../Assets/Images/team/SC/DeveshKumar.jpg";
+import abhiyash from "../../Assets/Images/team/SC/AbhiyashRajSona.jpg";
+import dhara from "../../Assets/Images/team/SC/DharaPainkra.jpg";
+import divyansh from "../../Assets/Images/team/SC/DivyanshDiwan.jpg";
+import mohit from "../../Assets/Images/team/SC/MohitPrasad.jpg"
+import navdeep from "../../Assets/Images/team/SC/NavdeepVaishnaw.jpeg"
+import nitin from "../../Assets/Images/team/SC/nitinkumarverma.jpg"
+import vijay from "../../Assets/Images/team/SC/VijayKoshale.jpg"
+import aakash from "../../Assets/Images/team/PR/AakashAgrawal.jpg"
+import ayushi from "../../Assets/Images/team/PR/AyushiYadav.jpg"
+import ishika from "../../Assets/Images/team/PR/IshikaJain.jpg"
+import jiya from "../../Assets/Images/team/PR/JiyaGoyal.jpg"
+import malays from "../../Assets/Images/team/PR/MalayaJhanwar.jpg"
+import dewansh from "../../Assets/Images/team/WEB/DewanshPatle.jpeg"
+import karishma from "../../Assets/Images/team/WEB/KarishmaDahariya.jpg"
 
 import "./ourTeam.component.css";
 function ourTeam() {
@@ -162,7 +185,6 @@ function ourTeam() {
             <p className="copy">Seriously, straight up, just blast off into outer space today</p>
           </div>
         </div>
-
       </main>
       
       <main className="page-content">

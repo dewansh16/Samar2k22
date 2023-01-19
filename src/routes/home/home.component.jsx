@@ -1,22 +1,25 @@
-import {useContext,useEffect,useState} from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import BasketBallImg from "../../Assets/Images/basketBallImg.png";
+import Merchandise from "../../Assets/Images/Merchandise.jpg";
 import './home.component.css'
 
 import { NavbarContext } from '../../contexts/navbar.context'
 
+// import Swiper core and required modules
+import {Autoplay,  Navigation, Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function Home() {
     const { setActiveLink } = useContext(NavbarContext);
-
-    const [isLoading, setLoading] = useState(false);
-
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        },4000)
-    },[])
-
     let date = new Date();
 
     const [seconds, setSeconds] = useState(date.getSeconds());
@@ -38,100 +41,112 @@ function Home() {
         setHours(hours);
         setDate(days);
     }, 1000)
-    
+
     return (
         <>
         <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
                     <div style={{ backgroundImage: `url(${BasketBallImg})` }} className='page-banner-bg' />
-                        <div className="carousal-page">
-                            <div className="carousal-page-heading">
-                                <h1>Day-1</h1>
-                            </div>
-                            <div className="carousal-page-content">
-                                <div className="carousal-page-content-gameName">
-                                    <p>basketball</p>
+                        <Swiper
+                        modules={[Autoplay, Navigation, Pagination]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        // style={{ height: '100%' }}
+                        className="samar-swiper-class"
+                        navigation
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                          }}
+                        pagination={{ clickable: true }}
+                      >
+                        <SwiperSlide>
+                            <div className="carousal-page">
+                                <div className="carousal-page-heading">
+                                    <h1>Day-1</h1>
                                 </div>
-                                <div className="carousal-page-content-gameTime">
-                                    <p>9:00 AM - 10:00 AM</p>
+                                <div className="carousal-page-content">
+                                    <div className="carousal-page-content-gameName">
+                                        <p>basketball</p>
+                                    </div>
+                                    <div className="carousal-page-content-gameTime">
+                                        <p>9:00 AM - 10:00 AM</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {
-                        // <div className="page-banner-carousal-div">
-                        //     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        //         <div class="carousel-inner">
-                        //             <div class="carousel-item active">
-                            
-                        //             </div>
-                        //             <div class="carousel-item">
-                        //             </div>
-                        //             <div class="carousel-item">
-                        //             </div>
-                        //         </div>
-                        //         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        //             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        //             <span class="sr-only">Previous</span>
-                        //         </a>
-                        //         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        //             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        //             <span class="sr-only">Next</span>
-                        //         </a>
-                        //     </div>
-                        // </div>
-                    }
+                        </SwiperSlide>
+                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>Slide 3</SwiperSlide>
+                        <SwiperSlide>Slide 4</SwiperSlide>
+                      </Swiper>
             </div>
 
-            {/* Samar Countdown */}
-            <div className="count-down flex">
-                <div className='count-down-div'>
-                    <p className='count-div-item-1'>{currDate}</p>
-                    <p>Days</p>
-                </div>
-                <div className='count-down-div'>
-                    <p className='count-div-item-1'>{hours}</p>
-                    <p>Hours</p>
-                </div>
-                <div className='count-down-div'>
-                    <p className='count-div-item-1'>{minutes}</p>
-                    <p>Minutes</p>                    
-                </div>
-                <div className='count-down-div'>
-                <p className='count-div-item-1'>{seconds}</p>
-                <p>Seconds</p>
-                </div>
-            </div>
 
-            {/* Samar Youtube */}
-            <div className="embadded-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HLTSKIlLRPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            
-            {/* speakers, schedule, sponsers, gallary */}
-            <div className='flex sssg-container'>
-            <div className="sssg speakers">
-                <div className='card sssg-item'>
-                    <div class="card2 sssg-item-child">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2572/2572204.png" alt="" />
+                {/* Samar Countdown */}
+                <div className="count-down flex">
+                    <div className='count-down-div'>
+                        <p className='count-div-item-1'>{currDate}</p>
+                        <p>Days</p>
+                    </div>
+                    <div className='count-down-div'>
+                        <p className='count-div-item-1'>{hours}</p>
+                        <p>Hours</p>
+                    </div>
+                    <div className='count-down-div'>
+                        <p className='count-div-item-1'>{minutes}</p>
+                        <p>Minutes</p>
+                    </div>
+                    <div className='count-down-div'>
+                        <p className='count-div-item-1'>{seconds}</p>
+                        <p>Seconds</p>
                     </div>
                 </div>
-                <p>Speakers</p>
+
+                {/* Samar Youtube */}
+                <div className="embadded-video">
+                
+                    <div className="video-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UBsDzaOYTTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                    </div>
+                    <div className="video-1">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/HLTSKIlLRPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                    </div>
+                    <div className="video-3">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/s7DYDkOeaKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                </div>
+                </div>
+
+                {/* speakers, schedule, sponsers, gallary */}
+                {/* <div className='flex sssg-container'>
+            <div className="sssg gallery">
+                <Link
+                    onClick={() => {
+                                setActiveLink(4)
+                            }}
+                            to='/gallery'
+                >
+                    <div className='card sssg-item-3'>
+                       <img src="https://cdn-icons-png.flaticon.com/128/1040/1040241.png" alt="" />
+                        </div>
+                 
+                    <p>Gallary</p>
+                </Link>
             </div>
                 
-            <div className="sssg schedule">
+            <div className="sssg merchandise">
                 <Link
                     onClick={() => {
                                 setActiveLink(2)
                             }}
-                            to='/schedule'
+                            to='/merchandise'
                 >
-                    <div className='card sssg-item'>
-                        <div class="card2 sssg-item-child">
+                    <div className='card sssg-item-2'>
+                       
                         <img src="https://cdn-icons-png.flaticon.com/512/3176/3176395.png" alt="" />
                         </div>
-                    </div>
-                    <p>Schedule</p>
+                   
+                    <h3>Merchandise</h3>
                 </Link>
             </div>
 
@@ -142,34 +157,69 @@ function Home() {
                             }}
                             to='/sponsors'
                 >
-                    <div className='card sssg-item'>
-                        <div class="card2 sssg-item-child">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3349/3349234.png" alt="" />
-                        </div>
+                    <div className='card sssg-item-'>
+                       
+                            <img src="	https://live.staticflickr.com/65535/52395640653_0ba071af3a_c.jpg" alt="" />
+                       
                     </div>
                     <p>Sponsers</p>
                 </Link>
-            </div>
-
-            <div className="sssg gallery">
-                <Link
+            </div> */}
+</div>
+                <div className="cards-container">
+<div className="gallery-container">
+<Link
                     onClick={() => {
                                 setActiveLink(4)
                             }}
                             to='/gallery'
                 >
-                    <div className='card sssg-item'>
-                        <div class="card2 sssg-item-child">
-                            <img src="https://cdn-icons-png.flaticon.com/128/1040/1040241.png" alt="" />
-                        </div>
-                    </div>
-                    <p>Gallary</p>
-                </Link>
-            </div>
-            </div>
-        </div>
-        </>
-    )
+                   
+  <div className="heading-container-cards">
+<h2>Gallery</h2>
+  </div>
+  <div className="image-container">
+    <img src="https://live.staticflickr.com/65535/52395640653_0ba071af3a_c.jpg"></img>
+  </div>
+  </Link>
+</div>
+<div className="events-container">
+<Link
+                    onClick={() => {
+                                setActiveLink(4)
+                            }}
+                            to='/events'
+                >
+            
+<div className="heading-container-cards">
+<h2>Events</h2>
+  </div>
+  <div className="image-container">
+    <img src="https://live.staticflickr.com/65535/52395134666_1d271cefb3_h.jpg"></img>
+  </div>
+  </Link>
+</div>
+<div className="merchandise-conatiner">
+<Link
+                    onClick={() => {
+                                setActiveLink(4)
+                            }}
+                            to='/merchandise'
+                >
+            
+<div className="heading-container-cards">
+<h2>Merchandise</h2>
+  </div>
+  <div className="image-container">
+    <img src={Merchandise} ></img>
+  </div>
+  </Link>
+</div>
+
+                </div>
+
+            </>
+            );
 }
 
-export default Home
+            export default Home

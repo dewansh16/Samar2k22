@@ -46,7 +46,6 @@
 }
 
 .page-content {
-  /* display: grid; */
   grid-gap: 8vw;
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +69,6 @@
   align-items: flex-end;
   /* try baseline */
   overflow: hidden;
-  /* height: 350px; */
   height: 350px;
   padding: 1rem;
   width: 80%;
@@ -126,7 +124,6 @@
 }
 
 
-/* the width and height of content should be equla to the width of card */
 .content {
   position: relative;
   display: -webkit-box;

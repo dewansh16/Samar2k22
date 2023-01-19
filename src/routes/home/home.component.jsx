@@ -20,16 +20,6 @@ import 'swiper/css/scrollbar';
 
 function Home() {
     const { setActiveLink } = useContext(NavbarContext);
-
-    const [isLoading, setLoading] = useState(false);
-
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 4000)
-    }, [])
-
     let date = new Date();
 
     const [seconds, setSeconds] = useState(date.getSeconds());

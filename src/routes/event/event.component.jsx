@@ -252,56 +252,12 @@ const Event = () => {
             <div class="bg-white h-full flex-1 bg-opacity-50"></div>
             <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
               <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                lawn Tennis
+                Karate
               </h5>
               <img
-                src="//live.staticflickr.com/65535/52312642335_f10eef07d9_w.jpg"
+                src="//live.staticflickr.com/65535/52345900233_3ee17db6e8_z.jpg"
                 class=""
-                alt="lawn Tennis background"
-              />
-            </div>
-          </div>
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                Mr. SAMAR
-              </h5>
-              <img
-                src="https://png.pngitem.com/pimgs/s/184-1842023_bodybuilder-png-transparent-png.png"
-                class=""
-                alt="Mr. UDGHOSH background"
-              />
-            </div>
-          </div>
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-blue-400 h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                Power Lifting
-              </h5>
-              <img
-                src="https://live.staticflickr.com/65535/52346081540_3773c68693.jpg"
-                class=""
-                alt="Power Lifting background"
-              />
-            </div>
-          </div>
-        </div>
-        <div class=" flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                Squash
-              </h5>
-              <img
-                src="https://live.staticflickr.com/65535/52345655546_ff396412bc.jpg"
-                class=""
-                alt="Squash background"
+                alt="Taekwondo background"
               />
             </div>
           </div>
@@ -319,36 +275,6 @@ const Event = () => {
               />
             </div>
           </div>
-        </div>
-        <div class=" flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                Taekwondo
-              </h5>
-              <img
-                src="//live.staticflickr.com/65535/52345900233_3ee17db6e8_z.jpg"
-                class=""
-                alt="Taekwondo background"
-              />
-            </div>
-          </div>
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                Ultimate Frisbee
-              </h5>
-              <img
-                src="https://live.staticflickr.com/65535/52345900328_7242180fe3.jpg"
-                class=""
-                alt="Ultimate Frisbee background"
-              />
-            </div>
-          </div>
           <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
             <div class="bg-white h-full flex-1 bg-opacity-50"></div>
             <div class="bg-blue-400 h-full flex-1 bg-opacity-50"></div>
@@ -360,36 +286,6 @@ const Event = () => {
                 src="https://live.staticflickr.com/65535/52312513168_c3bdfb59b3_w.jpg"
                 class=""
                 alt="Volleyball background"
-              />
-            </div>
-          </div>
-        </div>
-        <div class=" flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                wall-climbing
-              </h5>
-              <img
-                src="//live.staticflickr.com/65535/52345900178_e08eb3f62a.jpg"
-                class=""
-                alt="wall-climbing background"
-              />
-            </div>
-          </div>
-          <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
-            <div class="bg-white h-full flex-1 bg-opacity-50"></div>
-            <div class="bg-blue-400 h-full flex-1 bg-opacity-50"></div>
-            <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
-              <h5 class="uppercase text-xl font-bold text-center text-teal-900">
-                Weight lifting
-              </h5>
-              <img
-                src="https://live.staticflickr.com/65535/52312513158_7d4872c353_w.jpg"
-                class=""
-                alt="Weight lifting background"
               />
             </div>
           </div>

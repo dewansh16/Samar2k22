@@ -6,6 +6,18 @@ import './home.component.css'
 
 import { NavbarContext } from '../../contexts/navbar.context'
 
+// import Swiper core and required modules
+import {Autoplay,  Navigation, Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function Home() {
     const { setActiveLink } = useContext(NavbarContext);
 
@@ -46,42 +58,37 @@ function Home() {
             {/* Landing Page banner */}
             <div className='page-banner'>
                     <div style={{ backgroundImage: `url(${BasketBallImg})` }} className='page-banner-bg' />
-                        <div className="carousal-page">
-                            <div className="carousal-page-heading">
-                                <h1>Day-1</h1>
-                            </div>
-                            <div className="carousal-page-content">
-                                <div className="carousal-page-content-gameName">
-                                    <p>basketball</p>
+                        <Swiper
+                        modules={[Autoplay, Navigation, Pagination]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        style={{height:'100%'}}
+                        navigation
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                          }}
+                        pagination={{ clickable: true }}
+                      >
+                        <SwiperSlide>
+                            <div className="carousal-page">
+                                <div className="carousal-page-heading">
+                                    <h1>Day-1</h1>
                                 </div>
-                                <div className="carousal-page-content-gameTime">
-                                    <p>9:00 AM - 10:00 AM</p>
+                                <div className="carousal-page-content">
+                                    <div className="carousal-page-content-gameName">
+                                        <p>basketball</p>
+                                    </div>
+                                    <div className="carousal-page-content-gameTime">
+                                        <p>9:00 AM - 10:00 AM</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {
-                        // <div className="page-banner-carousal-div">
-                        //     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        //         <div class="carousel-inner">
-                        //             <div class="carousel-item active">
-                            
-                        //             </div>
-                        //             <div class="carousel-item">
-                        //             </div>
-                        //             <div class="carousel-item">
-                        //             </div>
-                        //         </div>
-                        //         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        //             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        //             <span class="sr-only">Previous</span>
-                        //         </a>
-                        //         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        //             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        //             <span class="sr-only">Next</span>
-                        //         </a>
-                        //     </div>
-                        // </div>
-                    }
+                        </SwiperSlide>
+                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>Slide 3</SwiperSlide>
+                        <SwiperSlide>Slide 4</SwiperSlide>
+                      </Swiper>
             </div>
 
 

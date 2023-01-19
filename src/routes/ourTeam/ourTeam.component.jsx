@@ -4,7 +4,8 @@ import "./ourTeam.component.css";
 function ourTeam() {
   return (
     <div className="">
-      <p className="team-head-text">OUR TEAM</p>
+       <h3 id="gallery-wrap"> <span className="aboutus_title" id="gallery-text">Our Team</span> </h3>
+      {/* <p className="team-head-text">OUR TEAM</p> */}
       <p className="overall" id="overall">OVERALL</p>
 
       <main className="page-content">

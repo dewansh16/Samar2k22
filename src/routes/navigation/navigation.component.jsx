@@ -9,12 +9,13 @@ import LandingLoader from "../../Components/animationPage/landingLoader.componen
 
 const Nav = styled.nav`
   height: 70px;
-  /* position:fixed; */
+position:fixed; 
   top:0;
   left:0;
   width:100%;
   border: 2px solid black;
   margin-top:0;
+  z-index:100;
   background: rgb(240,248,255,0.2) 0% 0% no-repeat padding-box;
   box-shadow: 0 0.5px 15px rgb(240,248,255,0.5);
   backdrop-filter: blur(6.5px);

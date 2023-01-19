@@ -5,7 +5,10 @@ import "./style2.css"
 function Schedule() {
     return (
         <div className='base'>
-            <div className="event">SCHEDULE</div>
+            {/* <div className="event">
+            </div> */}
+            <h3 id="gallery-wrap"> <span id="gallery-text">Schedule</span> </h3>
+            
             <div className="day">DAY 1</div>
             <div className="games">
 {/* comment */}

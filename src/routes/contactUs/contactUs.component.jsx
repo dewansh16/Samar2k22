@@ -61,9 +61,10 @@ function ContactUs() {
     return (
         <div className='main-container'>
             <div className="heading-container">
-                <div className="heading">
+                {/* <div className="heading">
                     <h3> CONTACT US</h3>
-                </div>
+                </div> */}
+                    <h3 id="gallery-wrap"> <span className="aboutus_title" id="gallery-text">Contact Us</span> </h3>
             </div>
             <div className="icons-container">
                 <div className="icons instagram">

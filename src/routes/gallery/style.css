@@ -1,3 +1,5 @@
+
+
 .gallery-page .gallery-heading {
   padding: 1rem;
 }
@@ -29,9 +31,9 @@
 		rgba(63, 94, 251, 1) 0%,
 		rgba(252, 70, 107, 1) 100%
 	);
-
+  padding-top: 40px;
 	background-size: 200%;
-
+  font-family: "Des_font","DragonBold";
 	font-size: 4rem;
 	font-weight: bolder;
 	color: transparent;

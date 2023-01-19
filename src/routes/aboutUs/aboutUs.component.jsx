@@ -6,7 +6,8 @@ import chess1 from "../../Assets/Images/SAMAR Llogo-01.png";
 function AboutUs() {
   return (
     <div className="about-us-container">
-      <p className="head-text">ABOUT US</p>
+      <h3 id="gallery-wrap"> <span className="aboutus_title" id="gallery-text">About Us</span> </h3>
+      {/* <p className="head-text">ABOUT US</p> */}
       <p className="samar">SAMAR</p>
       <div className=" ">
         <div className="aboutus_first">
@@ -48,7 +49,7 @@ function AboutUs() {
       <p className="samar">SHAURYA</p>
       <div className="aboutus_second">
 
-      <div className="aboutus_image1">
+      <div className="aboutus_image1" id="second_shaurya">
             <img src={chess} alt="Chess" />
        </div>
      <div className="aboutus_data1">

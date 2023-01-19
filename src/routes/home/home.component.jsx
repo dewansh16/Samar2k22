@@ -2,7 +2,7 @@ import {useContext,useEffect,useState} from 'react'
 import { Link } from 'react-router-dom';
 import BasketBallImg from "../../Assets/Images/basketBallImg.png";
 import './home.component.css'
-
+// import bgvedio from "../../Assets/Images/bg_home.mp4";
 import { NavbarContext } from '../../contexts/navbar.context'
 
 function Home() {
@@ -45,6 +45,9 @@ function Home() {
             {/* Landing Page banner */}
             <div className='page-banner'>
                     <div style={{ backgroundImage: `url(${BasketBallImg})` }} className='page-banner-bg' />
+                    <div className='bg_video'>
+                    {/* <video src={bgvedio} autoPlay muted loop  className='bg_vedio_in' /> */}
+                    </div>
                         <div className="carousal-page">
                             <div className="carousal-page-heading">
                                 <h1>Day-1</h1>

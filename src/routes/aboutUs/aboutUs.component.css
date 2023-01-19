@@ -1,60 +1,47 @@
 .aboutus_first1,
 .aboutus_second {
   display: flex;
+
+}
+.aboutus_second{
+  padding-bottom: 40px;
 }
 
 .aboutus_image1 img {
-  width: 400px;
+  /* width: 400px; */
+  height: auto;
 }
 
 .aboutus_data1 {
   display: flex;
-
   text-align: center;
-
   justify-content: center;
-
   align-items: center;
-
   padding: 10px;
-
   margin: 2px;
 }
-
-/* @media screen and (min-width:1151px)
-
-{
-
-    .first{
-
-        display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    
-
-    }
-
-} */
-
+#second_shaurya{
+  /* width: 1500px; */
+}
+.aboutus_title{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 40px;
+}
 @media screen and (max-width: 1128px) {
   .aboutus_second {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: space-around;
+    padding-bottom: 20px;
   }
-
+  .aboutus_image1 img {
+    width: 400px;
+    height: auto;
+  }
   .aboutus_first1 {
     flex-wrap: wrap-reverse;
-
     align-items: center;
-
     justify-content: center;
   }
 }

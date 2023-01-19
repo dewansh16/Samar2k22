@@ -53,6 +53,7 @@ function AboutUs() {
             <img src={chess} alt="Chess" />
        </div>
      <div className="aboutus_data1">
+
         <p>
           Apart from educational knowledge institute promotes lot of other
           activities and ideas in order to overall development of its students.

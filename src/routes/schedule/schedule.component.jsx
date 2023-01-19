@@ -5,8 +5,8 @@ import "./style2.css"
 function Schedule() {
     return (
         <div className='base'>
-            <div className="event">SCHEDULE</div>
-            <div className="day">DAY 1</div>
+            <div className="schedule-event"><h3 id='schedule-wrap'><span id="schedule-text">Schedule</span></h3></div>
+            <div className="schedule-day">Day 1</div>
             <div className="games">
 {/* comment */}
 
@@ -41,7 +41,7 @@ function Schedule() {
 
 {/* comment */}
             </div>
-            <div className="day">DAY 1</div>
+            <div className="day">Day 1</div>
             <div className="games">
 {/* comment */}
                 <div className='flex-container'>
@@ -75,7 +75,7 @@ function Schedule() {
 
 {/* comment */}
             </div>
-            <div className="day">DAY 1</div>
+            <div className="day">Day 1</div>
             <div className="games">
 {/* comment */}
                 <div className='flex-container'>
@@ -109,7 +109,7 @@ function Schedule() {
 
 {/* comment */}
             </div>
-            <div className="day">DAY 1</div>
+            <div className="day">Day 1</div>
             <div className="games">
 {/* comment */}
                 <div className='flex-container'>

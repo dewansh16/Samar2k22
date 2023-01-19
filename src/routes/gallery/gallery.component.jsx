@@ -5,7 +5,7 @@ import "./style.css";
 function Gallery() {
   return (
     <div className="gallery-page">
-      <div className="gallery-container">
+      <div className="gallery-page-container">
 
         {/* Gallery section 1 */}
 

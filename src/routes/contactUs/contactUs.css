@@ -24,15 +24,34 @@
     justify-content: center;
     margin-bottom: 0;
 }
-.heading {
-    background-color: #FC0A18;
-    border-radius: 50px;
-    width: 20%;
-    height: 100%;
+#contact-us-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#contact-us-text{
+    text-align: center;
+	background: radial-gradient(
+		circle,
+		rgba(63, 94, 251, 1) 0%,
+		rgba(252, 70, 107, 1) 100%
+	);
+
+	background-size: 200%;
+
+	font-size: 4rem;
+	font-weight: bolder;
+	color: transparent;
+	background-clip: text;
+	animation: animation 1.7s linear infinite;
+}
+
+@keyframes animation {
+	to {
+		background-position: 200% center;
+	}
+}
+
 .heading-container .heading {
     padding: 0.6em;
 }
@@ -73,13 +92,6 @@
 }
 
 /* find us heading used in mobile page  */
-.find-us {
-    display: flex;
-    /* background-color: rgb(237, 30, 193); */
-    height: 8%;
-    width: 98%;
-
-}
 
 /* Mobile page styling  */
 
@@ -87,7 +99,6 @@
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 0;
-    ;
 }
 
 .find-us .heading {
@@ -99,7 +110,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0 auto;
 }
 .heading h3 {
     margin: 0;
@@ -151,6 +162,7 @@
     margin-left: 2.2em;
     margin-top: 0;
     margin-bottom: 3em;
+    padding-bottom: 2rem;
 }
 
 .form-map-container-mobile .map-image {
@@ -177,18 +189,12 @@ form {
     margin-top: 1em;
     margin-bottom: 0;
 }
-button {
+.send-button {
     background-color: #FC0A18;
     border-radius: 20px;
-    width: 15em;
-    height: 3em;
-    border: none;
-    align-items: center;
     margin: auto;
-    margin-bottom: 0;
-    color: white;
-    font-weight: 600;
-
+    width: 12rem;
+    height: 3.2rem;
 }
 
 .map-image {
@@ -311,15 +317,6 @@ textarea {
         margin-bottom: 0;
     }
 
-    .heading {
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 70%;
-    }
-
     .icons-container {
         display: flex;
         padding: 2em;
@@ -399,7 +396,7 @@ textarea {
         flex-direction: column;
         gap: 2em;
         border-radius: 50px;
-        background-color: #E5A022;
+        background-color: transparent;
 
 
     }

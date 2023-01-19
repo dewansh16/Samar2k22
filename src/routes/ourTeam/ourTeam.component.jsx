@@ -27,193 +27,189 @@ import "./ourTeam.component.css";
 function ourTeam() {
   return (
     <div className="">
-      <p className="team-head-text">OUR TEAM</p>
-      <p className="overall" id="overall">OVERALL</p>
+      <p className="team-head-text"><span id="ot-text">Our Team</span></p>
+      <div className="ot-subhead-wrapper"><p className="overall" id="overall">OVERALL</p></div>
 
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${prajjwal})` }}>
-          <div class="content">
-            <h2 class="title">PRAJWAL SHARMA</h2>
-            <p class="copy">4th year</p>
-
+      <main className="page-content">
+        <div className = "card-container">
+          <div className="ot-card">
+            <div className="content">
+              <h2 className="title">Rajat Pradhan</h2>
+              <p className="copy">3rd Biomed</p>
+              <p className="copy">+91-987654310</p>
+            </div>
           </div>
         </div>
-        <div class="card" style={{ backgroundImage: `url(${binay})` }}>
-          <div class="content">
-            <h2 class="title">BINAY KUMAR SETHI</h2>
-            <p class="copy">4th year</p>
-
+        <div className = "card-container">
+          <div className="ot-card">
+            <div className="content">
+              <h2 className="title">To The Beach</h2>
+              <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+            </div>
           </div>
         </div>
-        <div class="card" style={{ backgroundImage: `url(${rishabh})` }}>
-          <div class="content">
-            <h2 class="title">RISHABH</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${chelsy})` }}>
-          <div class="content">
-            <h2 class="title">CHELSY GANGWAR</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-      </main>
-      <p className="overall" >SPORTS COORDINATOR</p>
-
-      <main class="page-content" id="sc">
-        <div class="card" style={{ backgroundImage: `url(${devesh})` }}>
-          <div class="content">
-            <h2 class="title">DEVESH KUMAR</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${abhiyash})` }}>
-          <div class="content">
-            <h2 class="title">ABHIYASH RAJ SONA</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${dhara})` }}>
-          <div class="content">
-            <h2 class="title">DHARE PAINKRA</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${divyansh})` }}>
-          <div class="content">
-            <h2 class="title">DIVYANSH DIWAN</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${mohit})` }}>
-          <div class="content">
-            <h2 class="title">MOHIT PRASAD</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${navdeep})` }}>
-          <div class="content">
-            <h2 class="title">NAVDEEP VAISHNAW</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${nitin})` }}>
-          <div class="content">
-            <h2 class="title">NITIN KUMAR VERMA</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${vijay})` }}>
-          <div class="content">
-            <h2 class="title">VIJAY KOSHALE</h2>
-            <p class="copy">4th year</p>
-
+        <div className = "card-container">
+          <div className="ot-card">
+            <div className="content">
+              <h2 className="title">To The Beach</h2>
+              <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+            </div>
           </div>
         </div>
       </main>
 
-      <p className="overall" id="design">DESIGN</p>
+      <div className="ot-subhead-wrapper"><p className="overall" id="spons">SPONSORSHIP</p></div>
 
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${anushka})` }}>
-          <div class="content">
-            <h2 class="title">ANUSHKA AHIRE</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${priyansh})` }}>
-          <div class="content">
-            <h2 class="title">PRIYANSH</h2>
-            <p class="copy">4th year</p>
+      <main className="page-content">
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Anupam Banjare</h2>
+            <p className="copy">8th | Meta</p>
+            <p className="copy">+91-8109785733</p>
 
           </div>
         </div>
-      </main>
-
-
-      <p className="overall" id="pr">PR & Marketing</p>
-
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${aakash})` }}>
-          <div class="content">
-            <h2 class="title">AAKASH AGRAWAL</h2>
-            <p class="copy">4th year</p>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Desert Destinations</h2>
+            <p className="copy">It's the desert you've always dreamed of</p>
           </div>
         </div>
-        <div class="card" style={{ backgroundImage: `url(${ayushi})` }}>
-          <div class="content">
-            <h2 class="title">AYUSHI YADAV</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${ishika})` }}>
-          <div class="content">
-            <h2 class="title">ISHIKA JAIN</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${jiya})` }}>
-          <div class="content">
-            <h2 class="title">JIYA GOYAL</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${malays})` }}>
-          <div class="content">
-            <h2 class="title">MALAYA JHANWAR</h2>
-            <p class="copy">4th year</p>
-
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Explore The Galaxy</h2>
+            <p className="copy">Seriously, straight up, just blast off into outer space today</p>
           </div>
         </div>
       </main>
 
-      <p className="overall" id="spons">SPONSORSHIP</p>
+      <div className="ot-subhead-wrapper"><p className="overall" id="design">DESIGN</p></div>
 
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${aman})` }}>
-          <div class="content">
-            <h2 class="title">AMAN KHANDWE</h2>
-            <p class="copy">4th year</p>
-
+      <main className="page-content">
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Mountain View</h2>
+            <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
           </div>
         </div>
-        <div class="card" style={{ backgroundImage: `url(${anupam})` }}>
-          <div class="content">
-            <h2 class="title">ANUPAM VIKAS BANJARE</h2>
-            <p class="copy">4th year</p>
-
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">To The Beach</h2>
+            <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Desert Destinations</h2>
+            <p className="copy">It's the desert you've always dreamed of</p>
           </div>
         </div>
       </main>
 
-      <p className="overall" id="webd">WEB DEVELOPER</p>
+      <div className="ot-subhead-wrapper"><p className="overall" >SPORTS COORDINATOR</p></div>
 
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${dewansh})` }}>
-          <div class="content">
-            <h2 class="title">DEWANSH PATLE</h2>
-            <p class="copy">4th year</p>
-
+      <main className="page-content" id="sc">
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Mountain View</h2>
+            <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
           </div>
         </div>
-        <div class="card" style={{ backgroundImage: `url(${karishma})` }}>
-          <div class="content">
-            <h2 class="title">KARISHMA DAHARIYA</h2>
-            <p class="copy">4th year</p>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Mountain View</h2>
+            <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">To The Beach</h2>
+            <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+          </div>
+        </div>
+      </main>
 
+      <div className="ot-subhead-wrapper"><p className="overall" id="pr">PR & Marketing</p></div>
+
+      <main className="page-content">
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Mountain View</h2>
+            <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">To The Beach</h2>
+            <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Desert Destinations</h2>
+            <p className="copy">It's the desert you've always dreamed of</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Explore The Galaxy</h2>
+            <p className="copy">Seriously, straight up, just blast off into outer space today</p>
+          </div>
+        </div>
+      </main>
+
+      <div className="ot-subhead-wrapper"><p className="overall" id="discipline">DISCIPLINE</p></div>
+
+      <main className="page-content">
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Mountain View</h2>
+            <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">To The Beach</h2>
+            <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Desert Destinations</h2>
+            <p className="copy">It's the desert you've always dreamed of</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Explore The Galaxy</h2>
+            <p className="copy">Seriously, straight up, just blast off into outer space today</p>
+          </div>
+        </div>
+      </main>
+      
+      <main className="page-content">
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Mountain View</h2>
+            <p className="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">To The Beach</h2>
+            <p className="copy">Plan your next beach trip with these fabulous destinations</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Desert Destinations</h2>
+            <p className="copy">It's the desert you've always dreamed of</p>
+          </div>
+        </div>
+        <div className="ot-card">
+          <div className="content">
+            <h2 className="title">Explore The Galaxy</h2>
+            <p className="copy">Seriously, straight up, just blast off into outer space today</p>
           </div>
         </div>
       </main>

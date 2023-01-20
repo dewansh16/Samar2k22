@@ -262,7 +262,7 @@ iframe {
 }
 .gallery-container .image-container img {
   height: 200.28px;
-  width:100%;
+  width: 100%;
 }
 .merchandise-conatiner .image-container img {
   height: 200.28px;
@@ -342,6 +342,10 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
+  .page-banner {
+    margin-top: 20px;
+  }
+
   .page-banner-bg {
     background-size: inherit;
   }

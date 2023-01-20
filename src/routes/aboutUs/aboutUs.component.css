@@ -19,6 +19,12 @@
   padding: 10px;
   margin: 2px;
 }
+
+.aboutus_data1 p{
+  padding: 0 1rem;
+  text-align: justify;
+}
+
 #second_shaurya {
   /* width: 1500px; */
 }

@@ -177,7 +177,7 @@
     margin-bottom: 0;
     padding-bottom: 0;
     margin-left: 3em;
-    background: #E5A022 0% 0% no-repeat padding-box;
+    background: #303233 0% 0% no-repeat padding-box;
     height: 100%;
     width: 80%;
     margin-left: 2em;
@@ -190,11 +190,17 @@ form {
     margin-bottom: 0;
 }
 .send-button {
-    background-color: #FC0A18;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-radius: 20px;
     margin: auto;
     width: 12rem;
+    outline: none;
     height: 3.2rem;
+}
+
+.send-button:hover{
+    background: black;
+    border: 1px solid blue;
 }
 
 .map-image {
@@ -223,10 +229,13 @@ form {
     margin: auto;
     padding: 1em;
     padding-bottom: 0;
-    ;
     border-radius: 50px;
-    ;
 }
+
+.contact-form textarea{
+    outline: none;
+}
+
 
 .mobile-footer-links-logo {
     width: 60%;
@@ -238,7 +247,7 @@ form {
     flex-direction: column;
     gap: 3em;
     border-radius: 50px;
-    background-color: #E5A022;
+    background-color:  #e5a02200;
 }
 
 .mobile-footer {
@@ -251,6 +260,7 @@ input {
     height: 3.5em;
     color:white;
     text-align: center;
+    outline: none;
 }
 
 ::placeholder {
@@ -384,7 +394,7 @@ textarea {
         padding: 1em;
         padding-bottom: 0;
         padding-bottom: 0;
-        background: #E5A022 0% 0% no-repeat padding-box;
+        background: #303233 0% 0% no-repeat padding-box;
         height: 90%;
         width: 100%;
         margin-bottom: 2em;

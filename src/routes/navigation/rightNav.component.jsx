@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo1 from "../../Assets/Images/home_logo.png";
+import logo1 from "../../Assets/Images/SAMAR.png";
 import { NavbarContext } from "../../contexts/navbar.context";
 import "./navigation.component.css";
 // import { hover } from "@testing-library/user-event/dist/hover";
@@ -70,7 +70,7 @@ const NavLinkContainer = styled.div`
   flex-shrink:3;
   font-size:100%;
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 4%;
   width: 100%;
   justify-content: space-between;
   @media (max-width: 800px) {
@@ -94,7 +94,7 @@ const RightNav = ({ open,setOpen,hover }) => {
               setOpen(false);
             }}
           >
-          <img src={logo1} className="mar_image" alt="Samar logo" height="22vh" width="auto" margin-left="5px"/>
+          <img src={logo1} className="mar_image" alt="Samar logo" />
           </NavLink>
         </NavLinkDiv>
         <NavLinkDiv  >

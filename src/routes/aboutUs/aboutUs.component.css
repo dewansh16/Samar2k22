@@ -19,9 +19,12 @@
   padding: 10px;
   margin: 2px;
 }
-#second_shaurya {
-  /* width: 1500px; */
+
+.aboutus_data1 p{
+  padding: 0 1rem;
+  text-align: justify;
 }
+
 .aboutus_title {
   font-family: "Courier New", Courier, monospace;
   margin-top: 40px;

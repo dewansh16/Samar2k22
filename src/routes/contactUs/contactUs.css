@@ -19,7 +19,7 @@
     display: flex;
     height: 10%;
     padding: 0;
-    margin: 0;
+    margin: 3rem;
     align-content: center;
     justify-content: center;
     margin-bottom: 0;
@@ -38,7 +38,7 @@
 	);
 
 	background-size: 200%;
-
+    font-family: "GOTSamar";
 	font-size: 4rem;
 	font-weight: bolder;
 	color: transparent;
@@ -99,6 +99,10 @@
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 0;
+}
+
+.find-us{
+    margin-top: 3rem;
 }
 
 .find-us .heading {
@@ -190,11 +194,17 @@ form {
     margin-bottom: 0;
 }
 .send-button {
-    background-color: #FC0A18;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-radius: 20px;
     margin: auto;
     width: 12rem;
+    outline: none;
     height: 3.2rem;
+}
+
+.send-button:hover{
+    background: black;
+    border: 1px solid blue;
 }
 
 .map-image {
@@ -223,10 +233,13 @@ form {
     margin: auto;
     padding: 1em;
     padding-bottom: 0;
-    ;
     border-radius: 50px;
-    ;
 }
+
+.contact-form textarea{
+    outline: none;
+}
+
 
 .mobile-footer-links-logo {
     width: 60%;
@@ -238,7 +251,11 @@ form {
     flex-direction: column;
     gap: 3em;
     border-radius: 50px;
+<<<<<<< HEAD
     background-color: #303233;
+=======
+    background-color:  #e5a02200;
+>>>>>>> d6018bad88574f9ea4ba4cb206953a3f3a5320e2
 }
 
 .mobile-footer {
@@ -253,6 +270,7 @@ input {
     height: 3.5em;
     color:white;
     text-align: center;
+    outline: none;
 }
 
 ::placeholder {
@@ -435,5 +453,11 @@ textarea {
 
     iframe {
         border-radius: 0;
+    }
+}
+
+@media (max-width: 425px){
+    #contact-us-text{
+        font-size: 2.5rem;
     }
 }

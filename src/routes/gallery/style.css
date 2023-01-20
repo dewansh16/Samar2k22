@@ -31,7 +31,7 @@
   );
 
   background-size: 200%;
-
+  font-family: "GOTSamar";
   font-size: 4rem;
   font-weight: bolder;
   color: transparent;
@@ -217,6 +217,11 @@
   .gallery-text-shadow {
     font-size: 1.3rem;
   }
+
+  #gallery-text{
+    font-size: 3rem;
+  }
+  
 }
 
 /* Tablet */

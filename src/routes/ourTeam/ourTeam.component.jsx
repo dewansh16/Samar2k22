@@ -27,7 +27,7 @@ import "./ourTeam.component.css";
 function ourTeam() {
   return (
     <div className="">
-      <p className="team-head-text">OUR TEAM</p>
+      <p className="team-head-text" id="ot-wrapper"><span id="ot-text">Our Team</span></p>
       <p className="overall" id="overall">OVERALL</p>
 
       <main class="page-content">

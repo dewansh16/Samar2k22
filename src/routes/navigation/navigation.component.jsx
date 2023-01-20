@@ -9,6 +9,7 @@ import LandingLoader from "../../Components/animationPage/landingLoader.componen
 
 const Nav = styled.nav`
   height: 90px;
+  font-family: GOTSamar;
 /* position:fixed;  */
   top:0;
   left:0;

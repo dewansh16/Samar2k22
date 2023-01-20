@@ -260,9 +260,13 @@ iframe {
 .image-container img {
   transition: all 0.3s;
 }
+.gallery-container .image-container img {
+  height: 200.28px;
+  width:100%;
+}
 .merchandise-conatiner .image-container img {
   height: 200.28px;
-  width: 321.2px;
+  width: 100%;
 }
 .image-container img:hover {
   transform: scale(1.05);

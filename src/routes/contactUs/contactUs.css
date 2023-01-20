@@ -177,7 +177,7 @@
     margin-bottom: 0;
     padding-bottom: 0;
     margin-left: 3em;
-    background: #E5A022 0% 0% no-repeat padding-box;
+    background: #303233 0% 0% no-repeat padding-box;
     height: 100%;
     width: 80%;
     margin-left: 2em;
@@ -238,13 +238,15 @@ form {
     flex-direction: column;
     gap: 3em;
     border-radius: 50px;
-    background-color: #E5A022;
+    background-color: #303233;
 }
 
 .mobile-footer {
     display: none;
 }
-
+.map iframe{
+ height:100%;
+}
 input {
     background-color: black;
     border-radius: 30px;
@@ -384,7 +386,7 @@ textarea {
         padding: 1em;
         padding-bottom: 0;
         padding-bottom: 0;
-        background: #E5A022 0% 0% no-repeat padding-box;
+        background: #303233 0% 0% no-repeat padding-box;
         height: 90%;
         width: 100%;
         margin-bottom: 2em;

@@ -6,7 +6,7 @@ import chess1 from "../../Assets/Images/SAMAR Llogo-01.png";
 function AboutUs() {
   return (
     <div className="about-us-container">
-      <h3 id="gallery-wrap"> <span className="aboutus_title" id="gallery-text">About Us</span> </h3>
+      <h3 id="about-us-wrapper"> <span className="aboutus_title" id="about-us-text-span">About Us</span> </h3>
       {/* <p className="head-text">ABOUT US</p> */}
       <p className="samar">SAMAR</p>
       <div className=" ">

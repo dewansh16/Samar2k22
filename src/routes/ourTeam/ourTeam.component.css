@@ -11,9 +11,7 @@
 }
 
 #ot-wrapper{
-  display: flex;
-	align-items: center;
-	justify-content: center;
+  margin-top: 2rem;
 }
 #ot-text {
 	text-align: center;
@@ -24,10 +22,11 @@
 	);
 
 	background-size: 200%;
-
+  line-height: 1.5;
 	font-size: 4rem;
   margin-top: 2rem;
 	font-weight: bolder;
+  font-family: "GOTSamar";
 	color: transparent;
 	background-clip: text;
 	animation: animation 1.7s linear infinite;
@@ -47,6 +46,12 @@
   width: 30%;
   margin: 5rem auto;
   border-bottom: 1px solid white;
+}
+
+@media (max-width: 320px){
+  #ot-text{
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 768px) {

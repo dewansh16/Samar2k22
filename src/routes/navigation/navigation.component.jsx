@@ -8,7 +8,7 @@ import './navigation.component.css';
 import LandingLoader from "../../Components/animationPage/landingLoader.component";
 
 const Nav = styled.nav`
-  height: 70px;
+  height: 90px;
 /* position:fixed;  */
   top:0;
   left:0;

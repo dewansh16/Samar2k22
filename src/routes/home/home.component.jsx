@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-import BasketBallImg from "../../Assets/Images/basketBallImg.png";
+import darkBasketBallImg from "../../Assets/Images/dark_basketBallImg.jpg";
 import Merchandise from "../../Assets/Images/Merchandise.jpg";
 import './home.component.css'
 
@@ -47,7 +47,7 @@ function Home() {
         <div className='home-container'>
             {/* Landing Page banner */}
             <div className='page-banner'>
-                    <div style={{ backgroundImage: `url(${BasketBallImg})` }} className='page-banner-bg' />
+                    <div style={{ backgroundImage: `url(${darkBasketBallImg})` }} className='page-banner-bg' />
                         <Swiper
                         modules={[Autoplay, Navigation, Pagination]}
                         spaceBetween={50}

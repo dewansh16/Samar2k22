@@ -7,7 +7,7 @@
   /* height: 500px; */
 }
 .merchandise_data h3 {
-  font-family: "DragonBold", sans-serif;
+  font-family: "GOTSamar", sans-serif;
   font-size: 40px;
 }
 .merchandise_data h2 {
@@ -28,31 +28,31 @@
   text-align: center;
 }
 
-#merch-wrapper{
+#merch-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#merch-text{
+#merch-text {
   text-align: center;
-	background: radial-gradient(
-		circle,
-		rgba(63, 94, 251, 1) 0%,
-		rgba(252, 70, 107, 1) 100%
-	);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
 
-	background-size: 200%;
-	font-weight: bolder;
-	color: transparent;
-	background-clip: text;
-	animation: animation 1.7s linear infinite;
+  background-size: 200%;
+  font-weight: bolder;
+  color: transparent;
+  background-clip: text;
+  animation: animation 1.7s linear infinite;
 }
 
 @keyframes animation {
-	to {
-		background-position: 200% center;
-	}
+  to {
+    background-position: 200% center;
+  }
 }
 .mar_button {
   background-color: rgb(222, 16, 16);
@@ -72,8 +72,8 @@
   }
 }
 
-@media (max-width: 418px){
-  .merchandise_data h2{
+@media (max-width: 418px) {
+  .merchandise_data h2 {
     font-size: 2.4rem;
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./aboutUs.css";
 import "./aboutUs.component.css";
 import chess from "../../Assets/Images/SHAURYA LOGO (1).png";
-import chess1 from "../../Assets/Images/SAMAR Llogo-01.png";
+import chess1 from "../../Assets/Images/SAMAR OG LOGO WHITE.png";
 function AboutUs() {
   return (
     <div className="about-us-container">

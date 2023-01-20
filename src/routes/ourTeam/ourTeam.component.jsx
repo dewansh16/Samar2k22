@@ -47,7 +47,7 @@ function ourTeam() {
         </div>
         <div class="card" style={{ backgroundImage: `url(${rishabh})` }}>
           <div class="content">
-            <h2 class="title">RISHABH</h2>
+            <h2 class="title">RISHABH CHOUHAN</h2>
             <p class="copy">4th year</p>
 
           </div>
@@ -133,7 +133,7 @@ function ourTeam() {
         </div>
         <div class="card" style={{ backgroundImage: `url(${priyansh})` }}>
           <div class="content">
-            <h2 class="title">PRIYANSH</h2>
+            <h2 class="title">PRIYANSHU GUPTA</h2>
             <p class="copy">4th year</p>
 
           </div>

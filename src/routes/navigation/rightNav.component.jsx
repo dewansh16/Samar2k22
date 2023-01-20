@@ -52,7 +52,7 @@ const NavLinkDiv = styled.div`
   margin: 7px 0;
   padding: 7px 10px;
   a:hover{
-    color:#e5a022;
+    color:red;
   }
   @media (max-width: 800px) {
     width: 100%;

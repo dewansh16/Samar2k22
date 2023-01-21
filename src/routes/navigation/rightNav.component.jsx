@@ -12,7 +12,7 @@ align-items: center;
   flex-flow: row nowrap;
   width: 100%;
   justify-content: space-around;
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
@@ -35,7 +35,7 @@ const NavLink = styled(Link)`
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px 30px 30px 0px;
     display: flex;
@@ -48,13 +48,13 @@ const NavLink = styled(Link)`
 const NavLinkDiv = styled.div`
   text-align: center;
   border-radius: 10px;
-  
+  min-width: 50px;
   margin: 7px 0;
   padding: 7px 10px;
   a:hover{
     color:red;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px 30px 30px 0px;
     display: flex;
@@ -66,19 +66,17 @@ const NavLinkDiv = styled.div`
 const NavLinkContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  
   flex-shrink:3;
   font-size:100%;
   align-items: center;
   padding: 0px 4%;
   width: 100%;
   justify-content: space-between;
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     height: 60%;
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
-  
   }
 `;
 const RightNav = ({ open,setOpen,hover }) => {

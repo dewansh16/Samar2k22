@@ -431,7 +431,11 @@ iframe {
 
 /* --------------------new styles by shankar ---------------- */
 .carousal-page-content-gameName table td {
-  padding: 8px 40px 8px 40px;
+  padding: 20px 40px 20px 40px;
+  font-size: large;
+}
+.carousal-page-content-gameName table {
+  margin-top: 10px;
 }
 /* .carousal-page-content-gameName table th{
   background-color: rgba(193, 201, 205, 0.2);
@@ -447,6 +451,12 @@ iframe {
   align-items: center;
   justify-content: space-around;
 }
+.carousal-page-content-gameName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 700px) {
   .info_table {
     display: none;
@@ -454,4 +464,27 @@ iframe {
   .carousal_tabledata {
     justify-content: center;
   }
+  .carousal-page-content-gameName table td {
+    padding: 6px 4px 6px 4px;
+  }
+  .page-banner-carousal-div {
+    border-radius: 1rem;
+  }
+  .page-banner-bg {
+    border-radius: 1rem;
+  }
+  .page-banner {
+    border-radius: 1rem;
+  }
+  .mid_row {
+    width: 35%;
+  }
+}
+
+.home-toggle-button {
+  margin: 20px 0px;
+}
+
+.toggle-text-div {
+  margin: 0px 10px;
 }

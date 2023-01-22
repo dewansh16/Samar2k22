@@ -79,7 +79,7 @@ function ourTeam() {
         </div>
         <div class="card" style={{ backgroundImage: `url(${dhara})` }}>
           <div class="content">
-            <h2 class="title">DHARE PAINKRA</h2>
+            <h2 class="title">DHARA PAINKRA</h2>
             <p class="copy">4th year</p>
 
           </div>

@@ -10,14 +10,14 @@ import LandingLoader from "../../Components/animationPage/landingLoader.componen
 const Nav = styled.nav`
   height: 90px;
   font-family: GOTSamar;
-/* position:fixed;  */
+position:fixed; 
   top:0;
   left:0;
   width:100%;
   /* border: 2px solid black; */
   margin-top:0;
   z-index:100;
-  /* background: rgb(240,248,255,0.2) 0% 0% no-repeat padding-box; */
+  background: black;
   /* box-shadow: 0 0.5px 15px rgb(240,248,255,0.5); */
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
@@ -32,7 +32,7 @@ const Nav = styled.nav`
   }
 `
 const NavDiv = styled.div`
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     @media (max-width: 800px) {
     margin: 0px;
   }

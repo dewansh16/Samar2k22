@@ -479,6 +479,9 @@ iframe {
   .mid_row {
     width: 35%;
   }
+.mid_row1{
+    width: min-content;
+  }
 }
 
 .home-toggle-button {

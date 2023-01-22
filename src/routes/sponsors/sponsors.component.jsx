@@ -1,8 +1,11 @@
 import React from "react";
 import "./style1.css";
 import sponsor from "../../Assets/Images/sponsors.jpg";
-import dainikBhaskar from "../../Assets/Images/dainikbhaskar.jpg";
-import ibc from "../../Assets/Images/ibc.jpg";
+import dainikBhaskar from "../../Assets/Images/Sponsors/dainikbhaskar.jpg";
+import ibc from "../../Assets/Images/Sponsors/ibc.jpg";
+import sparkcar from '../../Assets/Images/Sponsors/sparkcars.jpeg'
+import carshringar from '../../Assets/Images/Sponsors/carShringar.jpeg'
+import upgradraipur from '../../Assets/Images/Sponsors/upgradRaipur.jpeg'
 function Sponsors() {
   return (
     <div class="spo-wrapper">
@@ -18,33 +21,28 @@ function Sponsors() {
       </div>
       <div class="spo-main">
         <div className="sponsor-first">
-          <h1 className="spo-heading" >PRINT MEDIA PARTENER</h1>
             <img src={dainikBhaskar} alt="dainikbhaskar" className="spo-img" />
+            <h1 className="spo-heading" >PRINT MEDIA PARTENER</h1>
         </div>
 
         <div className="sponsor-first">
-          <h1 className="spo-heading">TELEVISION MEDIA PARTENER</h1>
             <img src={ibc} alt="ibc24" className="spo-img" />
-        </div>
-
-        <div className="sponsor-first">
-          <h1 className="spo-heading">PRINT MEDIA PARTENER</h1>
-            <img src={dainikBhaskar} alt="dainikbhaskar" className="spo-img" />
-        </div>
-
-        <div className="sponsor-first">
           <h1 className="spo-heading">TELEVISION MEDIA PARTENER</h1>
-            <img src={ibc} alt="ibc24" className="spo-img" />
+        </div>
+
+        <div className="sponsor-first">
+            <img src={sparkcar} alt="dainikbhaskar" className="spo-img" />
+          <h1 className="spo-heading">TRAVEL PARTENER</h1>
+        </div>
+
+        <div className="sponsor-first">
+            <img src={carshringar} alt="ibc24" className="spo-img" />
+          <h1 className="spo-heading">DECORATION PARTENER</h1>
         </div>
         
         <div className="sponsor-first">
-          <h1 className="spo-heading">PRINT MEDIA PARTENER</h1>
-            <img src={dainikBhaskar} alt="dainikbhaskar" className="spo-img" />
-        </div>
-
-        <div className="sponsor-first">
-          <h1 className="spo-heading">TELEVISION MEDIA PARTENER</h1>
-            <img src={ibc} alt="ibc24" className="spo-img" />
+            <img src={upgradraipur} alt="dainikbhaskar" className="spo-img" />
+          <h1 className="spo-heading">UPSKILLING PARTENER</h1>
         </div>
 
       </div>

@@ -36,7 +36,7 @@
 .btn{
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border-radius: 20px;
-  margin: auto;
+  margin: 20px;
   width: 12rem;
   outline: none;
   height: 3.2rem;

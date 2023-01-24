@@ -63,7 +63,7 @@
 /* container */
 .home-container {
   text-align: center;
-  padding: 0 1rem 0;
+  padding: 1rem 1rem 0;
 }
 
 /* page banner */
@@ -478,6 +478,9 @@ iframe {
   }
   .mid_row {
     width: 35%;
+  }
+  .mid_row1 {
+    width: min-content;
   }
 }
 

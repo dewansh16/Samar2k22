@@ -26,7 +26,7 @@ import karishma from "../../Assets/Images/team/WEB/KarishmaDahariya.jpg"
 import "./ourTeam.component.css";
 function ourTeam() {
   return (
-    <div className="">
+    <div className="ourTeam-main-container">
       <p className="team-head-text" id="ot-wrapper"><span id="ot-text">Our Team</span></p>
       <p className="overall" id="overall">OVERALL</p>
 

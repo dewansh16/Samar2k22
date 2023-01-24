@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo1 from "../../Assets/Images/SAMAR.png";
+import logo1 from "../../Assets/Images/home_logo1.png";
 import { NavbarContext } from "../../contexts/navbar.context";
 import "./navigation.component.css";
 // import { hover } from "@testing-library/user-event/dist/hover";

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import darkBasketBallImg from "../../Assets/Images/dark_basketBallImg.jpg";
+import darkBasketBallImg from "../../Assets/Images/dark_basketBallImg.png";
 import Merchandise from "../../Assets/Images/Merchandise.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
 import "./home.component.css";

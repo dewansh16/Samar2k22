@@ -22,27 +22,27 @@ function Sponsors() {
       <div class="spo-main">
         <div className="sponsor-first">
             <img src={dainikBhaskar} alt="dainikbhaskar" className="spo-img" />
-            <h1 className="spo-heading" >PRINT MEDIA PARTENER</h1>
+            <h1 className="spo-heading" >PRINT MEDIA PARTNER</h1>
         </div>
 
         <div className="sponsor-first">
             <img src={ibc} alt="ibc24" className="spo-img" />
-          <h1 className="spo-heading">TELEVISION MEDIA PARTENER</h1>
+          <h1 className="spo-heading">TELEVISION MEDIA PARTNER</h1>
         </div>
 
         <div className="sponsor-first">
             <img src={sparkcar} alt="dainikbhaskar" className="spo-img" />
-          <h1 className="spo-heading">TRAVEL PARTENER</h1>
+          <h1 className="spo-heading">TRAVEL PARTNER</h1>
         </div>
 
         <div className="sponsor-first">
             <img src={carshringar} alt="ibc24" className="spo-img" />
-          <h1 className="spo-heading">DECORATION PARTENER</h1>
+          <h1 className="spo-heading">DECORATION PARTNER</h1>
         </div>
         
         <div className="sponsor-first">
             <img src={upgradraipur} alt="dainikbhaskar" className="spo-img" />
-          <h1 className="spo-heading">UPSKILLING PARTENER</h1>
+          <h1 className="spo-heading">UPSKILLING PARTNER</h1>
         </div>
 
       </div>

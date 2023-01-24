@@ -145,8 +145,15 @@
     19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
-.gallery-flip .img1 {
-  background: url("../../Assets/Images/basketBallImg.png");
+.gallery-front h1{
+  font-weight: 600;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1rem black, 0 0 1rem black, 0 0 1rem black, 0 0 1rem black, 0 0 1rem black, 0 0 1rem #000000, 0 0 1rem black, 0 0 1rem black;
+}
+
+.gallery-flip .img4 {
+  background: url("../../Assets/Images/gallery-images/Basket\ ball.jpeg");
 }
 
 .gallery-flip .img2 {
@@ -156,11 +163,9 @@
 .gallery-flip .img3 {
   background: url("../../Assets/Images/gallery-images/born-fire.webp");
 }
-.gallery-flip .img4 {
-  background: url("../../Assets/Images/gallery-images/DJ\ Night.webp");
-}
+
 .gallery-flip .img5 {
-  background: url("../../Assets/Images/gallery-images/Field.webp");
+  background: url("../../Assets/Images/gallery-images/Field.jpeg");
 }
 .gallery-flip .img6 {
   background: url("../../Assets/Images/gallery-images/pickel.webp");
@@ -197,6 +202,17 @@
 }
 .gallery-flip .img17 {
   background: url("../../Assets/Images/gallery-images/spider.jpg");
+}
+
+.gallery-flip .img18 {
+  background: url("../../Assets/Images/gallery-images/sun\ burn.jpeg");
+}
+
+.gallery-flip .img19 {
+  background: url("../../Assets/Images/gallery-images/BIKE\ Stunt.jpeg");
+}
+.gallery-flip .img20 {
+  background: url("../../Assets/Images/gallery-images/Football.jpg");
 }
 
 .gallery-flip > .gallery-back {

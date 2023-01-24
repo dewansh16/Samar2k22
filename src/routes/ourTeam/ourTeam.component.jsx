@@ -85,66 +85,66 @@ function ourTeam() {
         </div>
       </main>
 
-{/* spons team */}
-<p className="overall" id="pr">SPONS</p>
+      {/* spons team */}
+      <p className="overall" id="pr">SPONS</p>
 
-<main class="page-content">
-  <div class="card" style={{ backgroundImage: `url(${abhi})` }}>
-    <div class="content">
-      <h2 class="title">ABHI AGRAWAL</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${rahul})` }}>
-    <div class="content">
-      <h2 class="title">RAHUL KUMAR</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${anupam})` }}>
-    <div class="content">
-      <h2 class="title">ANUPAM VIKAS BANJARE</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${amans})` }}>
-    <div class="content">
-      <h2 class="title">AMAN SUKHDAVE</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${palash})` }}>
-    <div class="content">
-      <h2 class="title">PALASH BANCHHOR</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${sachine})` }}>
-    <div class="content">
-      <h2 class="title">SACHINE MALVE</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-</main>
+      <main class="page-content">
+        <div class="card" style={{ backgroundImage: `url(${abhi})` }}>
+          <div class="content">
+            <h2 class="title">ABHI AGRAWAL</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${rahul})` }}>
+          <div class="content">
+            <h2 class="title">RAHUL KUMAR</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${anupam})` }}>
+          <div class="content">
+            <h2 class="title">ANUPAM VIKAS BANJARE</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${amans})` }}>
+          <div class="content">
+            <h2 class="title">AMAN SUKHDAVE</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${palash})` }}>
+          <div class="content">
+            <h2 class="title">PALASH BANCHHOR</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${sachine})` }}>
+          <div class="content">
+            <h2 class="title">SACHINE MALVE</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+      </main>
 
-<p className="overall" id="design">DESIGN</p>
+      <p className="overall" id="design">DESIGN</p>
 
-<main class="page-content">
-  <div class="card" style={{ backgroundImage: `url(${anushka})` }}>
-    <div class="content">
-      <h2 class="title">ANUSHKA AHIRE</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${priyansh})` }}>
-    <div class="content">
-      <h2 class="title">PRIYANSHU GUPTA</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-</main>
+      <main class="page-content">
+        <div class="card" style={{ backgroundImage: `url(${anushka})` }}>
+          <div class="content">
+            <h2 class="title">ANUSHKA AHIRE</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${priyansh})` }}>
+          <div class="content">
+            <h2 class="title">PRIYANSHU GUPTA</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+      </main>
 
-<p className="overall" id="webd">WEB DEVELOPER</p>
+      <p className="overall" id="webd">WEB DEVELOPER</p>
 
       <main class="page-content">
         <div class="card" style={{ backgroundImage: `url(${dewansh})` }}>
@@ -266,44 +266,44 @@ function ourTeam() {
       </main>
 
       {/* displipary team */}
-      <p className="overall" id="design">DISP</p>
-
-<main class="page-content">
-  <div class="card" style={{ backgroundImage: `url(${ainmesh})` }}>
-    <div class="content">
-      <h2 class="title">ANIMESH JHADI</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${ankit})` }}>
-    <div class="content">
-      <h2 class="title">ANKIT JHARIYA</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${arun})` }}>
-    <div class="content">
-      <h2 class="title">ARUN DHEBANA</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${devesh})` }}>
-    <div class="content">
-      <h2 class="title">DEVESH KUMAR</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-  <div class="card" style={{ backgroundImage: `url(${pradhav})` }}>
-    <div class="content">
-      <h2 class="title">PRADHAV GAUTAM</h2>
-      <p class="copy">4th year</p>
-    </div>
-  </div>
-</main>
-      <p className="overall" id="pr">PR & Marketing</p>
+      <p className="overall" id="design">DISCIPLINARY</p>
 
       <main class="page-content">
-      <div class="card" style={{ backgroundImage: `url(${amit})` }}>
+        <div class="card" style={{ backgroundImage: `url(${ainmesh})` }}>
+          <div class="content">
+            <h2 class="title">ANIMESH JHADI</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${ankit})` }}>
+          <div class="content">
+            <h2 class="title">ANKIT JHARIYA</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${arun})` }}>
+          <div class="content">
+            <h2 class="title">ARUN DHEBANA</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${devesh})` }}>
+          <div class="content">
+            <h2 class="title">DEVESH KUMAR</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${pradhav})` }}>
+          <div class="content">
+            <h2 class="title">PRADHAV GAUTAM</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+      </main>
+      <p className="overall" id="pr">PR & MARKETING</p>
+
+      <main class="page-content">
+        <div class="card" style={{ backgroundImage: `url(${amit})` }}>
           <div class="content">
             <h2 class="title">AMIT KUMAR</h2>
             <p class="copy">4th year</p>
@@ -355,8 +355,7 @@ function ourTeam() {
         </div>
       </main>
 
-      <p className="overall" id="spons">DOC</p>
-
+      <p className="overall" id="spons">DOCUMENTATION</p>
       <main class="page-content">
         <div class="card" style={{ backgroundImage: `url(${ajay})` }}>
           <div class="content">
@@ -367,19 +366,19 @@ function ourTeam() {
         </div>
         <div class="card" style={{ backgroundImage: `url(${dev})` }}>
           <div class="content">
-            <h2 class="title">DEV</h2>
+            <h2 class="title">DEV KUMAR TIRKEY</h2>
             <p class="copy">4th year</p>
           </div>
         </div>
         <div class="card" style={{ backgroundImage: `url(${prachi})` }}>
           <div class="content">
-            <h2 class="title">PRACHI</h2>
+            <h2 class="title">PRACHI SONI</h2>
             <p class="copy">4th year</p>
           </div>
         </div>
       </main>
 
-      
+
     </div>
   );
 }

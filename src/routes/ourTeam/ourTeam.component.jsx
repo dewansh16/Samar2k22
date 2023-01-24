@@ -41,10 +41,10 @@ import ajay from "../../Assets/Images/team/DOC/AjayKumarSahu.jpg"
 import dev from "../../Assets/Images/team/DOC/dev.jpeg"
 import prachi from "../../Assets/Images/team/DOC/prachi.jpeg"
 import ainmesh from "../../Assets/Images/team/DISP/AnimeshJhadi.jpg"
-import ankit from "../../Assets/Images/team/DISP/AnkitJhariya.jpg"
+import ankit from "../../Assets/Images/team/DISP/Ankitjhariya.jpg"
 import arun from "../../Assets/Images/team/DISP/ArunDhebana.jpg"
 import devesh from "../../Assets/Images/team/DISP/DeveshKumar.jpg"
-import pradhav from "../../Assets/Images/team/DISP/PradhavGautam.jpg"
+import pradhav from "../../Assets/Images/team/DISP/Pradhavgautam.jpg"
 
 
 import "./ourTeam.component.css";

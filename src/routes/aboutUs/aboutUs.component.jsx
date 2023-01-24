@@ -1,13 +1,18 @@
 import React from "react";
 import "./aboutUs.css";
-
+import "./aboutUs.component.css";
+import chess from "../../Assets/Images/SHAURYA LOGO (1).png";
+import chess1 from "../../Assets/Images/samar_logo.png";
 function AboutUs() {
   return (
     <div className="about-us-container">
-      <p className="head-text">ABOUT US</p>
+      <h3 id="about-us-wrapper"> <span className="aboutus_title" id="about-us-text-span">About Us</span> </h3>
+      {/* <p className="head-text">ABOUT US</p> */}
       <p className="samar">SAMAR</p>
       <div className=" ">
-        <div className="first ">
+        <div className="aboutus_first">
+        <div className="aboutus_first1">
+          <div className="aboutus_data1">
           <p>
             SAMAR is the Annual College Sports Festival of NIT Raipur being
             organised by "SHAURYA" The Sports Committee of NIT Raipur. It is a
@@ -22,9 +27,7 @@ function AboutUs() {
             participation. Samar was one of the best experiences at NITRR and
             has a rich string of memories linked with it. Samar brings with it a
             great opportunity to show your endeavour along with fun and
-            enjoyment.
-          </p>
-          <p>
+            enjoyment. <br />
             As continuing from the last 10 years, SAMAR 2K22 will accomodate
             students, rather sportspersons from all over Chhattisgarh. In Toto,
             so many games, both indoor and outdoor, are going to be organized,
@@ -36,17 +39,27 @@ function AboutUs() {
             participate in this grand fest and enjoy the thrill and titillation
             in sports in a way done never before.
           </p>
+          </div>
+          <div className="aboutus_image1">
+            <img src={chess1} alt="Chess" />
+          </div>
         </div>
+       </div>
       </div>
       <p className="samar">SHAURYA</p>
-      <div className="second">
+      <div className="aboutus_second">
+
+      <div className="aboutus_image1" id="second_shaurya">
+            <img src={chess} alt="Chess" />
+       </div>
+     <div className="aboutus_data1">
+
         <p>
           Apart from educational knowledge institute promotes lot of other
           activities and ideas in order to overall development of its students.
           Team SHAURYA provides such a platform to its students interested in
           sports where they are provided with the best equipment and training.
-        </p>
-        <p>
+          <br />
           Presents to you the most awaited sports fest of Central India, SAMAR
           2k22. With tons of enthusiasm and pounds of thrilling experiences, with
           hundreds of winners and thousands of learners, with sports ranging from
@@ -54,9 +67,10 @@ function AboutUs() {
           to expose your hidden sportsperson and let it take over you at this
           mind-blowing fest in from of an incredible audience.
         </p>
+        </div>
+
       </div>
     </div>
   );
 }
-
 export default AboutUs;

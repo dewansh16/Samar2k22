@@ -9,14 +9,17 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "digital": "^0.0.1",
+    "envelope": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native-form-component": "^2.6.7",
     "react-router-dom": "^6.6.2",
     "react-scripts": "^5.0.1",
+    "routines": "^0.3.0",
     "sass": "^1.57.1",
     "styled-components": "^5.3.6",
-    "swiper": "^8.4.5",
+    "swiper": "^8.4.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }

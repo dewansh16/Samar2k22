@@ -1,44 +1,60 @@
 import { useContext } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import logo1 from "../../Assets/Images/home_logo1.png";
 import { NavbarContext } from "../../contexts/navbar.context";
+import "./navigation.component.css";
+// import { hover } from "@testing-library/user-event/dist/hover";
 
 const Ul = styled.div`
-  align-items: center;
-  display: flex;
+display: flex;
+align-items: center;
   flex-flow: row nowrap;
   width: 100%;
   justify-content: space-around;
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
-    background-color: #e5a022;
+    background: rgb(0 0 0 / 13%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 0.5px 15px rgb(52 52 52 / 50%);
+    backdrop-filter: blur(6.5px);
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-108%)")};
+    transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(108%)")};
     top: 0;
-    left: 0;
+   right: 0;
+   z-index:99;
     height: 100vh;
     width: 300px;
     transition: transform 0.3s ease-in-out;
-    border-radius: 0px 70px 70px 0px;
+    border-radius: 60px 0px 0px 60px;
   }
 `;
-
 const NavLink = styled(Link)`
   font-weight: 800;
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
+    @media (max-width: 1000px) {
+    width: 100%;
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+  }
+ 
 `;
-
 const NavLinkDiv = styled.div`
   text-align: center;
   border-radius: 10px;
+  min-width: 50px;
   margin: 7px 0;
   padding: 7px 10px;
-  @media (max-width: 800px) {
+  a:hover{
+    color:red;
+  }
+  @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px 30px 30px 0px;
     display: flex;
@@ -47,110 +63,138 @@ const NavLinkDiv = styled.div`
     align-items: center;
   }
 `;
-
 const NavLinkContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
+  flex-shrink:3;
+  font-size:100%;
   align-items: center;
-  padding: 0px 10px;
-  width: 90%;
-  justify-content: space-around;
-  @media (max-width: 800px) {
+  padding: 0px 4%;
+  width: 100%;
+  justify-content: space-between;
+  @media (max-width: 1000px) {
     height: 60%;
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
   }
 `;
-
-const RightNav = ({ open }) => {
+const RightNav = ({ open,setOpen,hover }) => {
   const { activeLink, setActiveLink } = useContext(NavbarContext);
   return (
     <Ul open={open}>
       <NavLinkContainer>
-        <NavLinkDiv style={activeLink === 0 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
             to="/"
             onClick={() => {
               setActiveLink(0);
+              setOpen(false);
             }}
           >
-            Home
+          <img src={logo1} className="mar_image" alt="Samar logo" />
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 1 ? { background: "red" } : {}}>
+        <NavLinkDiv  >
           <NavLink
+            style={activeLink === 1 ? { color: "red" } : {}}
             to="/event"
             onClick={() => {
               setActiveLink(1);
+              setOpen(false);
             }}
           >
             Event
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 2 ? { background: "red" } : {}}>
+{
+        // <NavLinkDiv>
+        //   <NavLink
+        //     style={activeLink === 2 ? { color: "red" } : {}}
+        //     to="/schedule"
+        //     onClick={() => {
+        //       setActiveLink(2);
+        //       setOpen(false);
+        //     }}
+        //   >
+        //     Schedule
+        //   </NavLink>
+        // </NavLinkDiv>
+        }
+        <NavLinkDiv>
           <NavLink
-            to="/schedule"
-            onClick={() => {
-              setActiveLink(2);
-            }}
-          >
-            Schedule
-          </NavLink>
-        </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 3 ? { background: "red" } : {}}>
-          <NavLink
+            style={activeLink === 3 ? { color: "red" } : {}}
             to="/sponsors"
             onClick={() => {
               setActiveLink(3);
+              setOpen(false);
             }}
           >
             Sponsors
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 4 ? { background: "red" } : {}}>
+        <NavLinkDiv >
           <NavLink
+            style={activeLink === 4 ? { color: "red" } : {}}
             to="/gallery"
             onClick={() => {
               setActiveLink(4);
+              setOpen(false);
             }}
           >
             Gallery
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 5 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 5 ? { color: "red" } : {}}
             to="/ourTeam"
             onClick={() => {
               setActiveLink(5);
+              setOpen(false);
             }}
           >
-            Our Team
+           Team
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 6 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 6 ? { color: "red" } : {}}
             to="/contactUs"
             onClick={() => {
               setActiveLink(6);
+              setOpen(false);
             }}
           >
-            Contact Us
+            Contact
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv style={activeLink === 7 ? { background: "red" } : {}}>
+        <NavLinkDiv>
           <NavLink
+            style={activeLink === 7 ? { color: "red" } : {}}
             to="/aboutUs"
             onClick={() => {
               setActiveLink(7);
+              setOpen(false);
             }}
           >
-            About Us
+            About
+          </NavLink>
+        </NavLinkDiv>
+        <NavLinkDiv>
+          <NavLink
+            style={activeLink === 8 ? { color: "red" } : {}}
+            to="/Merchandise"
+            onClick={() => {
+              setActiveLink(8);
+              setOpen(false);
+            }}
+          >
+            Merchandise
           </NavLink>
         </NavLinkDiv>
       </NavLinkContainer>
     </Ul>
   );
 };
-
 export default RightNav;

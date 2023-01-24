@@ -1,22 +1,22 @@
 import styled from "styled-components";
-
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 15px;
-  left: 20px;
-  z-index: 20;
+  top: 40px;
+  right: 20px;
+  z-index: 101;
   display: none;
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    cursor: pointer;
   }
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "#ccc" : "#ccc")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -32,7 +32,6 @@ const StyledBurger = styled.div`
     }
   }
 `;
-
 const Burger = ({ open, setOpen }) => {
   return (
     <>
@@ -44,5 +43,4 @@ const Burger = ({ open, setOpen }) => {
     </>
   );
 };
-
 export default Burger;

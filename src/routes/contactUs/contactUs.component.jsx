@@ -62,7 +62,7 @@ function ContactUs() {
         <div className='main-container'>
             <div className="heading-container">
                 <div className="heading">
-                    <h3> CONTACT US</h3>
+                    <h3 id='contact-us-wrapper'><span id='contact-us-text'>Contact Us</span></h3>
                 </div>
             </div>
             <div className="icons-container">
@@ -154,7 +154,7 @@ function ContactUs() {
                                     autoComplete="off"
                                     required></textarea>
 
-                                <button className='send-button'>SEND</button>
+                                <button className="send-button" role="button"><span class="text">Send</span></button>
                             </form>
                         </div>
                     </div>

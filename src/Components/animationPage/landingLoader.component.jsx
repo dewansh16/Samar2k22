@@ -1,7 +1,7 @@
 import React from 'react'
 
-import SamarImg from "../../Assets/Images/samar21 (1).png";
-import LogoImg from "../../Assets/Images/SAMAR Llogo-01.png";
+import SamarImg from "../../Assets/Images/SAMAR.png";
+import LogoImg from "../../Assets/Images/SAMAR OG LOGO WHITE.png";
 import './landingLoader.component.css'
 
 function LandingLoader({isLoading}) {
@@ -29,11 +29,7 @@ function LandingLoader({isLoading}) {
                 />
             </div>
             <div style={{position:'absolute',top:'80%'}}>
-                <img
-                    style={{height:'auto',width:'24vh'}}
-                    alt="samarImage"
-                    src={SamarImg}
-                />
+                <h1 style={{fontFamily:'GOTSamar',fontSize:'4rem'}}>SAMAR</h1>
             </div>
         </div>
     )

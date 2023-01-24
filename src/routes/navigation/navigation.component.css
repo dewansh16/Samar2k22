@@ -13,12 +13,12 @@
 
 .head-logo-img {
   /* width: 2rem; */
-  height: 6rem;
+  height: 4rem;
   /* width: 2rem; */
   min-height: 40px;
   display: none;
   margin-left: 4%;
-  margin-top: 1%;
+  margin-top: 20%;
 }
 
 @media screen and (max-width: 1000px) {

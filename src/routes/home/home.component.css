@@ -63,7 +63,7 @@
 /* container */
 .home-container {
   text-align: center;
-  padding: 5rem 1rem 0;
+  padding: 6rem 1rem 0;
 }
 
 /* page banner */
@@ -290,7 +290,7 @@ iframe {
   .home-container {
     display: flex;
     text-align: center;
-    padding: 5rem 1rem 0;
+    padding: 6rem 1rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;

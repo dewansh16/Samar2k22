@@ -17,12 +17,12 @@ function Gallery() {
           </div>
           <div className="gallery-find-us">
             <div className="gallery-heading">
-              <h3>2021</h3>
+              <h3>2019</h3>
             </div>
           </div>
             {/* Images */}
             <div className="gallery-images section1">
-              <div className="gallery-flip">
+              {/* <div className="gallery-flip">
                 <div className="gallery-front img1">
                   <h1 className="gallery-text-shadow">BASKTE BALL</h1>
                 </div>
@@ -30,6 +30,19 @@ function Gallery() {
                   <h2>Bosket Ball</h2>
                   <p>
                     A competition of basket ball on sports day..
+                  </p>
+                </div>
+              </div> */}
+
+              
+              <div className="gallery-flip">
+                <div className="gallery-front img3">
+                  <h1 className="gallery-text-shadow">BORN FIRE</h1>
+                </div>
+                <div className="gallery-back">
+                  <h2>Born Fire</h2>
+                  <p>
+                    An event hosted on winter by shaurya..
                   </p>
                 </div>
               </div>
@@ -46,12 +59,13 @@ function Gallery() {
                 </div>
               </div>
 
+
               <div className="gallery-flip">
-                <div className="gallery-front img3">
-                  <h1 className="gallery-text-shadow">BORN FIRE</h1>
+                <div className="gallery-front img18">
+                  <h1 className="gallery-text-shadow">SUN BURN</h1>
                 </div>
                 <div className="gallery-back">
-                  <h2>Born Fire</h2>
+                  <h2>Sun Burn</h2>
                   <p>
                     An event hosted on winter by shaurya..
                   </p>
@@ -60,15 +74,42 @@ function Gallery() {
 
               <div className="gallery-flip">
                 <div className="gallery-front img4">
-                  <h1 className="gallery-text-shadow">DJ NIGHT</h1>
+                  <h1 className="gallery-text-shadow">BASKET BALL</h1>
                 </div>
                 <div className="gallery-back">
-                  <h2>DJ NIGHT 2022</h2>
+                  <h2>BASKET BALL 2022</h2>
                   <p>
                     A DJ event organized by Shourya at exam time to relief stress..
                   </p>
                 </div>
               </div>
+
+              <div className="gallery-flip">
+                <div className="gallery-front img19">
+                  <h1 className="gallery-text-shadow">BIKE STUNT</h1>
+                </div>
+                <div className="gallery-back">
+                  <h2>Bike Stunt</h2>
+                  <p>
+                    An event hosted on winter by shaurya..
+                  </p>
+                </div>
+              </div>
+              
+
+              {/* <div className="gallery-flip">
+                <div className="gallery-front img20">
+                  <h1 className="gallery-text-shadow">Football</h1>
+                </div>
+                <div className="gallery-back">
+                  <h2>Football</h2>
+                  <p>
+                    An event hosted on winter by shaurya..
+                  </p>
+                </div>
+              </div> */}
+
+              
 
               <div className="gallery-flip">
                 <div className="gallery-front img5">
@@ -89,7 +130,7 @@ function Gallery() {
         <div className="gallery-section2">
           <div className="gallery-find-us">
             <div className="gallery-heading">
-              <h3>2021</h3>
+              <h3>2022</h3>
             </div>
           </div>
             {/* Images */}

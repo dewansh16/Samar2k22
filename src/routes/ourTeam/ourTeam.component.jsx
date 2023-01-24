@@ -10,7 +10,7 @@ import abhiyash from "../../Assets/Images/team/SC/AbhiyashRajSona.jpg";
 import dhara from "../../Assets/Images/team/SC/DharaPainkra.jpg";
 import divyansh from "../../Assets/Images/team/SC/DivyanshDiwan.jpg";
 import mohit from "../../Assets/Images/team/SC/MohitPrasad.jpg"
-import navdeep from "../../Assets/Images/team/SC/NavdeepVaishnaw.jpeg"
+import navdeep from "../../Assets/Images/team/SC/NavdeepVaishnaw_.jpeg"
 import nitin from "../../Assets/Images/team/SC/nitinkumarverma.jpg"
 import vijay from "../../Assets/Images/team/SC/VijayKoshale.jpg"
 import palak from "../../Assets/Images/team/SC/PalakAgrawal.jpg"

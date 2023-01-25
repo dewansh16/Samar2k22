@@ -212,46 +212,94 @@ function Home() {
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
-                    <h1>CRICKET</h1>
+                    <h1>PICKLE BALL</h1>
                   </div>
                   <div className="carousal-page-content">
                     <div className="carousal_tabledata">
                       <div className="carousal-page-content-gameName">
-                        <table className="cricket">
-                          {/* <tr>
-                                                <th>Date</th>
-                                                <th>Fixture</th>
-                                                <th>Time</th>
-                                            </tr>
-                                             */}
+                    
+                        <center>
+                          <h1>26 jan----COURT 2</h1>
+                        </center>
+                        <table>
                           <tr>
-                            <td>27 Jan</td>
-                            <td className="mid_row1">
-                              Meta+BM vs Civil+CSE+MCA
+                            <td>Doubles</td>
+                            <td className="mid_row">
+                              Chem+Elex+PHD vs Biotech+IT
                             </td>
-                            <td>14:30-16:00</td>
+                            <td>18:00</td>
                           </tr>
                           <tr>
-                            <td>28 Jan</td>
-                            <td className="mid_row1">TBD Vs TBD</td>
-                            <td>12:30-14:00</td>
+                            <td>Doubles</td>
+                            <td className="mid_row">
+                            Chem+Elex+PHD vs Biotech+IT
+                            </td>
+                            <td>18:20</td>
                           </tr>
                           <tr>
-                            <td>28 Jan</td>
-                            <td className="mid_row1">TBD Vs TBD</td>
-                            <td>14:30-16:00</td>
-                          </tr>
-                          <tr>
-                            <td>29 Jan</td>
-                            <td className="mid_row1">TBD Vs TBD</td>
-                            <td>12:30-14:00</td>
+                            <td>Singles</td>
+                            <td className="mid_row">
+                            Chem+Elex+PHD vs Biotech+IT
+                            </td>
+                            <td>18:40</td>
                           </tr>
                         </table>
                       </div>
                     </div>
                   </div>
                 </div>
-             </SwiperSlide>
+              </SwiperSlide>
+
+              {/* new code */}
+              
+              <SwiperSlide>
+                <div className="carousal-page">
+                  <div className="carousal-page-heading">
+                    <h1>PICKLE BALL</h1>
+                  </div>
+                  <div className="carousal-page-content">
+                    <div className="carousal_tabledata">
+                      <div className="carousal-page-content-gameName">
+                        <table className="pickle">
+                          {/* <tr>
+                                                <th>Date</th>
+                                                <th>Fixture</th>
+                                                <th>Time</th>
+                                            </tr>
+                                             */}
+                                             <tr>
+                          <td>26 Jan</td>
+                            <td className="mid_row1">Civil+Cse+Mca vs Mining+Archi+Msc+Mtech</td>
+                            <td>19:00-20:00</td>
+                          </tr>
+                          <tr>
+                            <td>27 Jan</td>
+                            <td className="mid_row1">Meta+Bmd vs Chem+Elex+Phd</td>
+                            <td>18:00-19:00</td>
+                          </tr>
+                          <tr>
+                            <td>27 Jan</td>
+                            <td className="mid_row1">
+                            Mech+Elex vs Mining+Archi+Msc+Mtech
+                            </td>
+                            <td>19:00-20:00</td>
+                          </tr>
+                          <tr>
+                            <td>28 Jan</td>
+                            <td className="mid_row1">Meta+Bmd vs Biotech+IT</td>
+                            <td>18:00-19:00</td>
+                          </tr>
+                          <tr>
+                            <td>28 Jan</td>
+                            <td className="mid_row1">Mech+Elex vs Civil+Cse+Mca</td>
+                            <td>19:00-20:00</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -739,18 +787,18 @@ function Home() {
 
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">Mech+ECE vs Chem+EE</td>
-                            <td>13:00</td>
+                            <td className="mid_row">Mech+ECE vs Mining+Archi+MSE+MTECH</td>
+                            <td>18:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
-                            <td className="mid_row">Mech +ECE vs Chem + EE</td>
-                            <td>14:00</td>
+                            <td className="mid_row">Mech+ECE vs Mining+Archi+MSE+MTECH</td>
+                            <td>18:20</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">Chem + EE vs BT + IT</td>
-                            <td>15:00</td>
+                            <td className="mid_row">Mech+ECE vs Mining+Archi+MSE+MTECH</td>
+                            <td>18:40</td>
                           </tr>
                         </table>
                        
@@ -769,29 +817,29 @@ function Home() {
                       <div className="carousal-page-content-gameName">
                     
                         <center>
-                          <h1>26 jan----COURT 2</h1>
+                          <h1>26 jan----COURT 1</h1>
                         </center>
                         <table>
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                              Min+Arch+MSC+Mtech vs Meta + BM
+                              Chem+Elex+PHD vs Meta+BM
                             </td>
-                            <td>13:00</td>
+                            <td>19:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
                             <td className="mid_row">
-                              Min+Arch+MSc+Mtech vs Meta + BM
+                            Chem+Elex+PHD vs Meta+BM
                             </td>
-                            <td>14:00</td>
+                            <td>19:20</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                              Min+Arch+MSc+MTech vs Civil+CSE+MCA
+                            Chem+Elex+PHD vs Meta+BM
                             </td>
-                            <td>15:00</td>
+                            <td>19:40</td>
                           </tr>
                         </table>
                       </div>
@@ -799,6 +847,9 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* new code */}
+              
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -807,78 +858,46 @@ function Home() {
                   <div className="carousal-page-content">
                     <div className="carousal_tabledata">
                       <div className="carousal-page-content-gameName">
-                      <center>
-                            <h1>27 jan----COURT 1</h1>
-                          </center>
-                        <table>
+                        <table className="cricket">
                           {/* <tr>
                                                 <th>Date</th>
                                                 <th>Fixture</th>
                                                 <th>Time</th>
                                             </tr>
                                              */}
-                         
                           <tr>
-                            <td>Doubles</td>
-                            <td className="mid_row">BM+ IT vs Chem+EE</td>
-                            <td>13:00</td>
+                            <td>27 Jan</td>
+                            <td className="mid_row1">Civil+Cse+Mca vs Mining+Archi+Msc+Mtech</td>
+                            <td>18:00-19:00</td>
                           </tr>
                           <tr>
-                            <td>Singles</td>
-                            <td className="mid_row">Mech +ECE vs BT + IT</td>
-                            <td>14:00</td>
-                          </tr>
-                          <tr>
-                            <td>Doubles</td>
-                            <td className="mid_row">Mech + ECE vs BM + IT</td>
-                            <td>15:00</td>
-                          </tr>
-                          </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="carousal-page">
-                  <div className="carousal-page-heading">
-                    <h1>BADMINTON</h1>
-                  </div>
-                  <div className="carousal-page-content">
-                    <div className="carousal_tabledata">
-                      <div className="carousal-page-content-gameName">
-                          <center>
-                            <h1>27 jan----COURT 2</h1>
-                          </center>
-                          <table>
-                          <tr>
-                            <td>Doubles</td>
-                            <td className="mid_row">
-                            Min+Arch+MSc+Mtech Vs Meta+CE+CSE+
-                              MCA
+                            <td>27 Jan</td>
+                            <td className="mid_row1">
+                            Meta+Bmd vs Biotech+IT
+
                             </td>
-                            <td>13:00</td>
+                            <td>19:00-20:00</td>
                           </tr>
                           <tr>
-                            <td>Singles</td>
-                            <td className="mid_row">
-                              Meta+BME Vs Meta+CE+CSE+MCA
-                            </td>
-                            <td>14:00</td>
+                            <td>28 Jan</td>
+                            <td className="mid_row1">Mech+Elex vs Civil+Cse+Mca</td>
+                            <td>18:00-19:00</td>
                           </tr>
                           <tr>
-                            <td>Doubles</td>
-                            <td className="mid_row">
-                              Meta+BME Vs CE+CSE+MCA
-                            </td>
-                            <td>15:00</td>
+                            <td>28 Jan</td>
+                            <td className="mid_row1">Chem+Elex+Phd vs Biotech+IT</td>
+                            <td>19:00-20:00</td>
                           </tr>
+                          
                         </table>
                       </div>
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
+
+
+
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1569,18 +1588,18 @@ function Home() {
 
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">Mech+Arch+MCA vs ECE+ChE+EE</td>
+                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+Chem+EE</td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
-                            <td className="mid_row">Mech+Arch+MCA vs ECE+ChE+EE</td>
-                            <td>17:00</td>
+                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+Chem+EE</td>
+                            <td>16:20</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">Mech+Arch+MCA vs Meta+Min+CSE+BME</td>
-                            <td>18:00</td>
+                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+Chem+EE</td>
+                            <td>16:40</td>
                           </tr>
                         </table>
                        
@@ -1598,30 +1617,41 @@ function Home() {
                     <div className="carousal_tabledata">
                       <div className="carousal-page-content-gameName">
                     
-                        <center>
-                          <h1>26 jan----COURT 2</h1>
-                        </center>
                         <table>
                           <tr>
-                            <td>Singles</td>
+                            <td>26 JAN</td>
                             <td className="mid_row">
-                            Meta+Min+CSE+BME Vs IT+BT+CE+M.Tech
-                            </td>
-                            <td>16:00</td>
-                          </tr>
-                          <tr>
-                            <td>Doubles</td>
-                            <td className="mid_row">
-                            Meta+Min+CSE+BME Vs IT+BT+CE+M.Tech
+                            Mech+Archi+Mca vs Meta+Mining+Cse+Bme
                             </td>
                             <td>17:00</td>
                           </tr>
                           <tr>
-                            <td>Singles</td>
+                            <td>27 JAN</td>
                             <td className="mid_row">
-                            ECE+ChE+EE Vs IT+BT+CE+M.Tech
+                            Elex+Chem+EE vs Mech+Archi+Mca
                             </td>
-                            <td>18:00</td>
+                            <td>16:00</td>
+                          </tr>
+                          <tr>
+                            <td>27 JAN</td>
+                            <td className="mid_row">
+                            Meta+Mining+Cse+Bme Vs IT+BT+Civil+MTech
+                            </td>
+                            <td>17:00</td>
+                          </tr>
+                          <tr>
+                            <td>28 JAN</td>
+                            <td className="mid_row">
+                            Mech+Archi+Mca Vs IT+BT+CE+M.Tech
+                            </td>
+                            <td>16:00</td>
+                          </tr>
+                          <tr>
+                            <td>28 JAN</td>
+                            <td className="mid_row">
+                            ECE+ChE+EE Vs Meta+Mining+Cse+Bme
+                            </td>
+                            <td>17:00</td>
                           </tr>
                         </table>
                       </div>
@@ -1632,13 +1662,13 @@ function Home() {
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
-                    <h1>BADMINTON</h1>
+                    <h1>PICKLE BALL</h1>
                   </div>
                   <div className="carousal-page-content">
                     <div className="carousal_tabledata">
                       <div className="carousal-page-content-gameName">
                       <center>
-                            <h1>27 jan----COURT 1</h1>
+                            <h1>26 jan----COURT 2</h1>
                           </center>
                         <table>
                           {/* <tr>
@@ -1654,14 +1684,14 @@ function Home() {
                             <td>16:00</td>
                           </tr>
                           <tr>
-                            <td>Singles</td>
-                            <td className="mid_row">Mech+Arch+MCA Vs IT+BT+CE+M.Tech</td>
-                            <td>17:00</td>
+                            <td>Doubles</td>
+                            <td className="mid_row">Mech+Arch+MCA Vs Meta+Min+CSE+BME</td>
+                            <td>16:20</td>
                           </tr>
                           <tr>
-                            <td>Doubles</td>
-                            <td className="mid_row">Mech+Arch+MCA Vs IT+BT+CE+M.Tech</td>
-                            <td>18:00</td>
+                            <td>Singles</td>
+                            <td className="mid_row">Mech+Arch+MCA Vs Meta+Min+CSE+BME</td>
+                            <td>16:40</td>
                           </tr>
                           </table>
                       </div>
@@ -1672,35 +1702,47 @@ function Home() {
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
-                    <h1>BADMINTON</h1>
+                    <h1>PICKLE BALL</h1>
                   </div>
                   <div className="carousal-page-content">
                     <div className="carousal_tabledata">
                       <div className="carousal-page-content-gameName">
-                          <center>
-                            <h1>27 jan----COURT 2</h1>
-                          </center>
-                          <table>
+                    
+                        <table>
                           <tr>
-                            <td>Doubles</td>
+                            <td>26 JAN</td>
                             <td className="mid_row">
-                            ECE+ChE+EE Vs IT+BT+CE+M.Tech
-                            </td>
-                            <td>16:00</td>
-                          </tr>
-                          <tr>
-                            <td>Singles</td>
-                            <td className="mid_row">
-                            ECE+ChE+EE Vs Meta+Min+CSE+BME
+                            Elex+Chem+EE vs IT+Biotech+Civil+Mtech
                             </td>
                             <td>17:00</td>
                           </tr>
                           <tr>
-                            <td>Doubles</td>
+                            <td>27 JAN</td>
                             <td className="mid_row">
-                            ECE+ChE+EE Vs Meta+Min+CSE+BME
+                            Meta+Mining+Cse+Bme Vs IT+BT+Civil+MTech
                             </td>
-                            <td>18:00</td>
+                            <td>16:00</td>
+                          </tr>
+                          <tr>
+                            <td>27 JAN</td>
+                            <td className="mid_row">
+                            Elex+Chem+EE Vs Mech+Archi+Mca
+                            </td>
+                            <td>17:00</td>
+                          </tr>
+                          <tr>
+                            <td>28 JAN</td>
+                            <td className="mid_row">
+                            Elex+Chem+EE Vs Meta+Mining+Cse+Bme
+                            </td>
+                            <td>16:00</td>
+                          </tr>
+                          <tr>
+                            <td>28 JAN</td>
+                            <td className="mid_row">
+                            Mech+Archi+Mca Vs IT+BT+Civil+MTech
+                            </td>
+                            <td>17:00</td>
                           </tr>
                         </table>
                       </div>
@@ -1869,7 +1911,7 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
-
+              
             </Swiper>
           )}
         </div>

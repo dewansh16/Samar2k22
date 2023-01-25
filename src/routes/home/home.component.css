@@ -93,7 +93,7 @@
   height: 100%;
   position: absolute;
   background-size: cover;
-  background-position: 70% 35%;
+  background-position: 60% 35%;
   background-repeat: no-repeat;
   animation: image_blur 3s 1;
   animation-fill-mode: forwards;

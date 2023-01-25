@@ -111,7 +111,7 @@
   }
   100% {
     opacity: 0.5;
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(3px);
   }
 }
 

@@ -40,11 +40,13 @@ import rahul from "../../Assets/Images/team/SPONS/RahulKumar.jpg"
 import ajay from "../../Assets/Images/team/DOC/AjayKumarSahu.jpg"
 import dev from "../../Assets/Images/team/DOC/dev.jpeg"
 import prachi from "../../Assets/Images/team/DOC/prachi.jpeg"
+import rudronil from "../../Assets/Images/team/DOC/RudronilDey.jpeg"
 import ainmesh from "../../Assets/Images/team/DISP/AnimeshJhadi.jpg"
-import ankit from "../../Assets/Images/team/DISP/Ankitjhariya.jpg"
+import ankit from "../../Assets/Images/team/DISP/AnkitJhariya.jpg"
 import arun from "../../Assets/Images/team/DISP/ArunDhebana.jpg"
 import devesh from "../../Assets/Images/team/DISP/DeveshKumar.jpg"
-import pradhav from "../../Assets/Images/team/DISP/Pradhavgautam.jpg"
+import pradhav from "../../Assets/Images/team/DISP/PradhavGautam.jpg"
+
 
 
 import "./ourTeam.component.css";
@@ -357,6 +359,13 @@ function ourTeam() {
 
       <p className="overall" id="spons">DOCUMENTATION</p>
       <main class="page-content">
+      <div class="card" style={{ backgroundImage: `url(${rudronil})` }}>
+          <div class="content">
+            <h2 class="title">RUDRONIL DEY</h2>
+            <p class="copy">4th year</p>
+
+          </div>
+        </div>
         <div class="card" style={{ backgroundImage: `url(${ajay})` }}>
           <div class="content">
             <h2 class="title">AJAY KUMAR SAHU</h2>

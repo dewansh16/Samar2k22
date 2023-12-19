@@ -74,7 +74,7 @@
   position: relative;
   text-align: center;
   border: 1px solid white;
-  /* border-radius: 8rem; */
+  border-radius: 2rem;
 }
 
 /* .page-banner img {
@@ -97,24 +97,24 @@
   background-repeat: no-repeat;
   animation: image_blur 3s 1;
   animation-fill-mode: forwards;
-  /* border-radius: 8rem; */
+  border-radius: 2rem;
 }
 
 @keyframes image_blur {
   0% {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     -webkit-filter: blur(0px);
     filter:brightness(0.1);
   }
   40% {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     -webkit-filter: blur(0px);
-    filter:brightness(0.25);
+    filter:brightness(0.1.5);
   }
   100% {
-    opacity: 0.5;
+    /* opacity: 0.5; */
     -webkit-filter: blur(3px);
-    filter:brightness(0.4);
+    filter:brightness(0.2);
   }
 }
 

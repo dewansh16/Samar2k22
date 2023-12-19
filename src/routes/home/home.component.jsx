@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
 import pikachu from "../../Assets/Images/pikachu.jpg";
+import luffy from "../../Assets/Images/luffy.jpg";
 import Merchandise from "../../Assets/Images/merch.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
 import "./home.component.css";
@@ -60,18 +61,19 @@ function Home() {
 
   useEffect(()=>{
     const interval = setInterval(()=> getTime("January, 18, 2024"),1000)
-    return clearInterval(interval)
+    return () => clearInterval(interval)
   },[])
 
   return (
     <>
      {/* <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]"> */}
-     <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${animeBasketballImage})` }}>
+     <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
       <div className="home-container">
         {/* Landing Page banner */}
         <div className="page-banner">
           <div
+            // style={{ backgroundImage: `url(${animeBasketballImage})` }}
             style={{ backgroundImage: `url(${pikachu})` }}
             className="page-banner-bg"
           />

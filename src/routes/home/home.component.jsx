@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import darkBasketBallImg from "../../Assets/Images/dark_basketBallImg.png";
-import Merchandise from "../../Assets/Images/Merchandise.jpg";
+import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
+import pikachu from "../../Assets/Images/pikachu.jpg";
+import Merchandise from "../../Assets/Images/merch.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
 import "./home.component.css";
 
@@ -25,34 +26,53 @@ function Home() {
   const [seconds, setSeconds] = useState(date.getSeconds());
   const [minutes, setMinutes] = useState(date.getMinutes());
   const [hours, setHours] = useState(date.getHours());
-  const [currDate, setDate] = useState(date.getDate());
+  const [days, setDays] = useState(date.getDate());
   const [toggle, setToggle] = useState(true);
   const toggleClass = " transform translate-x-5";
 
-  setInterval(() => {
-    const countDownDate = new Date("Jan 26, 2023").getTime();
+  // setInterval(() => {
+  //   const countDownDate = new Date("January, 18, 2024").getTime();
 
-    const currTime = new Date().getTime();
-    var timeleft = countDownDate - currTime;
-    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
-      (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    setSeconds(seconds);
-    setMinutes(minutes);
-    setHours(hours);
-    setDate(days);
-  }, 1000);
+  //   const currTime = new Date().getTime();
+  //   var timeleft = countDownDate - currTime;
+  //   var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  //   var hours = Math.floor(
+  //     (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //   );
+  //   var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  //   var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+  //   setSeconds(seconds);
+  //   setMinutes(minutes);
+  //   setHours(hours);
+  //   setDate(days);
+  // }, 1000);
+
+
+  // timer function 
+
+  const getTime = () =>{
+    const timeleft = Date.parse("January, 18, 2024") - Date.now()
+    setDays( Math.floor(timeleft / (1000 * 60 * 60 * 24)))
+    setHours( Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
+    setMinutes( Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60)))
+    setSeconds( Math.floor((timeleft % (1000 * 60)) / 1000))
+  }
+
+  useEffect(()=>{
+    const interval = setInterval(()=> getTime("January, 18, 2024"),1000)
+    return clearInterval(interval)
+  },[])
 
   return (
     <>
+     {/* <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]"> */}
+     <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${animeBasketballImage})` }}>
+      <div class="block md:hidden lg:block">
       <div className="home-container">
         {/* Landing Page banner */}
         <div className="page-banner">
           <div
-            style={{ backgroundImage: `url(${darkBasketBallImg})` }}
+            style={{ backgroundImage: `url(${pikachu})` }}
             className="page-banner-bg"
           />
           {toggle ? (
@@ -68,6 +88,8 @@ function Home() {
                 disableOnInteraction: false,
               }}
               pagination={{ clickable: true }}>
+
+                {/* football  */}
             <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -159,6 +181,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* cricket  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -209,6 +233,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* basketball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -303,6 +329,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* volleyball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -396,6 +424,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* handball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -489,6 +519,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kabaddi  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -582,6 +614,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kho kho  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -675,6 +709,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* badminton  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -759,6 +795,7 @@ function Home() {
 
               {/* new code */}
               
+              {/* badminton  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -806,7 +843,7 @@ function Home() {
               </SwiperSlide>
 
 
-
+              {/* table tennis  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -984,6 +1021,7 @@ function Home() {
               }}
               pagination={{ clickable: true }}>
               
+              {/* cricket  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1067,6 +1105,8 @@ function Home() {
                   </div>
                 </div>
              </SwiperSlide>
+
+             {/* basketball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1150,6 +1190,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* volleyball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1232,6 +1274,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* handball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1314,6 +1358,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kabaddi  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1395,6 +1441,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kho kho  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1476,6 +1524,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* badminton  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1568,6 +1618,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* table tennis  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1734,6 +1786,7 @@ function Home() {
           )}
         </div>
 
+        {/* toggle  */}
         <div className="home-toggle-button">
           <div className="flex justify-center items-center ">
             {/*   Switch Container */}
@@ -1759,24 +1812,27 @@ function Home() {
         </div>
 
         {/* Samar Countdown */}
+
         <div className="count-down flex">
           <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
+            <p className="count-div-item-1">{days<10 ? "0"+days : days}</p>
             <p>Days</p>
-          </div>
+          </div>  
           <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
+            <p className="count-div-item-1">{hours<10 ? "0"+hours : hours}</p>
             <p>Hours</p>
-          </div>
+          </div>  
           <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
+            <p className="count-div-item-1">{minutes<10 ? "0"+minutes : minutes}</p>
             <p>Minutes</p>
-          </div>
+          </div>  
           <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
+            <p className="count-div-item-1">{seconds<10 ? "0"+seconds : seconds}</p>
             <p>Seconds</p>
-          </div>
-        </div>
+          </div>  
+        </div>  
+
+
 
         {/* Samar Youtube */}
         <div className="embadded-video">
@@ -1784,6 +1840,7 @@ function Home() {
             <iframe
               width="560"
               height="315"
+              // latest link paste here 
               src="https://www.youtube.com/embed/UBsDzaOYTTo"
               title="YouTube video player"
               frameborder="0"
@@ -1794,7 +1851,7 @@ function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/HLTSKIlLRPE"
+              src="https://www.youtube.com/embed/s7DYDkOeaKg"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1804,7 +1861,7 @@ function Home() {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/s7DYDkOeaKg"
+              src="https://www.youtube.com/embed/HLTSKIlLRPE"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1861,6 +1918,8 @@ function Home() {
                 </Link>
             </div> */}
       </div>
+
+      {/* gallery event and merchandise  */}
       <div className="cards-container">
         <div className="gallery-container">
           <Link
@@ -1904,6 +1963,9 @@ function Home() {
             </div>
           </Link>
         </div>
+      </div>
+
+      </div>
       </div>
     </>
   );

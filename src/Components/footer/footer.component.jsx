@@ -32,6 +32,8 @@ function Footer() {
                         <div className="footer-logo-container">
                             <a
                                 href="https://www.instagram.com/samar.nitrr/?hl=en"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <InstaLogo />
                             </a>
@@ -39,6 +41,8 @@ function Footer() {
                         <div className="footer-logo-container">
                             <a
                                 href="https://www.facebook.com/shaurya.nitrr/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <FacebookLogo/>
                             </a>
@@ -46,6 +50,8 @@ function Footer() {
                         <div className="footer-logo-container">
                             <a
                                 href="https://www.linkedin.com/in/team-shaurya-nit-raipur-096122120/?originalSubdomain=in"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <LinkedInLogo/>
                             </a>
@@ -110,7 +116,7 @@ function Footer() {
                 </div>
             </div>
             <div className="copyright-div">
-                <p>Copyright © 2022 Shaurya. All Rights Reserved.</p>
+                <p>Copyright © 2023 Shaurya. All Rights Reserved.</p>
             </div>
         </div>
     )

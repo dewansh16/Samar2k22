@@ -1,12 +1,22 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
-import samarPoster from "../../Assets/Images/samar-poster.jpg";
+import dateImg from "../../Assets/Images/date2-removebg-preview.png";
+import samarPoster from "../../Assets/Images/BG-fotor-2023122115516.png";
 import bikeStunt from "../../Assets/Images/gallery-images/BIKE Stunt.jpeg";
 import pikachu from "../../Assets/Images/pikachu.jpg";
 import luffy from "../../Assets/Images/luffy.jpg";
 import Merchandise from "../../Assets/Images/merch.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
+import team1 from "../../Assets/Images/playing-teams/team1.jpg";
+import team2 from "../../Assets/Images/playing-teams/team2.jpg";
+import team3 from "../../Assets/Images/playing-teams/team3.jpg";
+import team4 from "../../Assets/Images/playing-teams/team4.jpg";
+import team5 from "../../Assets/Images/playing-teams/team5.jpg";
+import team6 from "../../Assets/Images/playing-teams/team6.jpg";
+import team7 from "../../Assets/Images/playing-teams/team7.jpg";
+import team8 from "../../Assets/Images/playing-teams/team8.jpg";
+import team9 from "../../Assets/Images/playing-teams/team9.jpg";
 import "./home.component.css";
 
 import { NavbarContext } from "../../contexts/navbar.context";
@@ -111,8 +121,16 @@ function Home() {
 
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
-      
+        
+        <div className="date-img">
+          <div
+            style={{ backgroundImage: `url(${dateImg})` }}
+            className="date-img-bg"
+          />
+          </div>
       <div className="home-container">
+        {/* date  */}
+
 
         {/* first image  */}
          <div className="page-first-image">
@@ -1844,7 +1862,7 @@ function Home() {
             </Swiper>
           )}
         </div>
-
+                                             
         {/* toggle  */}
         <div className="home-toggle-button">
           <div className="flex justify-center items-center ">
@@ -1872,6 +1890,10 @@ function Home() {
 
         {/* Samar Countdown */}
 
+          <div className="count-down"> 
+           <h1><u><p>COUNTDOWN</p></u></h1> 
+          </div>
+
         <div className="count-down flex">
           <div className="count-down-div">
             <p className="count-div-item-1">{days<10 ? "0"+days : days}</p>
@@ -1891,6 +1913,188 @@ function Home() {
           </div>  
         </div>  
 
+        
+        {/* teams  */}
+
+          <div className="count-down"> 
+           <h1><u><p>OUR TEAMS</p></u></h1> 
+          </div>
+          
+          {/* line 1  */}
+          <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team1})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team2})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team3})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           {/* line 2  */}
+          <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team4})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team5})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team6})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           {/* line 3  */}
+          <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team7})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team8})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team9})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+         {/* gallery event and merchandise  */}
+      <div className="cards-container">
+        <div className="gallery-container">
+          <Link
+            onClick={() => {
+              setActiveLink(4);
+            }}
+            to="/gallery">
+            <div className="heading-container-cards">
+              <h2>Gallery</h2>
+            </div>
+            <div className="image-container">
+              <img src={Djnight}></img>
+            </div>
+          </Link>
+        </div>
+        <div className="gallery-container">
+          <Link
+            onClick={() => {
+              setActiveLink(1);
+            }}
+            to="/event">
+            <div className="heading-container-cards">
+              <h2>Events</h2>
+            </div>
+            <div className="image-container">
+              <img src={bikeStunt}></img>
+            </div>
+          </Link>
+        </div>
+        <div className="merchandise-conatiner">
+          <Link
+            onClick={() => {
+              setActiveLink(8);
+            }}
+            to="/merchandise">
+            <div className="heading-container-cards">
+              <h2>Merchandise</h2>
+            </div>
+            <div className="image-container">
+              <img src={Merchandise}></img>
+            </div>
+          </Link>
+        </div>
+      </div>
 
 
         {/* Samar Youtube */}
@@ -1978,52 +2182,7 @@ function Home() {
             </div> */}
       </div>
 
-      {/* gallery event and merchandise  */}
-      <div className="cards-container">
-        <div className="gallery-container">
-          <Link
-            onClick={() => {
-              setActiveLink(4);
-            }}
-            to="/gallery">
-            <div className="heading-container-cards">
-              <h2>Gallery</h2>
-            </div>
-            <div className="image-container">
-              <img src={Djnight}></img>
-            </div>
-          </Link>
-        </div>
-        <div className="gallery-container">
-          <Link
-            onClick={() => {
-              setActiveLink(1);
-            }}
-            to="/event">
-            <div className="heading-container-cards">
-              <h2>Events</h2>
-            </div>
-            <div className="image-container">
-              <img src={bikeStunt}></img>
-            </div>
-          </Link>
-        </div>
-        <div className="merchandise-conatiner">
-          <Link
-            onClick={() => {
-              setActiveLink(8);
-            }}
-            to="/merchandise">
-            <div className="heading-container-cards">
-              <h2>Merchandise</h2>
-            </div>
-            <div className="image-container">
-              <img src={Merchandise}></img>
-            </div>
-          </Link>
-        </div>
-      </div>
-
+     
       </div>
       </div>
     </>

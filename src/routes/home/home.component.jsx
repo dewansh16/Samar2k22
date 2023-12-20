@@ -66,9 +66,49 @@ function Home() {
     return () => clearInterval(interval)
   },[])
 
+
+  const [scrollbar, setScrollbar] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const progressHeight = (window.pageYOffset / totalHeight) * 100;
+      setScrollbar(progressHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollbarStyleRight = {
+    width: '10px',
+    height: `${scrollbar}%`,
+    position: 'fixed',
+    top: 0,
+    right: 0,
+    background: 'linear-gradient(to top, #ec9921, #dc5a42)',
+    zIndex: 9999,
+  };
+  const scrollbarStyleLeft = {
+    width: '10px',
+    height: `${scrollbar}%`,
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    background: 'linear-gradient(to top, #ec9921, #dc5a42)',
+    zIndex: 9999,
+  };
+
+  
   return (
     <>
-     {/* <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]"> */}
+
+     <div id="progressBar" style={scrollbarStyleRight}></div>
+     <div id="progressBar" style={scrollbarStyleLeft}></div>
+
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
       
@@ -77,7 +117,6 @@ function Home() {
         {/* first image  */}
          <div className="page-first-image">
           <div
-            // style={{ backgroundImage: `url(${animeBasketballImage})` }}
             style={{ backgroundImage: `url(${samarPoster})` }}
             className="page-first-image-bg"
           />
@@ -92,7 +131,6 @@ function Home() {
         {/* Landing Page banner */}
         <div className="page-banner">
           <div
-            // style={{ backgroundImage: `url(${animeBasketballImage})` }}
             style={{ backgroundImage: `url(${pikachu})` }}
             className="page-banner-bg"
           />

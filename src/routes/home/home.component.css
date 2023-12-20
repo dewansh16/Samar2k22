@@ -516,3 +516,56 @@ iframe {
 .toggle-text-div {
   margin: 0px 10px;
 }
+
+/* --------vertical progress bar--------  */
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
+ #scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}  
+
+#progressBar::before,
+#progressBar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #ec9921, #dc5a42);
+  /* animation: animate1 1s linear infinite; */
+}
+
+#progressBar::before {
+  filter: blur(10px);
+}
+
+#progressBar::after {
+  filter: blur(30px);
+}
+
+/* #progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #ec9921, #dc5a42);
+  animation: animate1 5s linear infinite;
+} */
+
+/* @keyframes animate1 {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+  }
+} */

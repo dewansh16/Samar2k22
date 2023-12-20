@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
+import samarPoster from "../../Assets/Images/samar-poster.jpg";
 import bikeStunt from "../../Assets/Images/gallery-images/BIKE Stunt.jpeg";
 import pikachu from "../../Assets/Images/pikachu.jpg";
 import luffy from "../../Assets/Images/luffy.jpg";
@@ -70,7 +71,24 @@ function Home() {
      {/* <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]"> */}
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
+      
       <div className="home-container">
+
+        {/* first image  */}
+         <div className="page-first-image">
+          <div
+            // style={{ backgroundImage: `url(${animeBasketballImage})` }}
+            style={{ backgroundImage: `url(${samarPoster})` }}
+            className="page-first-image-bg"
+          />
+          </div>
+          <br /><br /><br />
+
+          <div className="count-down"> 
+           <h1><u><p>SCHEDULE</p></u></h1> 
+          </div>
+
+
         {/* Landing Page banner */}
         <div className="page-banner">
           <div

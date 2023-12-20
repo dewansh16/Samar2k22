@@ -58,7 +58,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="footer-links-div">
+                {/* <div className="footer-links-div">
                     <div className="footer-links-inner-div">
                         <NavLink
                             onClick={() => {
@@ -85,7 +85,7 @@ function Footer() {
                             About Us
                         </NavLink>
                     </div>
-                </div>
+                </div> */}
                 <div className="footer-social-links-div">
                     <div className="footer-social-links-inner-div">
                         <div className="footer-contact-links">
@@ -109,7 +109,7 @@ function Footer() {
                                 <LocationPinLogo/>
                             </div>
                             <div className="contact-links-text-div" >
-                                <p>Raipur, Chhattisgarh, India</p>
+                                <p>NIT Raipur, Chhattisgarh, India</p>
                             </div>
                         </div>
                     </div>

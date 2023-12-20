@@ -95,6 +95,7 @@ const RightNav = ({ open,setOpen,hover }) => {
           <img src={logo1} className="mar_image" alt="Samar logo" />
           </NavLink>
         </NavLinkDiv>
+
         <NavLinkDiv  >
           <NavLink
             style={activeLink === 1 ? { color: "red" } : {}}
@@ -133,6 +134,7 @@ const RightNav = ({ open,setOpen,hover }) => {
             Sponsors
           </NavLink>
         </NavLinkDiv>
+
         <NavLinkDiv >
           <NavLink
             style={activeLink === 4 ? { color: "red" } : {}}
@@ -145,6 +147,7 @@ const RightNav = ({ open,setOpen,hover }) => {
             Gallery
           </NavLink>
         </NavLinkDiv>
+
         <NavLinkDiv>
           <NavLink
             style={activeLink === 5 ? { color: "red" } : {}}
@@ -157,7 +160,8 @@ const RightNav = ({ open,setOpen,hover }) => {
            Team
           </NavLink>
         </NavLinkDiv>
-        <NavLinkDiv>
+
+        {/* <NavLinkDiv>
           <NavLink
             style={activeLink === 6 ? { color: "red" } : {}}
             to="/contactUs"
@@ -168,7 +172,8 @@ const RightNav = ({ open,setOpen,hover }) => {
           >
             Contact
           </NavLink>
-        </NavLinkDiv>
+        </NavLinkDiv> */}
+
         <NavLinkDiv>
           <NavLink
             style={activeLink === 7 ? { color: "red" } : {}}
@@ -181,6 +186,7 @@ const RightNav = ({ open,setOpen,hover }) => {
             About
           </NavLink>
         </NavLinkDiv>
+
         <NavLinkDiv>
           <NavLink
             style={activeLink === 8 ? { color: "red" } : {}}
@@ -193,6 +199,7 @@ const RightNav = ({ open,setOpen,hover }) => {
             Merchandise
           </NavLink>
         </NavLinkDiv>
+        
       </NavLinkContainer>
     </Ul>
   );

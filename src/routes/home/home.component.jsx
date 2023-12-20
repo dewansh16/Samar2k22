@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
+import bikeStunt from "../../Assets/Images/gallery-images/BIKE Stunt.jpeg";
 import pikachu from "../../Assets/Images/pikachu.jpg";
 import luffy from "../../Assets/Images/luffy.jpg";
 import Merchandise from "../../Assets/Images/merch.jpg";
@@ -1937,24 +1938,24 @@ function Home() {
             </div>
           </Link>
         </div>
-        <div className="events-container">
+        <div className="gallery-container">
           <Link
             onClick={() => {
-              setActiveLink(4);
+              setActiveLink(1);
             }}
-            to="/events">
+            to="/event">
             <div className="heading-container-cards">
               <h2>Events</h2>
             </div>
             <div className="image-container">
-              <img src="https://live.staticflickr.com/65535/52395134666_1d271cefb3_h.jpg"></img>
+              <img src={bikeStunt}></img>
             </div>
           </Link>
         </div>
         <div className="merchandise-conatiner">
           <Link
             onClick={() => {
-              setActiveLink(4);
+              setActiveLink(8);
             }}
             to="/merchandise">
             <div className="heading-container-cards">

@@ -115,30 +115,80 @@ function Home() {
     zIndex: 9999,
   };
 
+  // smoke animation 
+
+  // const root = document.querySelector(".container");
+  // let x=0;
+  // let y=0;
+
+  // window.addEventListener("mousemove",(e) =>{
+  //   x=e.clientX;
+  //   y=e.clientY;
+  // })
+
+  // let draw = () => {
+  //   const smoke = document.createElement("div");
+  //   smoke.classList.add("smoke");
+  //   smoke.style.left = x + "px";
+  //   smoke.style.top = y + "px";
+
+  //   root.appendChild(smoke);
+    
+  //   smoke.animate(
+  //     [
+  //       {
+  //         backgroundColor: "magenta",
+  //         filter: "blur(10px)",
+  //       },
+  //       {
+  //         backgroundColor: "yellow",
+  //         filter: "blur(20px)",
+  //         top: y- (Math.random() * 400) + "px",
+  //         opacity: 0,
+  //         scale: 3,
+  //       }
+  //     ],
+  //     {
+  //       duration: 500
+  //     }
+  //   );
+
+  //   setTimeout(() => {
+  //     smoke.remove()
+  //   }, 500);
+  //   requestAnimationFrame(draw);
+  // }
+  // requestAnimationFrame(draw);
   
   return (
     <>
-
+    {/* <div className="fireAnimation">
      <div id="progressBar" style={scrollbarStyleRight}></div>
-     <div id="progressBar" style={scrollbarStyleLeft}></div>
+     <div id="progressBar" style={scrollbarStyleLeft}></div> */}
 
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
         
-        {/* date  */}
-        <div data-aos="fade-right" data-aos-duration="2000" className="date-img">
-          <div
-            style={{ backgroundImage: `url(${dateImg})` }}
-            className="date-img-bg"
-          />
-        </div>
+
 
 
       <div className="home-container">
 
+        {/* date  */}
+        <div data-aos="fade-right" data-aos-duration="2000" className="date-img">
+          {/* <div
+            style={{ backgroundImage: `url(${dateImg})` }}
+            className="date-img-bg"
+          /> */}
+          <div data-aos="fade-down" className="heading-samar2k23"> 
+          {/* <div data-aos="fade-down" className="count-down heading-samar2k23">  */}
+              SAMAR 2K23
+          </div>
+        </div>
+
 
         {/* first image  */}
-         <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image">
+         <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image heading-first-image">
           <div
             style={{ backgroundImage: `url(${samarPoster})` }}
             // style={{ backgroundImage: `url(${firstImg})` }}
@@ -148,15 +198,18 @@ function Home() {
         
           {/* date  */}
           <div data-aos="fade-left" data-aos-duration="2000" className="date-img">
-            <div
+            {/* <div
               style={{ backgroundImage: `url(${dateImg})` }}
               className="date-img-bg"
-            />
+            /> */}
+            <div data-aos="fade-down" className="heading-presentsYou"> 
+              PRESENTS YOU
+            </div>
           </div>
         
 
-          <div data-aos="fade-down" className="count-down"> 
-           <h1><u><p>SCHEDULE</p></u></h1> 
+          <div data-aos="fade-down" className="heading-schedule"> 
+              SCHEDULE
           </div>
 
 
@@ -1909,8 +1962,8 @@ function Home() {
 
         {/* Samar Countdown */}
 
-          <div data-aos="fade-down" className="count-down"> 
-           <h1><u><p>COUNTDOWN</p></u></h1> 
+          <div data-aos="fade-down" className="heading-countdown"> 
+           COUNTDOWN
           </div>
 
         <div className="count-down flex">
@@ -1937,8 +1990,8 @@ function Home() {
         
         {/* teams  */}
 
-          <div data-aos="fade-down" className="count-down"> 
-           <h1><u><p>OUR TEAMS</p></u></h1> 
+          <div data-aos="fade-down" className="heading-our-team"> 
+                OUR TEAMS
           </div>
           
           {/* line 1  */}
@@ -2206,6 +2259,7 @@ function Home() {
      
       </div>
       </div>
+      {/* </div> */}
     </>
   );
 }

@@ -8,6 +8,7 @@ import pikachu from "../../Assets/Images/pikachu.jpg";
 import luffy from "../../Assets/Images/luffy.jpg";
 import Merchandise from "../../Assets/Images/merch.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
+
 import team1 from "../../Assets/Images/playing-teams/team1.jpg";
 import team2 from "../../Assets/Images/playing-teams/team2.jpg";
 import team3 from "../../Assets/Images/playing-teams/team3.jpg";
@@ -17,6 +18,7 @@ import team6 from "../../Assets/Images/playing-teams/team6.jpg";
 import team7 from "../../Assets/Images/playing-teams/team7.jpg";
 import team8 from "../../Assets/Images/playing-teams/team8.jpg";
 import team9 from "../../Assets/Images/playing-teams/team9.jpg";
+
 import "./home.component.css";
 
 import { NavbarContext } from "../../contexts/navbar.context";
@@ -122,14 +124,16 @@ function Home() {
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
         
-        <div className="date-img">
+          {/* date  */}
+        <div data-aos="fade-right" data-aos-duration="2000" className="date-img">
           <div
             style={{ backgroundImage: `url(${dateImg})` }}
             className="date-img-bg"
           />
           </div>
-      <div className="home-container">
-        {/* date  */}
+
+
+      <div data-aos="fade-left" data-aos-duration="2000" className="home-container">
 
 
         {/* first image  */}
@@ -141,13 +145,18 @@ function Home() {
           </div>
           <br /><br /><br />
 
-          <div className="count-down"> 
+          <div data-aos="fade-down" className="count-down"> 
            <h1><u><p>SCHEDULE</p></u></h1> 
           </div>
 
 
         {/* Landing Page banner */}
-        <div className="page-banner">
+        <div data-aos="zoom-in"
+        data-aos-duration="2000"
+        className="page-banner">
+        {/* <div data-aos="fade-up"
+        data-aos-duration="2000"
+        className="page-banner"> */}
           <div
             style={{ backgroundImage: `url(${pikachu})` }}
             className="page-banner-bg"
@@ -1864,7 +1873,7 @@ function Home() {
         </div>
                                              
         {/* toggle  */}
-        <div className="home-toggle-button">
+        <div data-aos="fade-up" className="home-toggle-button">
           <div className="flex justify-center items-center ">
             {/*   Switch Container */}
             <div className="toggle-text-div">
@@ -1890,24 +1899,24 @@ function Home() {
 
         {/* Samar Countdown */}
 
-          <div className="count-down"> 
+          <div data-aos="fade-down" className="count-down"> 
            <h1><u><p>COUNTDOWN</p></u></h1> 
           </div>
 
         <div className="count-down flex">
-          <div className="count-down-div">
+          <div data-aos="fade-right" className="count-down-div">
             <p className="count-div-item-1">{days<10 ? "0"+days : days}</p>
             <p>Days</p>
           </div>  
-          <div className="count-down-div">
+          <div data-aos="fade-right" className="count-down-div">
             <p className="count-div-item-1">{hours<10 ? "0"+hours : hours}</p>
             <p>Hours</p>
           </div>  
-          <div className="count-down-div">
+          <div data-aos="fade-left" className="count-down-div">
             <p className="count-div-item-1">{minutes<10 ? "0"+minutes : minutes}</p>
             <p>Minutes</p>
           </div>  
-          <div className="count-down-div">
+          <div data-aos="fade-left" className="count-down-div">
             <p className="count-div-item-1">{seconds<10 ? "0"+seconds : seconds}</p>
             <p>Seconds</p>
           </div>  
@@ -1916,13 +1925,13 @@ function Home() {
         
         {/* teams  */}
 
-          <div className="count-down"> 
+          <div data-aos="fade-down" className="count-down"> 
            <h1><u><p>OUR TEAMS</p></u></h1> 
           </div>
           
           {/* line 1  */}
           <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="fade-right" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -1935,7 +1944,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div  data-aos="zoom-in" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -1948,7 +1957,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="fade-left" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -1965,7 +1974,7 @@ function Home() {
 
            {/* line 2  */}
           <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="fade-right" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -1978,7 +1987,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div  data-aos="zoom-in" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -1991,7 +2000,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="fade-left" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -2009,7 +2018,7 @@ function Home() {
 
            {/* line 3  */}
           <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="fade-right" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -2022,7 +2031,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="zoom-in" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -2035,7 +2044,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+            <div data-aos="fade-left" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
               <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
               <div class="bg-white h-full flex-1 bg-opacity-50"></div>
               <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
@@ -2051,7 +2060,7 @@ function Home() {
           </div>
 
          {/* gallery event and merchandise  */}
-      <div className="cards-container">
+      <div data-aos="fade-down" className="cards-container">
         <div className="gallery-container">
           <Link
             onClick={() => {
@@ -2098,7 +2107,7 @@ function Home() {
 
 
         {/* Samar Youtube */}
-        <div className="embadded-video">
+        <div data-aos="fade-down" className="embadded-video">
           <div className="video-2">
             <iframe
               width="560"

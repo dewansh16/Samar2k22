@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
+import firstImg from "../../Assets/Images/first-image.png";
 import dateImg from "../../Assets/Images/date2-removebg-preview.png";
 import samarPoster from "../../Assets/Images/BG-fotor-2023122115516.png";
 import bikeStunt from "../../Assets/Images/gallery-images/BIKE Stunt.jpeg";
@@ -124,26 +125,35 @@ function Home() {
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
         
-          {/* date  */}
+        {/* date  */}
         <div data-aos="fade-right" data-aos-duration="2000" className="date-img">
           <div
             style={{ backgroundImage: `url(${dateImg})` }}
             className="date-img-bg"
           />
-          </div>
+        </div>
 
 
-      <div data-aos="fade-left" data-aos-duration="2000" className="home-container">
+      <div className="home-container">
 
 
         {/* first image  */}
-         <div className="page-first-image">
+         <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image">
           <div
             style={{ backgroundImage: `url(${samarPoster})` }}
+            // style={{ backgroundImage: `url(${firstImg})` }}
             className="page-first-image-bg"
           />
           </div>
-          <br /><br /><br />
+        
+          {/* date  */}
+          <div data-aos="fade-left" data-aos-duration="2000" className="date-img">
+            <div
+              style={{ backgroundImage: `url(${dateImg})` }}
+              className="date-img-bg"
+            />
+          </div>
+        
 
           <div data-aos="fade-down" className="count-down"> 
            <h1><u><p>SCHEDULE</p></u></h1> 
@@ -1908,11 +1918,13 @@ function Home() {
             <p className="count-div-item-1">{days<10 ? "0"+days : days}</p>
             <p>Days</p>
           </div>  
-          <div data-aos="fade-right" className="count-down-div">
+          {/* <div data-aos="fade-right" className="count-down-div"> */}
+          <div data-aos="zoom-out" className="count-down-div">
             <p className="count-div-item-1">{hours<10 ? "0"+hours : hours}</p>
             <p>Hours</p>
           </div>  
-          <div data-aos="fade-left" className="count-down-div">
+          {/* <div data-aos="fade-left" className="count-down-div"> */}
+          <div data-aos="zoom-out" className="count-down-div">
             <p className="count-div-item-1">{minutes<10 ? "0"+minutes : minutes}</p>
             <p>Minutes</p>
           </div>  
@@ -2060,8 +2072,8 @@ function Home() {
           </div>
 
          {/* gallery event and merchandise  */}
-      <div data-aos="fade-down" className="cards-container">
-        <div className="gallery-container">
+      <div className="cards-container">
+        <div data-aos="fade-down" className="gallery-container">
           <Link
             onClick={() => {
               setActiveLink(4);
@@ -2075,7 +2087,7 @@ function Home() {
             </div>
           </Link>
         </div>
-        <div className="gallery-container">
+        <div data-aos="fade-down" className="gallery-container">
           <Link
             onClick={() => {
               setActiveLink(1);
@@ -2089,7 +2101,7 @@ function Home() {
             </div>
           </Link>
         </div>
-        <div className="merchandise-conatiner">
+        <div data-aos="fade-down" className="merchandise-conatiner">
           <Link
             onClick={() => {
               setActiveLink(8);
@@ -2107,8 +2119,8 @@ function Home() {
 
 
         {/* Samar Youtube */}
-        <div data-aos="fade-down" className="embadded-video">
-          <div className="video-2">
+        <div className="embadded-video">
+          <div data-aos="fade-down" className="video-2">
             <iframe
               width="560"
               height="315"
@@ -2119,7 +2131,7 @@ function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className="video-1">
+          <div data-aos="fade-down" className="video-1">
             <iframe
               width="560"
               height="315"
@@ -2129,7 +2141,7 @@ function Home() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className="video-3">
+          <div data-aos="fade-down" className="video-3">
             <iframe
               width="560"
               height="315"

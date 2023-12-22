@@ -166,30 +166,40 @@ function Home() {
      <div id="progressBar" style={scrollbarStyleRight}></div>
      <div id="progressBar" style={scrollbarStyleLeft}></div> */}
 
+
+
+
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
       <div class="block md:hidden lg:block">
         
+     {/* <div className="glow-animation-out">
+          <span>26</span>
+     </div> */}
 
 
 
       <div className="home-container">
 
-        {/* date  */}
-        <div data-aos="fade-right" data-aos-duration="2000" className="date-img">
-          {/* <div
-            style={{ backgroundImage: `url(${dateImg})` }}
-            className="date-img-bg"
-          /> */}
-          <div data-aos="fade-down" className="heading-samar2k23"> 
-          {/* <div data-aos="fade-down" className="count-down heading-samar2k23">  */}
-              SAMAR 2K23
-          </div>
-        </div>
 
+        {/* date  */}
+        <br />
+        <div data-aos="fade-down" data-aos-duration="2000" className="date-img">
+              <div
+                style={{ backgroundImage: `url(${dateImg})` }}
+                className="date-img-bg heading-samar2k23-image"
+              />  
+          {/* <div data-aos="fade-down" className="heading-samar2k23">
+             <div className="text-container">
+             <p>SAMAR 2K23</p>
+             <h3><span><p className="gradientText">SAMAR 2K23</p></span></h3>
+             </div>
+            </div> */}
+        </div> 
+        <br />
 
         {/* first image  */}
          <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image heading-first-image">
-          <div
+         <div
             style={{ backgroundImage: `url(${samarPoster})` }}
             // style={{ backgroundImage: `url(${firstImg})` }}
             className="page-first-image-bg"
@@ -203,7 +213,9 @@ function Home() {
               className="date-img-bg"
             /> */}
             <div data-aos="fade-down" className="heading-presentsYou"> 
-              PRESENTS YOU
+              <div className="text-container">
+                 <p className="text"> PRESENTS YOU. . . </p> 
+              </div>
             </div>
           </div>
         

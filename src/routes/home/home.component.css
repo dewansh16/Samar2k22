@@ -152,30 +152,40 @@
 }
 
 
-/* heading margins */
+/* heading properties */
+
 .heading-samar2k23{
-  font-family: 'moteratoo';
-  color: #ffffff;
-  margin: 0 0 1rem 0;
-  font-size: 60px;
+  font-family: 'Gang of Three';
+  /* color: #c34f4e; */
+  /* color: #fe7903; */
+  /* color: #ed6a4a; */
+  color: #ec9921;
+  /* color: white; */
+  /* text-shadow: 0 0 10px white ; */
+  /* text-shadow: 0 0 10px #fe7903 ; */
+               /* 0 0 20px white; */
+  margin: 2% auto 1%;
+  font-size: 150px;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
 }
+
 .heading-first-image{
   margin: auto;
 }
 .heading-presentsYou{
-  font-family: 'moteratoo';
-  margin:  1rem 0 1rem 0;
-  font-size: 60px;
+  font-family: 'Gang of Three';
+  margin: 2% auto 1%;
+  font-size: 50px;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  color: #ffffff;
+  /* color: #fe7903; */
+  color: white;
 }
 .heading-schedule{
-  font-family: 'moteratoo';
+  font-family: 'Gang of Three';
   margin: 10rem 0 2rem 0;
   font-size: 40px;
   justify-content: center;
@@ -184,7 +194,7 @@
   color: #ffffff;
 }
 .heading-countdown{
-  font-family: 'moteratoo';
+  font-family: 'Gang of Three';
   margin: 12rem 0 6rem 0;
   font-size: 40px;
   justify-content: center;
@@ -193,7 +203,7 @@
   color: #ffffff;
 }
 .heading-our-team{
-  font-family: 'moteratoo';
+  font-family: 'Gang of Three';
   margin: 10rem 0 1rem 0;
   font-size: 40px;
   justify-content: center;
@@ -205,13 +215,14 @@
 /* date image  */
 
 .date-img {
-  width:45%;
+  width:45vw;
   /* width: 55rem; */
   /* height: 6rem; */
-  height: 70px;
+  height: 5vw;
   position: relative;
   text-align: center;
-  margin: 2% auto 1%;
+  /* margin: 2% auto 1%; */
+  margin: auto;
 }
 
 
@@ -385,10 +396,10 @@ iframe {
 .heading-container-cards h2 {
   font-family: 'moteratoo';
   color: #ffffff;
+  font-size: 1.5em;
   font-weight: 1000;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5em;
   align-item: center;
   justify-item: center;
 }
@@ -700,4 +711,161 @@ iframe {
   height: 20px;
   width: 20px;
   position: absolute;
+} */
+
+
+/* text animation  */
+
+.text-container{
+  display: inline-block;
+}
+.text {
+  /* font-size: 5em; */
+  /* letter-spacing: 10px; */
+  /* font-family: monospace; */
+  /* border-right: 5px solid; */
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation-delay: 3s; */
+  animation: 
+          /* typing 2s steps(10), */
+          typing 3s,
+          cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+  50% {border-color: transparent;}
+}
+@keyframes typing{
+  from {width: 0}
+}
+
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    animation-delay: 6s;
+  }
+} */
+/* @keyframes delay {
+} */
+
+
+/* glow effect  */
+
+h3 {
+  letter-spacing: 5px;
+  cursor: pointer;
+  /* background-image: linear-gradient(135, #ff00d2, #fed90f, #00a2ff, #09f1b8,#ff00d2, #fed90f, #00a2ff, #09f1b8);
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  -webkit-background-clip: text;
+  color: transparent; */
+}
+h3 span {
+  transition: 0.5s;
+}
+h3:hover span
+{ 
+  font-size: larger;
+  /* letter-spacing: 7px; */
+  color: #fe7903;
+   text-shadow: 0 0 10px white,
+               0 0 20px white,
+               0 0 40px white,
+               0 0 80px white;
+   /* text-shadow: 0 0 10px rgb(187, 24, 24),
+               0 0 20px rgb(187, 24, 24),
+               0 0 40px rgb(187, 24, 24),
+               0 0 80px rgb(187, 24, 24); */
+  /* text-shadow: 0 0 10px #00b3ff,
+               0 0 20px #00b3ff,
+               0 0 40px #00b3ff,
+               0 0 80px #00b3ff; */
+               /* 0 0 120px white,
+               0 0 160px white; */
+}
+/* h3:hover span:nth-child(1)
+{
+  margin-right: 40px;
+}
+h3:hover span:nth-child(2)
+{
+  margin-left: 10px;
+} */
+
+/* .gradientText{
+   background-image: linear-gradient(135, #ff00d2, #fed90f, #00a2ff, #09f1b8,#ff00d2, #fed90f, #00a2ff, #09f1b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  animation: gradient 8s ease-in-out infinite;
+}
+
+
+@keyframes gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+} */
+
+/* glow animation  */
+
+.glow-animation-out{
+  width: 300px;
+  height: 300px;
+  background: #1e1e1e;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.glow-animation-out span {
+  color: white;
+  z-index: 1;
+}
+/* .glow-animation-in {
+  color: white;
+  z-index: 1;
+} */
+.glow-animation-out::before{
+    content: '';
+    position: absolute;
+    width: 70vw;
+    height: 30vw;
+    left: -6vw;
+    top: 1000px;
+    background: linear-gradient(#00e5ff, #b400fb);
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.glow-animation-out::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #29303f;
+    border-radius: 18px;
+}
+
+@font-face {
+  font-family: 'Gang of Three';
+  src: url('../../fonts/go3v2.ttf') format('truetype');
+}
+
+/* @font-face {
+  font-family: ;
+  src: url();
 } */

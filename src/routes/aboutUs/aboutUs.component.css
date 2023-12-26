@@ -108,8 +108,12 @@
 {
   .aboutus_data1{
     width: 100%;
-    padding: 10px 30px 30px 10px ;
-    margin: 2px 5px 2px 5px;
+    padding: 10px 10px 30px 10px ;
+    margin: 2px 2px 2px 5px;
+    text-align: center;
+  }
+  .aboutus_data1 p{
+    padding: 20px;
   }
 
 }
@@ -120,35 +124,6 @@
     height: 300px;
   }
 }
-
-
-
-/* ================cursor ============== */
-
-#cursor {
-  position: absolute;
-  background:url("../../Assets/Images/cursor.png");
-  /* background-color: red; */
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: background-color 0.2s ease;
-  z-index: 99;
-}
-
-#cursor-border {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  /* background:url("../../Assets/Images/cursor.png"); */
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.2s ease-out;
-}
-
 
 
 

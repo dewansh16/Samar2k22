@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './contactUs.css';
-
 import { ReactComponent as FacebookLogo } from '../../Assets/Icons/facebook.svg';
 import { ReactComponent as LinkedInLogo } from '../../Assets/Icons/linkedIn.svg';
 import { ReactComponent as YoutubeLogo } from '../../Assets/Icons/youtube.svg';

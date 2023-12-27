@@ -6,7 +6,8 @@ import dateImg from "../../Assets/Images/date2-removebg-preview.png";
 import samarPoster from "../../Assets/Images/BG-fotor-2023122115516.png";
 import bikeStunt from "../../Assets/Images/gallery-images/BIKE Stunt.jpeg";
 import pikachu from "../../Assets/Images/pikachu.jpg";
-import luffy from "../../Assets/Images/luffy.jpg";
+import luffy from "../../Assets/assets/herobg.png";
+// import luffy from "../../Assets/Images/luffy.jpg";
 import Merchandise from "../../Assets/Images/merch.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
 
@@ -19,6 +20,11 @@ import team6 from "../../Assets/Images/playing-teams/team6.jpg";
 import team7 from "../../Assets/Images/playing-teams/team7.jpg";
 import team8 from "../../Assets/Images/playing-teams/team8.jpg";
 import team9 from "../../Assets/Images/playing-teams/team9.jpg";
+
+import { motion } from "framer-motion";
+
+import { styles } from "../../styles";
+// import { ComputersCanvas } from "./canvas";
 
 import "./home.component.css";
 
@@ -170,55 +176,118 @@ function Home() {
 
 
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
-      <div class="block md:hidden lg:block">
+      <div class="block lg:block">
         
      {/* <div className="glow-animation-out">
           <span>26</span>
      </div> */}
 
 
+      <section className={`relative w-full h-screen mx-auto`}>
+      <div
+        className={`absolute inset-0 top-[40px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      >
+        <div className='flex flex-col justify-center items-center mt-5'>
+          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        </div>
+
+        {/* <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I develop 3D visuals, user <br className='sm:block hidden' />
+            interfaces and web applications
+          </p>
+        </div>
+      </div> */}
+
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Team <span className='text-[#915EFF]'>SHAURYA</span>
+          </h1>
+          <p className={`${styles.heroSubText} text-white-100`}>
+            &nbsp; Brings You ... 
+          </p>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+          <span className='text-[#915EFF]'>SAMAR</span>
+          <p className={`${styles.heroSubText} text-white-100`}>
+            &nbsp; The sports fest 
+          </p>
+          {/* <br /> <br /> */}
+          <p className={`${styles.heroSubText} mt-6 text-white-100`}>
+            &nbsp; <span className='text-[#915EFF]'>Get Ready </span>to enter <br />
+            &nbsp; the world of <span className='text-[#915EFF]'>ANIME</span>
+          </p>
+          </h1>
+        </div>
+      </div>
+
+      {/* <ComputersCanvas /> */}
+
+      <div className='absolute xs:bottom-[150px] bottom-[150px] w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'> */}
+        <a href='#about'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+
 
       <div className="home-container">
 
 
-        {/* date  */}
+        {/* date 
         <br />
         <div data-aos="fade-down" data-aos-duration="2000" className="date-img">
               <div
                 style={{ backgroundImage: `url(${dateImg})` }}
                 className="date-img-bg heading-samar2k23-image"
               />  
-          {/* <div data-aos="fade-down" className="heading-samar2k23">
+          <div data-aos="fade-down" className="heading-samar2k23">
              <div className="text-container">
              <p>SAMAR 2K23</p>
              <h3><span><p className="gradientText">SAMAR 2K23</p></span></h3>
              </div>
-            </div> */}
+            </div>
         </div> 
         <br />
 
-        {/* first image  */}
+        first image 
          <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image heading-first-image">
          <div
             style={{ backgroundImage: `url(${samarPoster})` }}
-            // style={{ backgroundImage: `url(${firstImg})` }}
+            style={{ backgroundImage: `url(${firstImg})` }}
             className="page-first-image-bg"
           />
           </div>
         
-          {/* date  */}
+          date 
           <div data-aos="fade-left" data-aos-duration="2000" className="date-img">
-            {/* <div
+            <div
               style={{ backgroundImage: `url(${dateImg})` }}
               className="date-img-bg"
-            /> */}
+            />
             <div data-aos="fade-down" className="heading-presentsYou"> 
               <div className="text-container">
                  <p className="text"> PRESENTS YOU. . . </p> 
               </div>
             </div>
           </div>
-        
+         */}
 
           <div data-aos="fade-down" className="heading-schedule"> 
               SCHEDULE

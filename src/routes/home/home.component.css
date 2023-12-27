@@ -155,20 +155,46 @@
 /* heading properties */
 
 .heading-samar2k23{
-  font-family: 'Gang of Three';
   /* color: #c34f4e; */
   /* color: #fe7903; */
   /* color: #ed6a4a; */
-  color: #ec9921;
+  /* color: #ec9921; */
   /* color: white; */
   /* text-shadow: 0 0 10px white ; */
   /* text-shadow: 0 0 10px #fe7903 ; */
-               /* 0 0 20px white; */
-  margin: 2% auto 1%;
-  font-size: 150px;
+  /* 0 0 20px white; */
+  /* margin: 2% auto 2%; */
+  font-family: 'Gang of Three';
+  font-size: 6vw;
   justify-content: center;
   align-items: center;
   font-weight: bolder;
+}
+
+.samar-animation {
+  text-align: center;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+    );
+    
+  
+  /* margin: 0 0 2rem 0; */
+  margin: 0 0 0 0;
+  background-size: 200%;
+  /* font-family: "Gang of Three"; */
+  font-weight: bolder;
+  /* font-size: 80px; */
+  color: transparent;
+  background-clip: text;
+  animation: animation3 1.7s linear infinite;
+}
+
+@keyframes animation3 {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .heading-first-image{
@@ -201,6 +227,12 @@
   align-items: center;
   font-weight: bolder;
   color: #ffffff;
+}
+.heading-DaysHMS{
+  font-family: 'Gang of Three';
+}
+.heading-time{
+  font-family: 'Gang of Three';
 }
 .heading-our-team{
   font-family: 'Gang of Three';
@@ -754,38 +786,33 @@ iframe {
 
 /* glow effect  */
 
-h3 {
+/* h3 {
   letter-spacing: 5px;
   cursor: pointer;
+    background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+    ) */
   /* background-image: linear-gradient(135, #ff00d2, #fed90f, #00a2ff, #09f1b8,#ff00d2, #fed90f, #00a2ff, #09f1b8);
   background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
   -webkit-background-clip: text;
   color: transparent; */
-}
+/* }
 h3 span {
   transition: 0.5s;
-}
-h3:hover span
-{ 
+} */
+/* h3:hover span
+{  
+  z-index: 1; 
   font-size: larger;
-  /* letter-spacing: 7px; */
   color: #fe7903;
    text-shadow: 0 0 10px white,
                0 0 20px white,
                0 0 40px white,
                0 0 80px white;
-   /* text-shadow: 0 0 10px rgb(187, 24, 24),
-               0 0 20px rgb(187, 24, 24),
-               0 0 40px rgb(187, 24, 24),
-               0 0 80px rgb(187, 24, 24); */
-  /* text-shadow: 0 0 10px #00b3ff,
-               0 0 20px #00b3ff,
-               0 0 40px #00b3ff,
-               0 0 80px #00b3ff; */
-               /* 0 0 120px white,
-               0 0 160px white; */
 }
-/* h3:hover span:nth-child(1)
+h3:hover span:nth-child(1)
 {
   margin-right: 40px;
 }
@@ -817,7 +844,7 @@ h3:hover span:nth-child(2)
 
 /* glow animation  */
 
-.glow-animation-out{
+/* .glow-animation-out{
   width: 300px;
   height: 300px;
   background: #1e1e1e;
@@ -829,12 +856,12 @@ h3:hover span:nth-child(2)
 .glow-animation-out span {
   color: white;
   z-index: 1;
-}
+} */
 /* .glow-animation-in {
   color: white;
   z-index: 1;
 } */
-.glow-animation-out::before{
+/* .glow-animation-out::before{
     content: '';
     position: absolute;
     width: 70vw;
@@ -858,7 +885,7 @@ h3:hover span:nth-child(2)
     inset: 5px;
     background: #29303f;
     border-radius: 18px;
-}
+} */
 
 @font-face {
   font-family: 'Gang of Three';

@@ -26,6 +26,8 @@ import { motion } from "framer-motion";
 import { styles } from "../../styles";
 // import { ComputersCanvas } from "./canvas";
 
+
+
 import "./home.component.css";
 
 import { NavbarContext } from "../../contexts/navbar.context";
@@ -168,9 +170,9 @@ function Home() {
   
   return (
     <>
-    {/* <div className="fireAnimation">
+    {/* <div className="fireAnimation"> */}
      <div id="progressBar" style={scrollbarStyleRight}></div>
-     <div id="progressBar" style={scrollbarStyleLeft}></div> */}
+     <div id="progressBar" style={scrollbarStyleLeft}></div>
 
 
 
@@ -270,6 +272,10 @@ function Home() {
          <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image heading-first-image">
          <div
             style={{ backgroundImage: `url(${samarPoster})` }}
+            className="page-first-image-bg"
+          >1</div>
+         <div
+            style={{ backgroundImage: `url(${samarPoster})` }}
             style={{ backgroundImage: `url(${firstImg})` }}
             className="page-first-image-bg"
           />
@@ -283,11 +289,11 @@ function Home() {
             />
             <div data-aos="fade-down" className="heading-presentsYou"> 
               <div className="text-container">
-                 <p className="text"> PRESENTS YOU. . . </p> 
+                 <p className="text"> PRESENTS YOU . . . </p> 
               </div>
             </div>
-          </div>
-         */}
+          </div> */}
+        
 
           <div data-aos="fade-down" className="heading-schedule"> 
               SCHEDULE
@@ -2049,22 +2055,22 @@ function Home() {
 
         <div className="count-down flex">
           <div data-aos="fade-right" className="count-down-div">
-            <p className="count-div-item-1">{days<10 ? "0"+days : days}</p>
-            <p>Days</p>
+            <p className="count-div-item-1 heading-time">{days<10 ? "0"+days : days}</p>
+            <p className="heading-DaysHMS">Days</p>
           </div>  
           {/* <div data-aos="fade-right" className="count-down-div"> */}
           <div data-aos="zoom-out" className="count-down-div">
-            <p className="count-div-item-1">{hours<10 ? "0"+hours : hours}</p>
-            <p>Hours</p>
+            <p className="count-div-item-1 heading-time">{hours<10 ? "0"+hours : hours}</p>
+            <p className="heading-DaysHMS">Hours</p>
           </div>  
           {/* <div data-aos="fade-left" className="count-down-div"> */}
           <div data-aos="zoom-out" className="count-down-div">
-            <p className="count-div-item-1">{minutes<10 ? "0"+minutes : minutes}</p>
-            <p>Minutes</p>
+            <p className="count-div-item-1 heading-time">{minutes<10 ? "0"+minutes : minutes}</p>
+            <p className="heading-DaysHMS">Minutes</p>
           </div>  
           <div data-aos="fade-left" className="count-down-div">
-            <p className="count-div-item-1">{seconds<10 ? "0"+seconds : seconds}</p>
-            <p>Seconds</p>
+            <p className="count-div-item-1 heading-time">{seconds<10 ? "0"+seconds : seconds}</p>
+            <p className="heading-DaysHMS">Seconds</p>
           </div>  
         </div>  
 

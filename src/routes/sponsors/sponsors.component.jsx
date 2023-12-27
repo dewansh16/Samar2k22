@@ -10,7 +10,7 @@ function Sponsors() {
   return (
     <div class="spo-wrapper">
       <div class="spo-sidebar">
-        <h3 id="sponsor-wrap" className="spo-heading1"><span id="sponsor-text">SPONSORS</span></h3>
+        <h3 id="sponsor-wrap" className="spo-heading1"><span id="sponsor-text">Sponsors</span></h3>
         <p  className="spo-text" >
           SAMAR success is unmatched and this
           is due to renowned partners we have who have always provided

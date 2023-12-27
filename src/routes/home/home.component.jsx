@@ -1,8 +1,33 @@
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import darkBasketBallImg from "../../Assets/Images/dark_basketBallImg.png";
-import Merchandise from "../../Assets/Images/Merchandise.jpg";
+import animeBasketballImage from "../../Assets/Images/anime-basketball-image.jpg";
+import firstImg from "../../Assets/Images/first-image.png";
+import dateImg from "../../Assets/Images/date2-removebg-preview.png";
+import samarPoster from "../../Assets/Images/BG-fotor-2023122115516.png";
+import bikeStunt from "../../Assets/Images/gallery-images/BIKE Stunt.jpeg";
+import pikachu from "../../Assets/Images/pikachu.jpg";
+import luffy from "../../Assets/assets/herobg.png";
+// import luffy from "../../Assets/Images/luffy.jpg";
+import Merchandise from "../../Assets/Images/merch.jpg";
 import Djnight from "../../Assets/Images/gallery-images/DJ Night.webp";
+
+import team1 from "../../Assets/Images/playing-teams/team1.jpg";
+import team2 from "../../Assets/Images/playing-teams/team2.jpg";
+import team3 from "../../Assets/Images/playing-teams/team3.jpg";
+import team4 from "../../Assets/Images/playing-teams/team4.jpg";
+import team5 from "../../Assets/Images/playing-teams/team5.jpg";
+import team6 from "../../Assets/Images/playing-teams/team6.jpg";
+import team7 from "../../Assets/Images/playing-teams/team7.jpg";
+import team8 from "../../Assets/Images/playing-teams/team8.jpg";
+import team9 from "../../Assets/Images/playing-teams/team9.jpg";
+
+import { motion } from "framer-motion";
+
+import { styles } from "../../styles";
+import { ComputersCanvas } from "./canvas";
+
+
+
 import "./home.component.css";
 
 import { NavbarContext } from "../../contexts/navbar.context";
@@ -25,34 +50,265 @@ function Home() {
   const [seconds, setSeconds] = useState(date.getSeconds());
   const [minutes, setMinutes] = useState(date.getMinutes());
   const [hours, setHours] = useState(date.getHours());
-  const [currDate, setDate] = useState(date.getDate());
+  const [days, setDays] = useState(date.getDate());
   const [toggle, setToggle] = useState(true);
   const toggleClass = " transform translate-x-5";
 
-  setInterval(() => {
-    const countDownDate = new Date("Jan 26, 2023").getTime();
+  // setInterval(() => {
+  //   const countDownDate = new Date("January, 18, 2024").getTime();
 
-    const currTime = new Date().getTime();
-    var timeleft = countDownDate - currTime;
-    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    var hours = Math.floor(
-      (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    setSeconds(seconds);
-    setMinutes(minutes);
-    setHours(hours);
-    setDate(days);
-  }, 1000);
+  //   const currTime = new Date().getTime();
+  //   var timeleft = countDownDate - currTime;
+  //   var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  //   var hours = Math.floor(
+  //     (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //   );
+  //   var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  //   var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+  //   setSeconds(seconds);
+  //   setMinutes(minutes);
+  //   setHours(hours);
+  //   setDate(days);
+  // }, 1000);
 
+
+  // timer function 
+
+  const getTime = () =>{
+    const timeleft = Date.parse("January, 18, 2024") - Date.now()
+    setDays( Math.floor(timeleft / (1000 * 60 * 60 * 24)))
+    setHours( Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
+    setMinutes( Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60)))
+    setSeconds( Math.floor((timeleft % (1000 * 60)) / 1000))
+  }
+
+  useEffect(()=>{
+    const interval = setInterval(()=> getTime("January, 18, 2024"),1000)
+    return () => clearInterval(interval)
+  },[])
+
+
+  const [scrollbar, setScrollbar] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const progressHeight = (window.pageYOffset / totalHeight) * 100;
+      setScrollbar(progressHeight);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollbarStyleRight = {
+    width: '10px',
+    height: `${scrollbar}%`,
+    position: 'fixed',
+    top: 0,
+    right: 0,
+    background: 'linear-gradient(to top, #ec9921, #dc5a42)',
+    zIndex: 9999,
+  };
+  const scrollbarStyleLeft = {
+    width: '10px',
+    height: `${scrollbar}%`,
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    background: 'linear-gradient(to top, #ec9921, #dc5a42)',
+    zIndex: 9999,
+  };
+
+  // smoke animation 
+
+  // const root = document.querySelector(".container");
+  // let x=0;
+  // let y=0;
+
+  // window.addEventListener("mousemove",(e) =>{
+  //   x=e.clientX;
+  //   y=e.clientY;
+  // })
+
+  // let draw = () => {
+  //   const smoke = document.createElement("div");
+  //   smoke.classList.add("smoke");
+  //   smoke.style.left = x + "px";
+  //   smoke.style.top = y + "px";
+
+  //   root.appendChild(smoke);
+    
+  //   smoke.animate(
+  //     [
+  //       {
+  //         backgroundColor: "magenta",
+  //         filter: "blur(10px)",
+  //       },
+  //       {
+  //         backgroundColor: "yellow",
+  //         filter: "blur(20px)",
+  //         top: y- (Math.random() * 400) + "px",
+  //         opacity: 0,
+  //         scale: 3,
+  //       }
+  //     ],
+  //     {
+  //       duration: 500
+  //     }
+  //   );
+
+  //   setTimeout(() => {
+  //     smoke.remove()
+  //   }, 500);
+  //   requestAnimationFrame(draw);
+  // }
+  // requestAnimationFrame(draw);
+  
   return (
     <>
+    {/* <div className="fireAnimation"> */}
+     {/* <div id="progressBar" style={scrollbarStyleRight}></div> */}
+     {/* <div id="progressBar" style={scrollbarStyleLeft}></div> */}
+
+
+
+
+     <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${luffy})` }}>
+      <div class="block lg:block">
+        
+     {/* <div className="glow-animation-out">
+          <span>26</span>
+     </div> */}
+
+
+      <section className={`relative w-full h-screen mx-auto`}>
+      <div
+        className={`absolute inset-0 top-[40px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      >
+        <div className='flex flex-col justify-center items-center mt-5'>
+          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        </div>
+
+        {/* <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I develop 3D visuals, user <br className='sm:block hidden' />
+            interfaces and web applications
+          </p>
+        </div>
+      </div> */}
+
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Team <span className='text-[#915EFF]'>SHAURYA</span>
+          </h1>
+          <p className={`${styles.heroSubText} text-white-100`}>
+            &nbsp; Brings You ... 
+          </p>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+          <span className='text-[#915EFF]'>SAMAR</span>
+          <p className={`${styles.heroSubText} text-white-100`}>
+            &nbsp; The sports fest 
+          </p>
+          {/* <br /> <br /> */}
+          <p className={`${styles.heroSubText} mt-6 text-white-100`}>
+            &nbsp; <span className='text-[#915EFF]'>Get Ready </span>to enter <br />
+            &nbsp; the world of <span className='text-[#915EFF]'>ANIME</span>
+          </p>
+          </h1>
+        </div>
+      </div>
+
+      <ComputersCanvas />
+
+      <div className='absolute xs:bottom-[150px] bottom-[150px] w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'> */}
+        <a href='#about'>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+
+
       <div className="home-container">
+
+
+        {/* date 
+        <br />
+        <div data-aos="fade-down" data-aos-duration="2000" className="date-img">
+              <div
+                style={{ backgroundImage: `url(${dateImg})` }}
+                className="date-img-bg heading-samar2k23-image"
+              />  
+          <div data-aos="fade-down" className="heading-samar2k23">
+             <div className="text-container">
+             <p>SAMAR 2K23</p>
+             <h3><span><p className="gradientText">SAMAR 2K23</p></span></h3>
+             </div>
+            </div>
+        </div> 
+        <br />
+
+        first image 
+         <div  data-aos="flip-up" data-aos-duration="2000" className="page-first-image heading-first-image">
+         <div
+            style={{ backgroundImage: `url(${samarPoster})` }}
+            className="page-first-image-bg"
+          >1</div>
+         <div
+            style={{ backgroundImage: `url(${samarPoster})` }}
+            style={{ backgroundImage: `url(${firstImg})` }}
+            className="page-first-image-bg"
+          />
+          </div>
+        
+          date 
+          <div data-aos="fade-left" data-aos-duration="2000" className="date-img">
+            <div
+              style={{ backgroundImage: `url(${dateImg})` }}
+              className="date-img-bg"
+            />
+            <div data-aos="fade-down" className="heading-presentsYou"> 
+              <div className="text-container">
+                 <p className="text"> PRESENTS YOU . . . </p> 
+              </div>
+            </div>
+          </div> */}
+        
+
+          <div data-aos="fade-down" className="heading-schedule"> 
+              SCHEDULE
+          </div>
+
+
         {/* Landing Page banner */}
-        <div className="page-banner">
+        <div data-aos="zoom-in"
+        data-aos-duration="2000"
+        className="page-banner">
+        {/* <div data-aos="fade-up"
+        data-aos-duration="2000"
+        className="page-banner"> */}
           <div
-            style={{ backgroundImage: `url(${darkBasketBallImg})` }}
+            style={{ backgroundImage: `url(${pikachu})` }}
             className="page-banner-bg"
           />
           {toggle ? (
@@ -68,6 +324,8 @@ function Home() {
                 disableOnInteraction: false,
               }}
               pagination={{ clickable: true }}>
+
+                {/* football  */}
             <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -159,6 +417,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* cricket  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -209,6 +469,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* basketball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -303,6 +565,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* volleyball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -396,6 +660,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* handball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -489,6 +755,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kabaddi  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -582,6 +850,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kho kho  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -675,6 +945,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* badminton  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -759,6 +1031,7 @@ function Home() {
 
               {/* new code */}
               
+              {/* badminton  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -806,7 +1079,7 @@ function Home() {
               </SwiperSlide>
 
 
-
+              {/* table tennis  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -984,6 +1257,7 @@ function Home() {
               }}
               pagination={{ clickable: true }}>
               
+              {/* cricket  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1067,6 +1341,8 @@ function Home() {
                   </div>
                 </div>
              </SwiperSlide>
+
+             {/* basketball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1150,6 +1426,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* volleyball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1232,6 +1510,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* handball  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1314,6 +1594,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kabaddi  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1395,6 +1677,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* kho kho  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1476,6 +1760,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* badminton  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1568,6 +1854,8 @@ function Home() {
                   </div>
                 </div>
               </SwiperSlide>
+
+              {/* table tennis  */}
               <SwiperSlide>
                 <div className="carousal-page">
                   <div className="carousal-page-heading">
@@ -1733,8 +2021,9 @@ function Home() {
             </Swiper>
           )}
         </div>
-
-        <div className="home-toggle-button">
+                                             
+        {/* toggle  */}
+        <div data-aos="fade-up" className="home-toggle-button">
           <div className="flex justify-center items-center ">
             {/*   Switch Container */}
             <div className="toggle-text-div">
@@ -1759,52 +2048,244 @@ function Home() {
         </div>
 
         {/* Samar Countdown */}
+
+          <div data-aos="fade-down" className="heading-countdown"> 
+           COUNTDOWN
+          </div>
+
         <div className="count-down flex">
-          <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
-            <p>Days</p>
+          <div data-aos="fade-right" className="count-down-div">
+            <p className="count-div-item-1 heading-time">{days<10 ? "0"+days : days}</p>
+            <p className="heading-DaysHMS">Days</p>
+          </div>  
+          {/* <div data-aos="fade-right" className="count-down-div"> */}
+          <div data-aos="zoom-out" className="count-down-div">
+            <p className="count-div-item-1 heading-time">{hours<10 ? "0"+hours : hours}</p>
+            <p className="heading-DaysHMS">Hours</p>
+          </div>  
+          {/* <div data-aos="fade-left" className="count-down-div"> */}
+          <div data-aos="zoom-out" className="count-down-div">
+            <p className="count-div-item-1 heading-time">{minutes<10 ? "0"+minutes : minutes}</p>
+            <p className="heading-DaysHMS">Minutes</p>
+          </div>  
+          <div data-aos="fade-left" className="count-down-div">
+            <p className="count-div-item-1 heading-time">{seconds<10 ? "0"+seconds : seconds}</p>
+            <p className="heading-DaysHMS">Seconds</p>
+          </div>  
+        </div>  
+
+        
+        {/* teams  */}
+
+          <div data-aos="fade-down" className="heading-our-team"> 
+                OUR TEAMS
           </div>
-          <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
-            <p>Hours</p>
+          
+          {/* line 1  */}
+          <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
+            <div data-aos="fade-right" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team1})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div  data-aos="zoom-in" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team2})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team3})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
-            <p>Minutes</p>
+
+           {/* line 2  */}
+          <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
+            <div data-aos="fade-right" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team4})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div  data-aos="zoom-in" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team5})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team6})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="count-down-div">
-            <p className="count-div-item-1">0</p>
-            <p>Seconds</p>
+
+
+           {/* line 3  */}
+          <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
+            <div data-aos="fade-right" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team7})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team8})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div data-aos="fade-left" class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
+              <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
+              <div class="bg-white h-full flex-1 bg-opacity-50"></div>
+              <div class="my-6 mx-5 shadow-sm p-10 flex flex-col justify-center bg-white absolute inset-0 transform  group-hover:scale-[0.95] transition duration-300">
+
+                <div className="team-image">
+                  <div
+                    style={{ backgroundImage: `url(${team9})` }}
+                    className="team-image-bg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+
+         {/* gallery event and merchandise  */}
+      <div className="cards-container">
+        <div data-aos="fade-down" className="gallery-container">
+          <Link
+            onClick={() => {
+              setActiveLink(4);
+            }}
+            to="/gallery">
+            <div className="heading-container-cards">
+              <h2>Gallery</h2>
+            </div>
+            <div className="image-container">
+              <img src={Djnight}></img>
+            </div>
+          </Link>
         </div>
+        <div data-aos="fade-down" className="gallery-container">
+          <Link
+            onClick={() => {
+              setActiveLink(1);
+            }}
+            to="/event">
+            <div className="heading-container-cards">
+              <h2>Events</h2>
+            </div>
+            <div className="image-container">
+              <img src={bikeStunt}></img>
+            </div>
+          </Link>
+        </div>
+        <div data-aos="fade-down" className="merchandise-conatiner">
+          <Link
+            onClick={() => {
+              setActiveLink(8);
+            }}
+            to="/merchandise">
+            <div className="heading-container-cards">
+              <h2>Merchandise</h2>
+            </div>
+            <div className="image-container">
+              <img src={Merchandise}></img>
+            </div>
+          </Link>
+        </div>
+      </div>
+
 
         {/* Samar Youtube */}
         <div className="embadded-video">
-          <div className="video-2">
+          <div data-aos="fade-down" className="video-2">
             <iframe
               width="560"
               height="315"
+              // latest link paste here 
               src="https://www.youtube.com/embed/UBsDzaOYTTo"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className="video-1">
+          <div data-aos="fade-down" className="video-1">
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/HLTSKIlLRPE"
+              src="https://www.youtube.com/embed/s7DYDkOeaKg"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
           </div>
-          <div className="video-3">
+          <div data-aos="fade-down" className="video-3">
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/s7DYDkOeaKg"
+              src="https://www.youtube.com/embed/HLTSKIlLRPE"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1861,50 +2342,11 @@ function Home() {
                 </Link>
             </div> */}
       </div>
-      <div className="cards-container">
-        <div className="gallery-container">
-          <Link
-            onClick={() => {
-              setActiveLink(4);
-            }}
-            to="/gallery">
-            <div className="heading-container-cards">
-              <h2>Gallery</h2>
-            </div>
-            <div className="image-container">
-              <img src={Djnight}></img>
-            </div>
-          </Link>
-        </div>
-        <div className="events-container">
-          <Link
-            onClick={() => {
-              setActiveLink(4);
-            }}
-            to="/events">
-            <div className="heading-container-cards">
-              <h2>Events</h2>
-            </div>
-            <div className="image-container">
-              <img src="https://live.staticflickr.com/65535/52395134666_1d271cefb3_h.jpg"></img>
-            </div>
-          </Link>
-        </div>
-        <div className="merchandise-conatiner">
-          <Link
-            onClick={() => {
-              setActiveLink(4);
-            }}
-            to="/merchandise">
-            <div className="heading-container-cards">
-              <h2>Merchandise</h2>
-            </div>
-            <div className="image-container">
-              <img src={Merchandise}></img>
-            </div>
-          </Link>
-        </div>
+
+     
       </div>
+      </div>
+      {/* </div> */}
     </>
   );
 }

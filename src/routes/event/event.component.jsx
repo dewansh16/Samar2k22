@@ -98,6 +98,8 @@ const Event = () => {
     // </div>
     <div class="w-full h-auto py-24 bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]">
       <div class="block md:hidden lg:block">
+
+        {/* line 1  */}
         <div class=" flex flex-col lg:flex-row items-center justify-center p-20">
           <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
             <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
@@ -142,6 +144,8 @@ const Event = () => {
             </div>
           </div>
         </div>
+        
+        {/* line 2  */}
         <div class=" flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
           <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
             <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
@@ -172,6 +176,8 @@ const Event = () => {
             </div>
           </div>
         </div>
+
+        {/* line 3  */}
         <div class="flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
           <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
             <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
@@ -216,6 +222,8 @@ const Event = () => {
             </div>
           </div>
         </div>
+
+        {/* line 4  */}
         <div class=" flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
           <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
             <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>
@@ -246,6 +254,8 @@ const Event = () => {
             </div>
           </div>
         </div>
+
+        {/* line 5  */}
         <div class=" flex flex-col lg:flex-row items-center justify-center lg:-mt-16 p-20">
           <div class="relative group flex flex-row justify-center mb-12 lg:mb-0 h-80 w-64 mx-5 transform transition duration-500 hover:scale-[1.1]">
             <div class="bg-blue-400  h-full flex-1 bg-opacity-50"></div>

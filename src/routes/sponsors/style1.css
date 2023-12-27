@@ -1,57 +1,125 @@
+/* @font-face {
+  font-family: NEW;
+  src: url("../../fonts/anime_body.ttf");
+}
+ */
+ @font-face {
+  font-family: anime_body;
+  src: url('../../fonts/anime_body.ttf');
+}
+@font-face {
+  font-family: anime_body2;
+  src: url('../../fonts/anime_body2.ttf');
+}
 .spo-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../Assets/Images/sponsBG.jpg");
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  overflow: hidden;
+  
 }
-
+body{
+  
+  overflow-y: visible;
+}
 .spo-main,
 .spo-sidebar {
-  border: 3px solid black;
-  background-color: #fff;
+  
+  
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+  overflow: hidden;
 }
 
 .spo-main {
-  width: 50%;
-  height: 100vh;
-  margin-right: 2rem;
+  width: 70%;  
+  margin:  0rem;
   margin-bottom: 2rem;
-  background-color: black;
-  overflow: scroll;
+ 
+  overflow: visible;
+  border: #ffffff;
+  padding-bottom: 20px;
+  
+    box-sizing: border-box;
+    --g : 60px;
+   padding: var(--g);
+   --num-cols: 3;
+   --row-height: 360px;
+   display: grid;
+   
+   grid-template-columns: repeat(var(--num-cols), 1fr);
+   grid-auto-rows: var(--row-height);
+   gap: var(--g);
+
 }
 
+.spo-main > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+ 
+}
+
+@media screen and (max-width : 1024px) {
+    .spo-main{
+        --num-cols: 2;
+        --row-height:100px;
+    }
+}
+
+
 .spo-main::-webkit-scrollbar {
-  display: none;
+  display: flex;
 }
 
 .spo-sidebar {
-  width: 40%;
+  width: 80%;
+  height: 30%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  color: #fff;
-  background-color: black;
+  color: #ffffff;
+
+  
   padding-top: 2rem;
-  padding-left: 2rem;
-  margin-left: 2rem;
+  padding-left: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 20px;
 }
 
 .spo-heading1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
-}
+  
 
+}
+/* @font-face {
+  font-family: NEW;
+  src: url(C:\Users\adity\Samar2k22\src\fonts\Bender.ttf);
+} */
 #sponsor-text {
   background: radial-gradient(
     circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
+    rgb(156, 1, 1) 0%,
+    rgb(20, 11, 155) 100%
   );
-  font-family: "GOTSamar";
+  font-family: anime_body;
   background-size: 200%;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: transparent;
   background-clip: text;
-  animation: animation 1.7s linear infinite;
+  animation: animation 2s linear infinite;
+  font-size: 3cm;
+   -webkit-text-stroke: #ffffff ;
+  -webkit-text-stroke-width: 0.5px;
 }
 
 @keyframes animation {
@@ -67,14 +135,15 @@
 
 .spo-text {
   text-align: justify;
-  padding-left: 1rem;
-  font-size: larger;
-  padding-top: 1.5rem;
+  padding-left: 0rem;
+  font-size: x-large;
+  padding-top: 1rem;
+  margin-bottom: 10px;
 }
 
 .spo-img {
-  width: 50%;
-  height: 18rem;
+  width: 100%;
+  height: 100%;
 }
 
 .sponsor-first {
@@ -82,8 +151,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 40px;
+ 
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  
+
+  position: relative;
+	
+	
+  background-color: rgba(255, 255, 255, 0.1);  
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+ 
 }
+
 
 .sponsor-first h1 {
   margin-bottom: 20px;
@@ -99,11 +181,7 @@
     padding: 1rem;
     margin-top: 20px;
   }
-  .spo-main {
-    width: 100%;
-    height: 100%;
-    margin-top: 6rem;
-  }
+  
 
   .spo-wrapper {
     display: flex;

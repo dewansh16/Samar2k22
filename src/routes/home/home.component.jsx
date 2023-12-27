@@ -19,7 +19,7 @@ import team6 from "../../Assets/Images/playing-teams/team6.jpg";
 import team7 from "../../Assets/Images/playing-teams/team7.jpg";
 import team8 from "../../Assets/Images/playing-teams/team8.jpg";
 import team9 from "../../Assets/Images/playing-teams/team9.jpg";
-
+ 
 import "./home.component.css";
 
 import { NavbarContext } from "../../contexts/navbar.context";

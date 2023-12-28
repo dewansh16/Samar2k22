@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-// import chess from "../../Assets/Images/chess.jpg";
 
 function Gallery() {
   return (
@@ -17,33 +16,20 @@ function Gallery() {
           </div>
           <div className="gallery-find-us">
             <div className="gallery-heading">
-              <h3>2019</h3>
+              <h3>SAMAR</h3>
             </div>
           </div>
             {/* Images */}
             <div className="gallery-images section1">
-              {/* <div className="gallery-flip">
-                <div className="gallery-front img1">
-                  <h1 className="gallery-text-shadow">BASKTE BALL</h1>
-                </div>
-                <div className="gallery-back">
-                  <h2>Bosket Ball</h2>
-                  <p>
-                    A competition of basket ball on sports day..
-                  </p>
-                </div>
-              </div> */}
-
-              
               <div className="gallery-flip">
                 <div className="gallery-front img3">
                   <h1 className="gallery-text-shadow">BORN FIRE</h1>
                 </div>
                 <div className="gallery-back">
-                  <h2>Born Fire</h2>
-                  <p>
-                    An event hosted on winter by shaurya..
-                  </p>
+                    <h2>Born Fire</h2>
+                    <p>
+                      An event hosted on winter by shaurya..
+                    </p>
                 </div>
               </div>
 
@@ -79,7 +65,7 @@ function Gallery() {
                 <div className="gallery-back">
                   <h2>BASKET BALL 2022</h2>
                   <p>
-                    A DJ event organized by Shourya at exam time to relief stress..
+                    A DJ event organized by Shaurya at exam time to relief stress..
                   </p>
                 </div>
               </div>
@@ -95,21 +81,6 @@ function Gallery() {
                   </p>
                 </div>
               </div>
-              
-
-              {/* <div className="gallery-flip">
-                <div className="gallery-front img20">
-                  <h1 className="gallery-text-shadow">Football</h1>
-                </div>
-                <div className="gallery-back">
-                  <h2>Football</h2>
-                  <p>
-                    An event hosted on winter by shaurya..
-                  </p>
-                </div>
-              </div> */}
-
-              
 
               <div className="gallery-flip">
                 <div className="gallery-front img5">
@@ -289,15 +260,3 @@ function Gallery() {
 }
 
 export default Gallery;
-
- {/* <img alt="chess" src={chess} className="img2" />
-
-        <img alt="chess" src={chess} className="img2" />
-
-        <img alt="chess" src={chess} className="img2" />
-
-        <img alt="chess" src={chess} className ="img2"/>
-
-        <img alt="chess" src={chess} className ="img2"/>
-
-        <img alt="chess" src={chess} className ="img2"/> */}

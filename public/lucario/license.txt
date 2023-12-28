@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lucario
+* source:	https://sketchfab.com/3d-models/lucario-32ab2458321e495084fe3bc3b3bf6a91
+* author:	Gianmarco (https://sketchfab.com/GianmArt)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lucario" (https://sketchfab.com/3d-models/lucario-32ab2458321e495084fe3bc3b3bf6a91) by Gianmarco (https://sketchfab.com/GianmArt) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

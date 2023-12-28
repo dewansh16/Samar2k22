@@ -1,99 +1,96 @@
 .footer {
-  background: rgb(240, 248, 255, 0.2);
-  min-height: 208px;
-  margin-top: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   display: flex;
+  width: 100%;
   flex-direction: column;
-  /* added margin top */
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  padding: 80px 0px 0px 0px;
 }
-
-@media screen and (max-width: 880px) {
-  .footer {
-    display: none;
-  }
+.logo_content_div .logo_name img{
+  width: 15rem;
 }
+.logo_content_div{
+  margin-left: 5rem;
+  width: 30%;
+}
+.logo_content_div .logo_data{
+  font-size: 1.2rem;
+  font-weight: 600;
 
+}
 .footer-content-div {
   height: 90%;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-bottom: 40px ;
 }
-
 .footer-icon-div {
-  width: 30%;
+  width: 25%;
 }
-
 .footer-icon-inner-div {
-  height: 100%;
-  width: 100%;
+ width: 15rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
-
 .footer-logo-container {
   width: 111px;
-  padding: 25px;
+  padding: 17px;
+  margin-top: 14px;
 }
-
 .footer-links-div {
-  width: 30%;
+  width: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
 .footer-links-inner-div {
   height: 100%;
   width: 100%;
-  padding-left: 30%;
+  padding-left: 25%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 }
-
+.footer-links-inner-div h3, .footer-social-links-inner-div h3 , .footer-icon-inner-div h3, .link_connect span{
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 4px solid white;
+  margin-bottom: 1.5rem;
+}
+.link_connect span{
+  margin: 0px 0px 2px 1.6rem;
+  padding-bottom: 6px;
+}
 .footer-social-links-div {
   width: 30%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
 .footer-social-links-inner-div {
   height: 100%;
   width: 100%;
-  padding-left: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 }
-
 .footer-contact-links {
   width: 100%;
   display: flex;
   padding-bottom: 12px;
 }
-
 .contact-links-logo-div {
   width: 10%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-
 .contact-links-text-div {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-
 .footer-contact-links p {
   font-weight: 800;
   color: #ffffff;
@@ -102,19 +99,80 @@
   padding-left: 6px;
   margin: 0px;
 }
-
 .copyright-div {
   height: 10%;
   width: 100%;
   max-height: 50px;
-  background: #fc0a18;
   border-radius: 40px 40px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin: 1.2rem; */
 }
-
 .copyright-div p {
   text-align: center;
   margin: 0px;
+}
+@media screen and (max-width : 1220px ) {
+  .footer-links-inner-div h3, .footer-social-links-inner-div h3 , .footer-icon-inner-div h3, .link_connect span{
+    font-size: 1.2rem;
+  }
+  .logo_content_div .logo_name img{
+    width: 10rem;
+  }
+  .contact-links-logo-div {
+    width: 8%;
+  }
+  .footer-logo-container {
+    width: 70px;
+    padding: 17px;
+    margin-top: 14px;
+  }
+}
+@media screen and (max-width: 972px) {
+  .footer-content-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-links-inner-div{
+    padding-left: 0;
+  }
+  .logo_content_div{
+    margin-left: 0;
+  }
+  .logo_content_div .logo_name, .logo_content_div .logo_data{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-links-inner-div, .footer-social-links-inner-div, .footer-contact-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-links-text-div {
+    justify-content: center;
+  }
+  .contact-links-logo-div{
+    display: none;
+  }
+  .footer-icon-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+.logo_content_div,.footer-social-links-div, .footer-links-div, .footer-icon-inner-div{
+     width: 100%;
+    border-bottom: 2px dotted white;
+    padding: 20px;
+  }
+  .link_connect span{
+    margin-left: 0;
+  }
+.footer-icon-div{
+  width: 250px;
+}
 }

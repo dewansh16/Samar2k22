@@ -1,34 +1,73 @@
+@font-face {
+  font-family: anime_body2;
+  src: url('../../fonts/anime_body2.ttf');
+}
 .aboutus_first1,
 .aboutus_second {
   display: flex;
 }
-.aboutus_second {
-  padding-bottom: 40px;
+.Block1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.aboutus_image1 img {
-  /* width: 400px; */
-  height: auto;
+.aboutus_image1{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutus_image1 img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 40px;
+  padding: 20px;
 }
 
 .aboutus_data1 {
+  font-family: anime_body2;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 2px;
+  margin: 30px;
+  width: 60%;
+  font-size: 1.5rem;
 }
 
 .aboutus_data1 p{
-  padding: 0 1rem;
+  padding: 0 2rem;
   text-align: justify;
 }
-
-.aboutus_title {
-  font-family: "Courier New", Courier, monospace;
-  margin-top: 40px;
+.aboutus_image1 .circle-spin{
+  position: absolute;
+  z-index: -1;
+  border-top: 5px solid red;
+  border-left: 5px solid black;
+  border-bottom: 5px solid red;
+  border-right: 5px solid black;
+  box-shadow: 5px 5px 45px red;
+  border-radius: 50%;
+  width: 420px;
+  height: 420px;
+  animation: rotate(360deg);
+  animation: autospinner 8s linear infinite; 
 }
+@keyframes autospinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
+}
+
 @media screen and (max-width: 1128px) {
   .aboutus_second {
     display: flex;
@@ -38,12 +77,53 @@
     padding-bottom: 20px;
   }
   .aboutus_image1 img {
-    width: 400px;
-    height: auto;
+    width: 300px;
+    height: 300px
   }
   .aboutus_first1 {
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
   }
+  .aboutus_image1 .circle-spin{
+    width: 305px;
+    height: 305px;
+  }
 }
+@media screen and (max-width: 808px) 
+{
+  .aboutus_image1 .circle-spin{
+    width: 305px;
+    height: 305px;
+  }
+}
+@media screen and (max-width: 1140px)
+{
+  .aboutus_image1{
+    margin: 20px;
+  }
+
+} 
+@media screen and (max-width: 970px)
+{
+  .aboutus_data1{
+    width: 100%;
+    padding: 10px 10px 30px 10px ;
+    margin: 2px 2px 2px 5px;
+    text-align: center;
+  }
+  .aboutus_data1 p{
+    padding: 20px;
+  }
+
+}
+@media screen and (max-width: 708px) 
+{
+  .aboutus_image1 img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+

@@ -2,6 +2,7 @@ import {useContext} from 'react'
 import { Link } from 'react-router-dom';
 import './footer.component.css'
 import styled from 'styled-components';
+import logo1 from "../../Assets/Images/home_logo1.png";
 
 import { NavbarContext } from '../../contexts/navbar.context';
 
@@ -27,33 +28,19 @@ function Footer() {
     return (
         <div className='footer'>
             <div className="footer-content-div">
-                <div className="footer-icon-div">
-                    <div className="footer-icon-inner-div">
-                        <div className="footer-logo-container">
-                            <a
-                                href="https://www.instagram.com/samar.nitrr/?hl=en"
-                            >
-                                <InstaLogo />
-                            </a>
-                        </div>
-                        <div className="footer-logo-container">
-                            <a
-                                href="https://www.facebook.com/shaurya.nitrr/"
-                            >
-                                <FacebookLogo/>
-                            </a>
-                        </div>
-                        <div className="footer-logo-container">
-                            <a
-                                href="https://www.linkedin.com/in/team-shaurya-nit-raipur-096122120/?originalSubdomain=in"
-                            >
-                                <LinkedInLogo/>
-                            </a>
-                        </div>
+                <div className="logo_content_div">
+                    <div className="logo_name">
+                        <img src={logo1} alt="Samar logo" />
+                    </div>
+                    <div className="logo_data">
+                        <p>"The playground of dreams is where playfulness and perseverance shake hands."</p>
                     </div>
                 </div>
+              
+               
                 <div className="footer-links-div">
                     <div className="footer-links-inner-div">
+                    <h3> Shaurya </h3>
                         <NavLink
                             onClick={() => {
                                 setActiveLink(5)
@@ -80,8 +67,10 @@ function Footer() {
                         </NavLink>
                     </div>
                 </div>
+
                 <div className="footer-social-links-div">
                     <div className="footer-social-links-inner-div">
+                    <h3>Contact</h3>
                         <div className="footer-contact-links">
                             <div className="contact-links-logo-div">
                                 <LetterLogo />
@@ -108,9 +97,38 @@ function Footer() {
                         </div>
                     </div>
                 </div>
+
+                <div className="footer-icon-div">
+                    <div className='link_connect'>
+                            <span>Lets Connect</span>
+                    </div>
+                    <div className="footer-icon-inner-div">
+                        <div className="footer-logo-container">
+                            <a
+                                href="https://www.instagram.com/samar.nitrr/?hl=en"
+                            >
+                                <InstaLogo />
+                            </a>
+                        </div>
+                        <div className="footer-logo-container">
+                            <a
+                                href="https://www.facebook.com/shaurya.nitrr/"
+                            >
+                                <FacebookLogo/>
+                            </a>
+                        </div>
+                        <div className="footer-logo-container">
+                            <a
+                                href="https://www.linkedin.com/in/team-shaurya-nit-raipur-096122120/?originalSubdomain=in"
+                            >
+                                <LinkedInLogo/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="copyright-div">
-                <p>Copyright © 2022 Shaurya. All Rights Reserved.</p>
+                <p>Copyright © 2024 Shaurya. All Rights Reserved.</p>
             </div>
         </div>
     )

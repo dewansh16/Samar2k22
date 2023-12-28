@@ -5,11 +5,12 @@ import FinalPart from "./FinalPart";
 import FirstPart from './FirstPart';
 
 import bgImg from "../../Assets/assets/herobg.png";
+// import Cards from './Cards';
 
 // import "./home.component.css";
 
-
 function Home() {
+
   // const [scrollbar, setScrollbar] = useState(0);
 
   // useEffect(() => {
@@ -97,8 +98,6 @@ function Home() {
      {/* <div id="progressBar" style={scrollbarStyleLeft}></div> */}
 
 
-
-
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgImg})` }}>
       <div class="block lg:block">
 
@@ -113,6 +112,8 @@ function Home() {
         <OurTeams/>
 
         <FinalPart/>
+
+        {/* <Cards/> */}
 
 
         

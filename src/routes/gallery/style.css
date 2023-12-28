@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: anime_body2;
+  src: url('../../fonts/anime_body2.ttf');
+}
+
 .gallery-page .gallery-heading {
   padding: 1rem;
 }
@@ -31,7 +37,8 @@
   );
 
   background-size: 200%;
-  font-family: "GOTSamar";
+  /* font-family: "GOTSamar"; */
+  font-family: "anime_body2";
   font-size: 4rem;
   font-weight: bolder;
   color: transparent;
@@ -100,11 +107,15 @@
   transform: rotateY(-180deg);
 }
 
-.gallery-flip:hover > .gallery-front {
+.gallery-flip:hover > .gallery-front {           /* When the element is in hover state */
   transform: rotateY(180deg);
 }
+
+.gallery-flip:hover > .gallery-front h1{
+  display: none;
+}
 .gallery-flip:hover > .gallery-back {
-  opacity: 1;
+  opacity: 0.6;
   transform: rotateY(0deg);
 }
 
@@ -129,7 +140,7 @@
 .gallery-flip > .gallery-back p {
   font-size: 0.9125rem;
   line-height: 160%;
-  color: #999;
+  color: #fbf4f4;
 }
 
 .gallery-text-shadow {
@@ -220,6 +231,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 
 /* Media queries */
 

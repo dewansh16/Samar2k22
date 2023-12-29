@@ -4,7 +4,7 @@ import { ComputersCanvas } from "./canvas";
 
 const FirstPart = () => {
   return (
-     <section className={`relative w-full h-screen mx-auto mt-12`}>
+     <section className={`relative w-full h-screen mx-auto`}>
       <div
         // className={`absolute inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
         className={`absolute inset-0 top-[40px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}

@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
 import { services } from "../../constants";
-import StarWrapper from "./SectionWrapper" ;
-// import SectionWrapper from "./SectionWrapper" ;
+import {StarWrapper} from "../../hoc" ;
 import { fadeIn, textVariant } from "../../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
@@ -41,8 +40,9 @@ const ServiceCard = ({ index, title, icon }) => (
 const OurTeams = () => {
       return (
     <>
+    <div className="mt-20">
         <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>OUR TEAMS</h2>
+        <h2 className={styles.sectionHeadText}> <center>OUR TEAMS</center></h2>
       </motion.div>
 
       <div className="px-4 lg:px-20">
@@ -62,13 +62,13 @@ const OurTeams = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      
+      </div>
     </>
   )
 }
 
 // export default OurTeams
-export default StarWrapper(OurTeams, "about");
+export default StarWrapper(OurTeams, "ourTeams");
 
 
 // import { useContext, useEffect, useState } from "react";

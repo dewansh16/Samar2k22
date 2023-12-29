@@ -1,6 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import "./home.component.css";
+import { fadeIn, textVariant } from "../../utils/motion";
+import { motion } from "framer-motion";
+import { styles } from "../../styles";
+import {StarWrapper} from "../../hoc" ;
 
 const Countdown = () => {
     let date = new Date();
@@ -26,10 +30,35 @@ const Countdown = () => {
   return (
         <>
         
-        <div data-aos="fade-down" className="heading-countdown hidden sm:block"> 
-           COUNTDOWN
+        {/* <div data-aos="fade-down" className="heading-countdown hidden sm:block">  */}
+        <div data-aos="fade-down" className="heading-countdown text-[30px] lg:text-[60px]"> 
+          <center> COUNTDOWN </center>
           </div>
+        {/* <div data-aos="fade-down" className="countdown-text hidden sm:block">
+          <center> Samar is more than an event; it's an experience!  </center>
+          <center> "Get ready to witness the thrill and excitement of Samar - the ultimate sports fest! The countdown is on!"</center>
+          </div>  */}
 
+           {/* <div className="mt-20"> */}
+           {/* <motion.div variants={textVariant()}>
+              <h2 className={styles.sectionHeadText}> <center>COUNTDOWN</center></h2>
+            </motion.div> */}
+
+            <div className="px-4 lg:px-20 pb-20">
+            {/* <div className="px-4 lg:px-20 pb-20 hidden sm:block"> */}
+              <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className='mt-4 mx-auto text-secondary text-[17px] text-center'
+              > 
+                <center> "Samar is more than an event; it's an experience!"  </center>
+                <center> "Get ready to witness the thrill and excitement of Samar - the ultimate sports fest! The countdown is on!"</center>
+              </motion.p>
+
+            </div>
+          {/* </div> */}
+
+
+        {/* <div className="count-down"> */}
         <div className="count-down hidden sm:flex">
           <div data-aos="fade-right" className="count-down-div">
             <p className="count-div-item-1 heading-time">{days<10 ? "0"+days : days}</p>
@@ -52,4 +81,4 @@ const Countdown = () => {
   )
 }
 
-export default Countdown;
+export default StarWrapper(Countdown,"countdown");

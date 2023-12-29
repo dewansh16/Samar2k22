@@ -16,8 +16,8 @@ const FirstPart = () => {
 
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white pr-10`}>
-            Team <span className='text-[#915EFF]'>SHAURYA</span>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Team <span className='text-[#915EFF] pr-20 lg:pr-0'>SHAURYA</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
             &nbsp; Brings You ... 

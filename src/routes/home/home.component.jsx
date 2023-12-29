@@ -5,6 +5,7 @@ import FinalPart from "./FinalPart";
 import FirstPart from './FirstPart';
 
 import bgImg from "../../Assets/assets/herobg.png";
+// import CustomCursor from './CustomCursor';
 // import Cards from './Cards';
 
 // import "./home.component.css";
@@ -93,6 +94,11 @@ function Home() {
   
   return (
     <>
+    
+    <div>
+        {/* <button> */}
+    {/* <div className='home-cursor'> */}
+    {/* <div className="font-home"> */}
     {/* <div className="fireAnimation"> */}
      {/* <div id="progressBar" style={scrollbarStyleRight}></div> */}
      {/* <div id="progressBar" style={scrollbarStyleLeft}></div> */}
@@ -101,78 +107,21 @@ function Home() {
      <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgImg})` }}>
       <div class="block lg:block">
 
-        <FirstPart/>
+        {/* <CustomCursor /> */}
 
-      <div className="home-container">        
+        <FirstPart/>
 
         <Schedule/>
 
         <Countdown/>
 
         <OurTeams/>
-
+        
         <FinalPart/>
 
-        {/* <Cards/> */}
-
-
-        
-         {/* gallery event and merchandise  */}
-
-
-        {/* speakers, schedule, sponsers, gallary */}
-        {/* <div className='flex sssg-container'>
-            <div className="sssg gallery">
-                <Link
-                    onClick={() => {
-                                setActiveLink(4)
-                            }}
-                            to='/gallery'
-                >
-                    <div className='card sssg-item-3'>
-                       <img src="https://cdn-icons-png.flaticon.com/128/1040/1040241.png" alt="" />
-                        </div>
-                 
-                    <p>Gallary</p>
-                </Link>
-            </div>
-                
-            <div className="sssg merchandise">
-                <Link
-                    onClick={() => {
-                                setActiveLink(2)
-                            }}
-                            to='/merchandise'
-                >
-                    <div className='card sssg-item-2'>
-                       
-                        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176395.png" alt="" />
-                        </div>
-                   
-                    <h3>Merchandise</h3>
-                </Link>
-            </div>
-
-            <div className="sssg sponsers">
-                <Link
-                    onClick={() => {
-                                setActiveLink(3)
-                            }}
-                            to='/sponsors'
-                >
-                    <div className='card sssg-item-'>
-                       
-                            <img src="	https://live.staticflickr.com/65535/52395640653_0ba071af3a_c.jpg" alt="" />
-                       
-                    </div>
-                    <p>Sponsers</p>
-                </Link>
-            </div> */}
-      </div>
-
-     
       </div>
       </div>
+     </div>
     </>
   );
 }

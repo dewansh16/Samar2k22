@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Outlet } from "react-router-dom"
-import React, { useState,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import Burger from './burger.component';
@@ -21,10 +21,10 @@ const Nav = styled.nav`
   /* border: 2px solid black; */
   margin-top:0;
   z-index:100;
-  background: black;
+  background:transparent;
   /* box-shadow: 0 0.5px 15px rgb(240,248,255,0.5); */
   backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(7.5px);
   display: flex;
   justify-content: space-between;
   @media (max-width: 1000px) {
@@ -36,7 +36,7 @@ const Nav = styled.nav`
   }
 `
 const NavDiv = styled.div`
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     @media (max-width: 800px) {
     margin: 0px;
   }

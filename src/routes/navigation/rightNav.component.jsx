@@ -16,7 +16,7 @@ align-items: center;
     padding: 0px;
     margin-top: 0px;
     flex-flow: column nowrap;
-    background: rgb(0 0 0 / 13%) 0% 0% no-repeat padding-box;
+    // background: rgb(0 0 0 / 13%) 0% 0% no-repeat padding-box;
     box-shadow: 0 0.5px 15px rgb(52 52 52 / 50%);
     backdrop-filter: blur(6.5px);
     position: fixed;
@@ -32,7 +32,7 @@ align-items: center;
 `;
 const NavLink = styled(Link)`
   font-weight: 800;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   font-size: 18px;
     @media (max-width: 1000px) {
@@ -51,9 +51,32 @@ const NavLinkDiv = styled.div`
   min-width: 50px;
   margin: 7px 0;
   padding: 7px 10px;
+  tansistion: 0.1s;
   a:hover{
-    color:red;
+    // color:#E1D9D1;
+    color:#3618de;
   }
+
+  .underline {
+    position: relative;
+  }
+
+  .underline::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+
+  .underline:hover::after {
+    width: 100%;
+  }
+
+
   @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px 30px 30px 0px;
@@ -95,10 +118,10 @@ const RightNav = ({ open,setOpen,hover }) => {
           <img src={logo1} className="mar_image" alt="Samar logo" />
           </NavLink>
         </NavLinkDiv>
-
         <NavLinkDiv  >
           <NavLink
-            style={activeLink === 1 ? { color: "red" } : {}}
+            className="underline"
+            style={activeLink === 1 ? { color: "#E1D9D1" } : {}}
             to="/event"
             onClick={() => {
               setActiveLink(1);
@@ -124,7 +147,8 @@ const RightNav = ({ open,setOpen,hover }) => {
         }
         <NavLinkDiv>
           <NavLink
-            style={activeLink === 3 ? { color: "red" } : {}}
+          className="underline"
+            style={activeLink === 3 ? { color: "#E1D9D1" } : {}}
             to="/sponsors"
             onClick={() => {
               setActiveLink(3);
@@ -134,10 +158,10 @@ const RightNav = ({ open,setOpen,hover }) => {
             Sponsors
           </NavLink>
         </NavLinkDiv>
-
         <NavLinkDiv >
           <NavLink
-            style={activeLink === 4 ? { color: "red" } : {}}
+          className="underline"
+            style={activeLink === 4 ? { color: "#E1D9D1" } : {}}
             to="/gallery"
             onClick={() => {
               setActiveLink(4);
@@ -147,10 +171,10 @@ const RightNav = ({ open,setOpen,hover }) => {
             Gallery
           </NavLink>
         </NavLinkDiv>
-
         <NavLinkDiv>
           <NavLink
-            style={activeLink === 5 ? { color: "red" } : {}}
+          className="underline"
+            style={activeLink === 5 ? { color: "#E1D9D1" } : {}}
             to="/ourTeam"
             onClick={() => {
               setActiveLink(5);
@@ -160,10 +184,10 @@ const RightNav = ({ open,setOpen,hover }) => {
            Team
           </NavLink>
         </NavLinkDiv>
-
         {/* <NavLinkDiv>
           <NavLink
-            style={activeLink === 6 ? { color: "red" } : {}}
+          className="underline"
+            style={activeLink === 6 ? { color: "#E1D9D1" } : {}}
             to="/contactUs"
             onClick={() => {
               setActiveLink(6);
@@ -173,10 +197,10 @@ const RightNav = ({ open,setOpen,hover }) => {
             Contact
           </NavLink>
         </NavLinkDiv> */}
-
         <NavLinkDiv>
           <NavLink
-            style={activeLink === 7 ? { color: "red" } : {}}
+          className="underline"
+            style={activeLink === 7 ? { color: "#E1D9D1" } : {}}
             to="/aboutUs"
             onClick={() => {
               setActiveLink(7);
@@ -186,10 +210,10 @@ const RightNav = ({ open,setOpen,hover }) => {
             About
           </NavLink>
         </NavLinkDiv>
-
         <NavLinkDiv>
           <NavLink
-            style={activeLink === 8 ? { color: "red" } : {}}
+          className="underline"
+            style={activeLink === 8 ? { color: "#E1D9D1" } : {}}
             to="/Merchandise"
             onClick={() => {
               setActiveLink(8);
@@ -199,7 +223,6 @@ const RightNav = ({ open,setOpen,hover }) => {
             Merchandise
           </NavLink>
         </NavLinkDiv>
-        
       </NavLinkContainer>
     </Ul>
   );

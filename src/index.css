@@ -5,8 +5,11 @@ html {
 body {
   margin: 0;
   color: white;
-  background: black;
-  font-family: Montserrat, sans-serif;
+  background: url("../src/Assets/assets/herobg.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* font-family: Montserrat, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;

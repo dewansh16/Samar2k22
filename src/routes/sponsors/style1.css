@@ -15,8 +15,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../../Assets/assets/herobg.png");
- 
+  background-image: url('../../Assets/Images/SponsBG2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -26,6 +25,18 @@
 body{
   
   overflow-y: visible;
+}
+ .line {
+  margin-top: 25px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-self: center;
+
+  width: 80%;
+  
+}
+hr.li{
+  border: #ffffff solid 3px;
 }
 .spo-main,
 .spo-sidebar {
@@ -59,7 +70,7 @@ body{
 
 }
 
-.spo-main > img{
+.sponsor-first> img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -72,6 +83,11 @@ body{
         --num-cols: 2;
         --row-height:100px;
     }
+}
+@media (max-width : 768px){
+  .sponsor-first{
+    
+  }
 }
 
 
@@ -108,18 +124,19 @@ body{
 #sponsor-text {
   background: radial-gradient(
     circle,
-    rgb(156, 1, 1) 0%,
-    rgb(20, 11, 155) 100%
+    rgb(236, 10, 10) 0%,
+    rgb(10, 2, 121) 100%
   );
   font-family: anime_body;
   background-size: 200%;
   /* font-weight: bolder; */
   color: transparent;
   background-clip: text;
-  animation: animation 2s linear infinite;
-  font-size: 3cm;
+  animation: animation 1.5s linear infinite;
+  --sise: 50px;
+  font-size: 3.5cm;
    -webkit-text-stroke: #ffffff ;
-  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-width: 3px;
 }
 
 @keyframes animation {
@@ -146,25 +163,53 @@ body{
   height: 100%;
 }
 
+
 .sponsor-first {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
  
-  height: 100%;
-  width: 100%;
   padding: 10px;
-  
 
   position: relative;
-	
-	
+    
   background-color: rgba(255, 255, 255, 0.1);  
   border-radius: 10px; 
   box-shadow: 0 0 20px rgb(255, 255, 255);
  
 }
+.sponsor-first:hover{
+  box-shadow: 0 30px 35px rgba(71, 7, 135, 0.7);
+  box-sizing: border-box;
+
+  bottom: 5%;
+
+  --border-size: 3px;
+  --border-angle: 0turn;
+  
+  background-image: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 50%,
+      #213
+    ),
+    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 3s linear infinite;
+  animation-play-state: running;
+  
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
 
 
 .sponsor-first h1 {

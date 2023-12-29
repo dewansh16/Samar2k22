@@ -22,6 +22,9 @@ function Sponsors() {
           a new audience.
         </p>
       </div>
+      <div className="line">
+        <hr className="li"/>
+      </div>
       <div class="spo-main">
         <div className="sponsor-first">
             <img src={dainikBhaskar} alt="dainikbhaskar" className="spo-img" />

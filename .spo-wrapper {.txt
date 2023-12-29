@@ -1,0 +1,163 @@
+.spo-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.spo-main,
+.spo-sidebar {
+  border: 3px solid black;
+  background-color: #000000;
+  justify-content: center;
+  box-sizing: border-box;
+  align-self: center;
+
+}
+
+.spo-main {
+  width: 70%;  
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  background-color: rgb(0, 0, 0);
+  
+  
+    box-sizing: border-box;
+    --g : 30px;
+   padding: var(--g);
+   --num-cols: 3;
+   --row-height: 300px;
+   display: grid;
+   
+   grid-template-columns: repeat(var(--num-cols), 1fr);
+   grid-auto-rows: var(--row-height);
+   gap: var(--g);
+
+}
+.spo-main > img{
+  width: 100%;
+  height: 0px;
+  object-fit: cover;
+}
+
+@media screen and (max-width : 1024px) {
+    .imge{
+        --num-cols: 2;
+        --row-height:100px;
+    }
+}
+
+
+.spo-main::-webkit-scrollbar {
+  display: flex;
+}
+
+.spo-sidebar {
+  width: 80%;
+  height: 30%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #0ec7d1;
+  background-color: rgb(0, 0, 0);
+  padding-top: 2rem;
+  padding-left: 0rem;
+  margin-left: 0rem;
+}
+
+.spo-heading1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+@font-face {
+  font-family: NEW;
+  src: url(C:\Users\adity\Samar2k22\src\fonts\Bender.ttf);
+}
+#sponsor-text {
+  background: radial-gradient(
+    circle,
+    rgb(0, 0, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  font-family: "GOTSamar";
+  background-size: 200%;
+  font-weight: bolder;
+  color: transparent;
+  background-clip: text;
+  animation: animation 2s linear infinite;
+}
+
+@keyframes animation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.spo-heading {
+  margin-top: 0.4rem;
+  font-weight: 800;
+}
+
+.spo-text {
+  text-align: justify;
+  padding-left: 0rem;
+  font-size: larger;
+  padding-top: 1rem;
+}
+
+.spo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.sponsor-first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+  margin: 20px;
+  margin-bottom: 30px;
+  height: 120%;
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 5px solid white;
+
+  
+}
+
+.sponsor-first h1 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .spo-sidebar {
+    margin-left: 0;
+    width: 100%;
+    float: none;
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+  
+
+  .spo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .spo-text {
+    text-align: justify;
+    font-size: larger;
+    padding: 0rem;
+  }
+
+  .spo-img {
+    width: fit-content;
+    height: 18rem;
+  }
+}

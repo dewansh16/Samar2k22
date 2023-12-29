@@ -1,9 +1,12 @@
+import { useEffect } from "react";
 import "./aboutUs.css";
 import "./aboutUs.component.css";
 import chess from "../../Assets/Images/SHAURYA LOGO (1).png";
 import chess1 from "../../Assets/Images/samar_logo.png";
 function AboutUs() {
- 
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <div className="about-us-container">
       <h3 id="about-us-wrapper"> <span className="aboutus_title" id="about-us-text-span">About us</span> </h3>

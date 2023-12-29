@@ -135,7 +135,7 @@ function Footer() {
                                 to='/WebDTeam'
                         >
                             {/* Contact Us */}
-                            <p>Copyright © 2024 Shaurya. All Rights Reserved.</p>
+                            <p>Crafted with code by Team Shaurya !</p>
                         </NavLink>
             </div>
         </div>

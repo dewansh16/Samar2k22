@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 import "./style1.css";
 import sponsor from "../../Assets/Images/sponsors.jpg";
 import dainikBhaskar from "../../Assets/Images/Sponsors/dainikbhaskar.jpg";
@@ -7,6 +7,9 @@ import sparkcar from '../../Assets/Images/Sponsors/sparkcars.jpeg'
 import carshringar from '../../Assets/Images/Sponsors/carShringar.jpeg'
 import upgradraipur from '../../Assets/Images/Sponsors/upgradRaipur.jpeg'
 function Sponsors() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div class="spo-wrapper">
       <div class="spo-sidebar">

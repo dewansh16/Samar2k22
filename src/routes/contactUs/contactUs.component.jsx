@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './contactUs.css';
 import { ReactComponent as FacebookLogo } from '../../Assets/Icons/facebook.svg';
 import { ReactComponent as LinkedInLogo } from '../../Assets/Icons/linkedIn.svg';
@@ -8,6 +8,9 @@ import { ReactComponent as LocationPinLogo } from '../../Assets/Icons/locationPi
 import { ReactComponent as SmartPhoneLogo } from '../../Assets/Icons/smartphone.svg'
 import { ReactComponent as InstagramLogo } from '../../Assets/Icons/instaiconmobile.svg'
 function ContactUs() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const [userData, setUserData] =
         useState({
             username: "",

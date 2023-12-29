@@ -1,4 +1,13 @@
+@font-face {
+  font-family: anime_body;
+  src: url('../../fonts/anime_body.ttf');
+}
+@font-face {
+  font-family: anime_body2;
+  src: url('../../fonts/anime_body2.ttf');
+}
 .footer {
+  font-family: anime_body2;
   background: rgba(34, 22, 65, 0.5);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   display: flex;
@@ -57,6 +66,7 @@
   font-weight: 700;
   border-bottom: 4px solid white;
   margin-bottom: 1.5rem;
+  font-family: anime_body;
 }
 .link_connect span{
   margin: 0px 0px 2px 1.6rem;
@@ -75,6 +85,7 @@
   align-items: flex-start;
 }
 .footer-contact-links {
+  
   width: 100%;
   display: flex;
   padding-bottom: 12px;
@@ -91,6 +102,7 @@
   justify-content: flex-start;
 }
 .footer-contact-links p {
+
   font-weight: 800;
   color: #ffffff;
   text-decoration: none;

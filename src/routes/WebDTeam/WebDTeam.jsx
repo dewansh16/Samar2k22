@@ -1,18 +1,13 @@
-import React from "react";
 import { Tilt } from "react-tilt";
-
 import { motion } from "framer-motion";
-
-import { styles } from "../../styles";
 import { contributors } from "../../constants";
-import {StarWrapper} from "../../hoc" ;
 import { fadeIn, textVariant } from "../../utils/motion";
 import bgImg from "../../Assets/assets/herobg.png";
 import { linkedIn, instagram, twitter } from "../../Assets/Icons";
-
+import "./WebDTeam.css";
 
 const ContributorsCard = ({ index, name, position, photo, linkedInLink, instagramLink, twitterLink }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full webd_card'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -57,13 +52,16 @@ const WebDTeam = () => {
     <div className=" mx-10 my-20 lg:mx-40 lg:my-20">
     <div>
         <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText} > <center>CONTRIBUTORS SPOTLIGHT</center></h2>
+        <div class="" id="webd-text-span">
+          <h1 className="web_head">contributers spotlight</h1>
+        </div>
+        {/* <h2 className={styles.sectionHeadText} > <center>CONTRIBUTORS SPOTLIGHT</center></h2> */}
       </motion.div>
 
-      <div className="px-4 lg:px-20">
+      <div className="px-4 lg:px-20 font-anime_body2 webd_text">
         <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 mx-auto text-secondary text-[17px] text-center'
+        className='mt-4 mx-auto text-secondary text-[17px] text-center font-anime_body2'
       > 
            "Spotlighting the exceptional individuals who contributed their
             creativity and expertise to make Team Shaurya's website a reality. Explore the stories behind their contributions."
@@ -71,7 +69,7 @@ const WebDTeam = () => {
 
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-20 justify-center'>
+      <div className='mt-20 flex flex-wrap gap-20 justify-center webd_card'>
         {contributors.map((contributor, index) => (
           <ContributorsCard key={contributor.title} index={index} {...contributor} />
         ))}

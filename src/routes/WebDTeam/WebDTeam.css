@@ -1,0 +1,21 @@
+#webd-text-span {
+    text-align: center;
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+  
+    background-size: 200%;
+    line-height: 1.5;
+    font-size: 4rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-family: "GOTSamar";
+    color: transparent;
+    background-clip: text;
+    animation: animation 1.7s linear infinite; 
+  }
+  .webd_text,.webd_card{
+    font-family: anime_body2;
+  }

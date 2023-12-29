@@ -34,7 +34,7 @@ const NavLink = styled(Link)`
   font-weight: 800;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 28px;
     @media (max-width: 1000px) {
     width: 100%;
     border-radius: 0px 30px 30px 0px;

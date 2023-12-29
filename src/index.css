@@ -28,7 +28,7 @@ a {
   color: white;
 }
 
-@font-face {
+ /* @font-face {
   font-family: "Dragon";
   src: local("Lato"),
     url(./fonts/HouseOfTheDragon_PERSONAL_USE_ONLY.otf) format("opentype");
@@ -38,28 +38,29 @@ a {
   font-family: "DragonBold";
   font-weight: 900;
   src: local("Lato"),
-    url(./fonts/HouseOfTheDragonBold_PERSONAL_USE_ONLY.otf) format("opentype");
-}
+    url("./fonts/anime_body.ttf") format("opentype");
+} */
 
-@font-face {
+
+/* @font-face {
   font-family: "DragonDeco";
   font-weight: 900;
   src: local("Lato"),
     url(./fonts/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf) format("opentype");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "DragonOutline";
   font-weight: 900;
   src: local("Lato"),
     url(./fonts/HouseOfTheDragonOutline_PERSONAL_USE_ONLY.otf)
       format("opentype");
-}
+} */
 
 @font-face {
   font-family: "GOTSamar";
   src: local("Game of Thrones"),
-    url(./fonts/Game\ of\ Thrones.ttf) format("truetype");
+    url("./fonts/anime_body.ttf") format("truetype");
 }
 
 @tailwind base;

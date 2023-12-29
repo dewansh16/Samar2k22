@@ -4,11 +4,11 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
-import { services } from "../../constants";
+import { teams } from "../../constants";
 import {StarWrapper} from "../../hoc" ;
 import { fadeIn, textVariant } from "../../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const TeamCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -42,7 +42,7 @@ const OurTeams = () => {
     <>
     <div className="mt-20">
         <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}> <center>OUR TEAMS</center></h2>
+        <h2 className={styles.sectionHeadText} > <center>OUR TEAMS</center></h2>
       </motion.div>
 
       <div className="px-4 lg:px-20">
@@ -58,8 +58,8 @@ const OurTeams = () => {
       </div>
 
       <div className='mt-20 flex flex-wrap gap-20 justify-center'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+        {teams.map((team, index) => (
+          <TeamCard key={team.title} index={index} {...team} />
         ))}
       </div>
       </div>

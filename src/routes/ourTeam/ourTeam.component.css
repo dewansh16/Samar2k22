@@ -32,7 +32,7 @@
   font-size: 4rem;
   margin-top: 2rem;
   font-weight: bolder;
-  font-family: "GOTSamar";
+  /* font-family: "GOTSamar"; */
   color: transparent;
   background-clip: text;
   animation: animation 1.7s linear infinite;
@@ -106,7 +106,7 @@
   align-items: center;
   max-width: 100%;
   margin: 0 auto;
-  font-family: var(--font-sans);
+  /* font-family: var(--font-sans); */
 }
 
 .card-container {
@@ -247,7 +247,7 @@
 }
 
 .copy {
-  font-family: var(--font-serif);
+  /* font-family: var(--font-serif); */
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.35;

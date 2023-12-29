@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Countdown from './Countdown';
 import Schedule from "./Schedule";
 import OurTeams from "./OurTeams";
@@ -92,6 +93,9 @@ function Home() {
   // }
   // requestAnimationFrame(draw);
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     

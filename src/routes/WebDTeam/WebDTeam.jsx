@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 import { Tilt } from "react-tilt";
 
 import { motion } from "framer-motion";
@@ -50,6 +50,9 @@ const ContributorsCard = ({ index, name, position, photo, linkedInLink, instagra
 
 
 const WebDTeam = () => {
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
       return (
     <>
     <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgImg})` }}>

@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect} from "react";
 import chelsy from "../../Assets/Images/team/OC/ChelsyGangwar.jpeg";
 import prajjwal from "../../Assets/Images/team/OC/prajjwal.jpg";
 import rishabh from "../../Assets/Images/team/OC/Rishabh.jpg";

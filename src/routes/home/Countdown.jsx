@@ -117,7 +117,7 @@ const Countdown = () => {
 
 
 
-        <div className='mt-10 flex flex-wrap gap-10 lg:gap-2 justify-center items-center'>
+        <div className='mt-10 flex flex-wrap gap-10 lg:gap-2 justify-center items-center px-5'>
         
           
          

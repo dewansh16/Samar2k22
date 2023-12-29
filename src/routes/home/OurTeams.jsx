@@ -57,7 +57,7 @@ const OurTeams = () => {
 
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-20 justify-center'>
+      <div className='mt-20 flex flex-wrap gap-20 justify-center px-10'>
         {teams.map((team, index) => (
           <TeamCard key={team.title} index={index} {...team} />
         ))}

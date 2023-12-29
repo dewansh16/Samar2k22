@@ -2,6 +2,14 @@
   font-family: anime_body2;
   src: url('../../fonts/anime_body2.ttf');
 }
+.about-us-container{
+  background: url("../../Assets/assets/herobg.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+}
 .aboutus_first1,
 .aboutus_second {
   display: flex;
@@ -47,11 +55,11 @@
 .aboutus_image1 .circle-spin{
   position: absolute;
   z-index: -1;
-  border-top: 5px solid red;
+  border-top: 5px solid rgb(46, 5, 107);
   border-left: 5px solid black;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid  rgb(46, 5, 107);
   border-right: 5px solid black;
-  box-shadow: 5px 5px 45px red;
+  box-shadow: 5px 5px 45px rgb(46, 5, 107);
   border-radius: 50%;
   width: 420px;
   height: 420px;
@@ -78,7 +86,7 @@
   }
   .aboutus_image1 img {
     width: 300px;
-    height: 300px
+    height: 300px;
   }
   .aboutus_first1 {
     flex-wrap: wrap-reverse;
@@ -95,6 +103,20 @@
   .aboutus_image1 .circle-spin{
     width: 305px;
     height: 305px;
+  }
+}
+@media screen and (max-width: 708px) 
+{
+  .aboutus_image1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .aboutus_image1 img {
+    width: 300px;
+    height: 200px;
+    /* padding: 20px; */
+    margin: 70px;
+    
   }
 }
 @media screen and (max-width: 1140px)
@@ -117,13 +139,7 @@
   }
 
 }
-@media screen and (max-width: 708px) 
-{
-  .aboutus_image1 img {
-    width: 300px;
-    height: 300px;
-  }
-}
+
 
 
 

@@ -184,33 +184,16 @@ hr.li{
   box-sizing: border-box;
 
   bottom: 5%;
-
-  --border-size: 3px;
-  --border-angle: 0turn;
   
-  background-image: conic-gradient(
-      from var(--border-angle),
-      #213,
-      #112 50%,
-      #213
-    ),
-    conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
-  background-size: calc(100% - (var(--border-size) * 2))
-      calc(100% - (var(--border-size) * 2)),
-    cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-
-  animation: bg-spin 3s linear infinite;
-  animation-play-state: running;
+  background-color: #302244;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 5;
+  box-shadow: 0 0 25px rgb(255, 255, 255);
   
-  }
-  @keyframes bg-spin {
-    to {
-      --border-angle: 1turn;
-    }
-  }
-
+  margin: 20px auto;
+  
+}
 
 .sponsor-first h1 {
   margin-bottom: 20px;

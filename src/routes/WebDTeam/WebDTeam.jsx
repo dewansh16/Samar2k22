@@ -54,7 +54,7 @@ const WebDTeam = () => {
     <>
     <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgImg})` }}>
       {/* <div class="block lg:block"> */}
-    <div className="mx-40 my-20">
+    <div className=" mx-10 my-20 lg:mx-40 lg:my-20">
     <div>
         <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText} > <center>CONTRIBUTORS SPOTLIGHT</center></h2>

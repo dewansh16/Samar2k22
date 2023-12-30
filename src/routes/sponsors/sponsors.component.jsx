@@ -13,8 +13,8 @@ function Sponsors() {
   return (
     <div class="spo-wrapper">
       <div class="spo-sidebar">
-        <h3 id="sponsor-wrap" className="spo-heading1"><span id="sponsor-text">Sponsors</span></h3>
-        <p  className="spo-text" >
+        <h3 id="sponsor-wrap" className="spo-heading1 mt-10" ><span id="sponsor-text">Sponsors</span></h3>
+        <p  className="spo-text " >
           SAMAR success is unmatched and this
           is due to renowned partners we have who have always provided
           unequivocal support . The mutual work between samar and it's partners
@@ -22,23 +22,26 @@ function Sponsors() {
           a new audience.
         </p>
       </div>
-      <div class="spo-main">
-        <div className="sponsor-first">
-            <img src={dainikBhaskar} alt="dainikbhaskar" className="spo-img" />
+      <div className="line block">
+        <hr className="li block"/>
+      </div>
+      <div class="spo-main  ">
+        <div className="sponsor-first flex">
+            <img src={dainikBhaskar} alt="dainikbhaskar " className="spo-img" />
             <h1 className="spo-heading" >PRINT MEDIA PARTNER</h1>
         </div>
 
-        <div className="sponsor-first">
+        <div className="sponsor-first  ">
             <img src={ibc} alt="ibc24" className="spo-img" />
-          <h1 className="spo-heading">TELEVISION MEDIA PARTNER</h1>
+          <h1 className="spo-heading">TELEVISION PARTNER</h1>
         </div>
 
-        <div className="sponsor-first">
+        <div className="sponsor-first flex">
             <img src={sparkcar} alt="dainikbhaskar" className="spo-img" />
           <h1 className="spo-heading">TRAVEL PARTNER</h1>
         </div>
 
-        <div className="sponsor-first">
+        <div className="sponsor-first flex">
             <img src={carshringar} alt="ibc24" className="spo-img" />
           <h1 className="spo-heading">DECORATION PARTNER</h1>
         </div>

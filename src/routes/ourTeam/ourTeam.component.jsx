@@ -81,10 +81,7 @@ const Overall = ({ data }) => {
 
 
 
-const OurTeam = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+const ourTeam = () => {
   
   const overall = [
     { name: 'PRAJJWAL SHARMA', img: prajjwal, year: '4th year' },
@@ -182,7 +179,7 @@ const OurTeam = () => {
   );
 };
 
-export default OurTeam;
+export default ourTeam;
 
 //       
 //      

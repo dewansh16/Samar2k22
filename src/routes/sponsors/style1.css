@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url('../../Assets/Images/SponsBG2.jpg');
+  background-image: url('../../Assets/assets/herobg.png');
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -36,16 +36,15 @@ body{
   
 }
 hr.li{
-  border: #ffffff solid 3px;
+  border: #ffffff solid 2px;
 }
 .spo-main,
 .spo-sidebar {
   
-  
   justify-content: center;
   box-sizing: border-box;
   align-self: center;
-  overflow: hidden;
+  
 }
 
 .spo-main {
@@ -53,7 +52,7 @@ hr.li{
   margin:  0rem;
   margin-bottom: 2rem;
  
-  overflow: visible;
+  
   border: #ffffff;
   padding-bottom: 20px;
   
@@ -80,8 +79,8 @@ hr.li{
 
 @media screen and (max-width : 1024px) {
     .spo-main{
-        --num-cols: 1;
-        --row-height:160px;
+        --num-cols: 2;
+        --row-height:170px;
         --g:60px
     }
 }
@@ -111,9 +110,15 @@ hr.li{
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
-  
 
 }
+@media screen and (max-width : 1024px) {
+  .spo-heading{
+  /* font-size: 0.5rem; */
+  }
+}
+  
+
 /* @font-face {
   font-family: NEW;
   src: url(C:\Users\adity\Samar2k22\src\fonts\Bender.ttf);
@@ -134,8 +139,10 @@ hr.li{
   --sise: 3cm;
   font-size: var(--sise);
    -webkit-text-stroke: #ffffff ;
-   --stroke: 3px;
+   --stroke: 2px;
   -webkit-text-stroke-width:var(--stroke);
+  margin-top: 160px;
+  padding-top: 0px;
 }
 @media screen and (max-width : 1024px) {
     #sponsor-text{
@@ -159,10 +166,19 @@ hr.li{
 .spo-text {
   text-align: justify;
   padding-left: 0rem;
-  font-size: x-large;
+  --fs: 1.5rem;
+  font-size: var(--fs);
   padding-top: 1rem;
   margin-bottom: 10px;
+  
 }
+
+@media screen and (max-width : 1024px) {
+  .spo-text{
+--fs: 0.5rem;
+  }
+}
+
 
 .spo-img {
   width: 100%;
@@ -179,11 +195,13 @@ hr.li{
   --p: 10px;
   padding: 10px;
   padding-bottom: var(--p);
+  --ptop: 10px;
+  padding-top:var(--ptop);
 
   --m:0px;
   margin: var(--m);
 
-  position: relative;
+  /* position: relative; */
   --high: 100%;
   height: var(--high);
   background-color: rgba(255, 255, 255, 0.1);  
@@ -198,7 +216,8 @@ hr.li{
     --p: 0px;
     width: 120%;
     padding-bottom: 0px;
-    overflow: scroll;
+    
+
  
   }
 }
@@ -229,7 +248,7 @@ hr.li{
     width: 100%;
     float: none;
     margin-bottom: 2rem;
-    position: relative;
+    /* position: relative; */
     padding: 1rem;
     margin-top: 20px;
 

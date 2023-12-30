@@ -155,8 +155,8 @@ const ourTeam = () => {
   return (
     <div>
       <div className="ourTeam w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgImg})` }}>
-      <p className="team-head-text" id="ot-wrapper"><span id="ot-text">Our Team</span></p>
-      <p className="overall" id="overall">OVERALL</p>
+      <p className="team-head-text " id="ot-wrapper"><span id="ot-text">Our Team</span></p>
+      <p className="overall " id="overall">OVERALL</p>
       <Overall data={overall} />
 
       <p className="overall" id="overall">SPONS</p>

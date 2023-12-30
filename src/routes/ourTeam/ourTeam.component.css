@@ -268,7 +268,7 @@
   font-size: 4rem;
   margin-top: 2rem;
   font-weight: bolder;
-  font-family: "GOTSamar";
+  /* font-family: "GOTSamar"; */
   color: transparent;
   background-clip: text;
   animation: animation 1.7s linear infinite;
@@ -284,9 +284,9 @@
   font-size: 45px;
   font-weight: 400;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 30%;
-  margin: 5rem auto;
+  margin: 3.5rem auto;
   border-bottom: 1px solid white;
 }
 
@@ -411,7 +411,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color:#fe7903;/* #6d6a6a;*/
+  background-color:#6813f0;/* #6d6a6a;*/
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   content: '';
   opacity: 0.5;

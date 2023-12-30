@@ -80,8 +80,9 @@ hr.li{
 
 @media screen and (max-width : 1024px) {
     .spo-main{
-        --num-cols: 2;
-        --row-height:100px;
+        --num-cols: 1;
+        --row-height:160px;
+        --g:60px
     }
 }
 
@@ -174,10 +175,13 @@ hr.li{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   --p: 10px;
-  padding: var(--p);
-  --m:0;
-  margin-block-end: var(--m);
+  padding: 10px;
+  padding-bottom: var(--p);
+
+  --m:0px;
+  margin: var(--m);
 
   position: relative;
   --high: 100%;
@@ -189,8 +193,12 @@ hr.li{
 }
 @media (max-width: 768px) {
   .sponsor-first {
-    --high: 200%;
-    --m: 90px;
+    --high: 120%;
+    --m: 0;
+    --p: 0px;
+    width: 120%;
+    padding-bottom: 0px;
+    overflow: scroll;
  
   }
 }

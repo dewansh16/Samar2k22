@@ -1,58 +1,63 @@
-/* .about-us-container {
-  font-family: "DragonBold";
-} */
-.merchandise_image img {
-  width: 500px;
-  padding-bottom: 50px;
-  /* height: 500px; */
-}
-.merchandise_data h3 {
-  /* font-family: "GOTSamar", sans-serif; */
-  font-size: 40px;
-}
+
 .merchandise_data h2 {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 6rem;
+  /* font-weight: bold; */
 }
+
 .containermar {
+  /* background-image: url("../../Assets/Images/merchbg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  overflow: hidden;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  flex-shrink: 2;
-  justify-content: space-around;
-  margin: 5px;
+  flex-direction: column;
+  justify-content: center;
+  /* margin: 5px; */
   padding-top: 40px;
 }
 
 .merchandise_data {
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-right: 30px;
 }
 
 #merch-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
 .btn{
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  border-radius: 20px;
-  margin: 20px;
+  background-color: rgba(222, 16, 16,0.9);
+  /* background-image: url("../../Assets/Images/akatsuki.png");
+  background-size: cover; */
+  font-size: xx-large;
+  border-radius: 5px;
   width: 12rem;
-  outline: none;
+ margin-top: 40px;
   height: 3.2rem;
+  outline-style: none;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: white
 }
 
 #merch-text {
+  font-family: "anime_body";
   text-align: center;
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
     rgba(252, 70, 107, 1) 100%
   );
-
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
   background-size: 200%;
-  /* font-family: "GOTSamar"; */
-  font-weight: bolder;
+  /* font-weight: bolder; */
   color: transparent;
   background-clip: text;
   animation: animation 1.7s linear infinite;
@@ -66,6 +71,118 @@
 .mar_button {
   background-color: rgb(222, 16, 16);
 }
+
+/* .carousel .slider-wrapper{
+  width: 500px;
+} */
+.carousel .thumb{
+  width: 80px;
+  height: 80px;
+}
+.carousel {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+   /* max-width: 800px;
+  min-height: 300px;   */
+  backdrop-filter: blur(6px);  
+  /* justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  grid-template-columns: repeat(auto-fit, minmax(418px , 1fr));
+  grid-gap: 50px;  
+  align-items: center;
+}
+
+.character{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.align{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anime img{
+  max-width: 150px;
+  max-height: 180px;
+}
+
+.anime{
+  align-items: center;
+}
+
+.marqueeB{
+  margin-top:80px ;
+  margin-bottom: 20px;
+  width: 100vw;
+  /* height:170px; */
+   /* overflow: hidden;  */
+  /* background-color: aliceblue; */
+  }
+  
+  .marks img{
+    /* padding-bottom: 40px; */
+    margin: 0 30px;
+    height: 170px;
+    width: 220px;
+  }
+
+  .carousel-set{
+    /* display: block;
+    height: 70%;
+    width: 80%; */
+    padding-top: 30px;
+  }
+
+  .carousel-root{
+    display: block;
+    max-height: 60%;
+    max-width: 70%; 
+    margin: auto;
+
+  }
+
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: large;
+     font-weight: bold; 
+    text-overflow: clip;
+    margin-bottom: 10px;
+  }
+
+   .view{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  } 
+
+  .doc{
+    /* min-height: 60%;
+    min-width: 70%; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .in {
+    display: block;
+    max-height: 80%;
+    max-width: 70%; 
+    margin: auto;
+  } 
+
 @media screen and (max-width: 820px){
   .btn{
     margin:2em;
@@ -86,7 +203,13 @@
 }
 
 @media (max-width: 418px) {
-  .merchandise_data h2 {
-    font-size: 2rem;
-  }
+    .merchandise_data h2 {
+    font-size: 4rem;
+  }   
+
+  /* .container{
+    grid-gap: 50px;
+  } */
+
+
 }

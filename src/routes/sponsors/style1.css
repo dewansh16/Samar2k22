@@ -15,8 +15,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../../Assets/assets/herobg.png");
- 
+  background-image: url('../../Assets/assets/herobg.png');
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -27,14 +26,25 @@ body{
   
   overflow-y: visible;
 }
+ .line {
+  margin-top: 25px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-self: center;
+
+  width: 80%;
+  
+}
+hr.li{
+  border: #ffffff solid 2px;
+}
 .spo-main,
 .spo-sidebar {
-  
   
   justify-content: center;
   box-sizing: border-box;
   align-self: center;
-  overflow: hidden;
+  
 }
 
 .spo-main {
@@ -42,7 +52,7 @@ body{
   margin:  0rem;
   margin-bottom: 2rem;
  
-  overflow: visible;
+  
   border: #ffffff;
   padding-bottom: 20px;
   
@@ -59,7 +69,7 @@ body{
 
 }
 
-.spo-main > img{
+.sponsor-first> img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -70,7 +80,8 @@ body{
 @media screen and (max-width : 1024px) {
     .spo-main{
         --num-cols: 2;
-        --row-height:100px;
+        --row-height:170px;
+        --g:60px
     }
 }
 
@@ -81,26 +92,33 @@ body{
 
 .spo-sidebar {
   width: 80%;
-  height: 30%;
+  --h: 30%;
+  height: var(--h);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   color: #ffffff;
 
-  
   padding-top: 2rem;
   padding-left: 0rem;
   margin-left: 0rem;
   margin-bottom: 20px;
 }
 
+
 .spo-heading1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
-  
 
 }
+@media screen and (max-width : 1024px) {
+  .spo-heading{
+  /* font-size: 0.5rem; */
+  }
+}
+  
+
 /* @font-face {
   font-family: NEW;
   src: url(C:\Users\adity\Samar2k22\src\fonts\Bender.ttf);
@@ -108,19 +126,31 @@ body{
 #sponsor-text {
   background: radial-gradient(
     circle,
-    rgb(156, 1, 1) 0%,
-    rgb(20, 11, 155) 100%
+    rgb(212, 5, 5) 0%,
+    
+    rgb(25, 4, 94) 100%
   );
   font-family: anime_body;
   background-size: 200%;
   /* font-weight: bolder; */
   color: transparent;
   background-clip: text;
-  animation: animation 2s linear infinite;
-  font-size: 3cm;
+  animation: animation 1.5s linear infinite;
+  --sise: 3cm;
+  font-size: var(--sise);
    -webkit-text-stroke: #ffffff ;
-  -webkit-text-stroke-width: 0.5px;
+   --stroke: 2px;
+  -webkit-text-stroke-width:var(--stroke);
+  margin-top: 160px;
+  padding-top: 0px;
 }
+@media screen and (max-width : 1024px) {
+    #sponsor-text{
+--stroke: 1px;
+--sise: 50px;
+    }
+  }
+
 
 @keyframes animation {
   to {
@@ -136,36 +166,77 @@ body{
 .spo-text {
   text-align: justify;
   padding-left: 0rem;
-  font-size: x-large;
+  --fs: 1.5rem;
+  font-size: var(--fs);
   padding-top: 1rem;
   margin-bottom: 10px;
+  
 }
+
+@media screen and (max-width : 1024px) {
+  .spo-text{
+--fs: 0.5rem;
+  }
+}
+
 
 .spo-img {
   width: 100%;
   height: 100%;
 }
 
+
 .sponsor-first {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
- 
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  
 
-  position: relative;
-	
-	
+  --p: 10px;
+  padding: 10px;
+  padding-bottom: var(--p);
+  --ptop: 10px;
+  padding-top:var(--ptop);
+
+  --m:0px;
+  margin: var(--m);
+
+  /* position: relative; */
+  --high: 100%;
+  height: var(--high);
   background-color: rgba(255, 255, 255, 0.1);  
   border-radius: 10px; 
   box-shadow: 0 0 20px rgb(255, 255, 255);
  
 }
+@media (max-width: 768px) {
+  .sponsor-first {
+    --high: 120%;
+    --m: 0;
+    --p: 0px;
+    width: 120%;
+    padding-bottom: 0px;
+    
 
+ 
+  }
+}
+.sponsor-first:hover{
+  box-shadow: 0 30px 35px rgba(71, 7, 135, 0.7);
+  box-sizing: border-box;
+
+  bottom: 10%;
+  
+  background-color: #302244;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 4;
+  border-image-repeat:space;
+  box-shadow: 0 0 16px rgb(255, 255, 255);
+  
+  margin: 20px auto;
+  
+}
 
 .sponsor-first h1 {
   margin-bottom: 20px;
@@ -177,11 +248,12 @@ body{
     width: 100%;
     float: none;
     margin-bottom: 2rem;
-    position: relative;
+    /* position: relative; */
     padding: 1rem;
     margin-top: 20px;
+
+    --h: 360px;
   }
-  
 
   .spo-wrapper {
     display: flex;

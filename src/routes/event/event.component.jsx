@@ -1,4 +1,3 @@
-import React from "react";
 
 // import BasketBallImg from "../../Assets/Images/basketBallImg.png";
 // import "./style1.css"
@@ -80,8 +79,12 @@ import React from "react";
 //         </div>
 //     )
 // }
-
+import { useEffect } from "react";
+import bgImg from "../../Assets/assets/herobg.png";
 const Event = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     // <div className="w-full h-auto py-24 bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]">
     //     <div className="block md:hidden lg:block">
@@ -96,7 +99,8 @@ const Event = () => {
     //        </div>
     //     </div>
     // </div>
-    <div class="w-full h-auto py-24 bg-fixed bg-cover bg-no-repeat bg-center  bg-[url('https://live.staticflickr.com/65535/52305606430_40ba7828eb_h.jpg')]">
+    <div class="w-full h-auto bg-fixed bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${bgImg})` }}>
+    <div class="w-full h-auto py-24 bg-fixed bg-cover bg-no-repeat bg-center]">
       <div class="block md:hidden lg:block">
 
         {/* line 1  */}
@@ -301,6 +305,7 @@ const Event = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

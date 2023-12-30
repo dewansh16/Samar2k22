@@ -128,7 +128,15 @@ function Footer() {
                 </div>
             </div>
             <div className="copyright-div">
-                <p>Copyright © 2024 Shaurya. All Rights Reserved.</p>
+                        <NavLink
+                            onClick={() => {
+                                setActiveLink(6)
+                            }}
+                                to='/WebDTeam'
+                        >
+                            {/* Contact Us */}
+                            <p>Crafted with code by Team Shaurya !</p>
+                        </NavLink>
             </div>
         </div>
     )

@@ -2,7 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Gang of Three';
 }
+body {
+  overflow-x: hidden;
+}
+
+/* .home-cursor:nth-child(1){
+  cursor: url('../../Assets/Images/pokeball.png');
+}
+.home-cursor{
+  cursor: url('../../Assets/Images/pokeball.png');
+}
+.custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px; 
+  background-image: url('path/to/your-cursor-image.png');
+  background-size: cover;
+  pointer-events: none;
+}
+
+.font-home{
+  font-family: 'Gang of Three';
+} */
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -61,11 +84,11 @@
 }
 
 /* container */
-.home-container {
-  text-align: center;
-  padding: 0 1rem 0;
+/* .home-container { */
+  /* text-align: center; */
+  /* padding: 0 1rem 0; */
   /* padding: 6rem 1rem 0; */
-}
+/* } */
 
 /* page banner */
 
@@ -95,12 +118,23 @@
   height: 100%;
   position: absolute;
   background-size: cover;
-  /* background-position: 60% 35%; */
+  background-position: 60% 50%;
   background-repeat: no-repeat;
   animation: image_blur 3s 1;
   animation-fill-mode: forwards;
   border-radius: 2rem;
 }
+/* @media (max-width: 767px) {
+  .page-banner-bg {
+    background-image: url('../../Assets/Images/schedule-bg2.webp');
+  }
+}
+@media (min-width: 768px) {
+  .page-banner-bg {
+    background-image: url('../../Assets/Images/schedule-bg1.webp');
+  }
+} */
+
 
 /* first image  */
 
@@ -154,7 +188,7 @@
 
 /* heading properties */
 
-.heading-samar2k23{
+.samar2k23{
   /* color: #c34f4e; */
   /* color: #fe7903; */
   /* color: #ed6a4a; */
@@ -164,7 +198,7 @@
   /* text-shadow: 0 0 10px #fe7903 ; */
   /* 0 0 20px white; */
   /* margin: 2% auto 2%; */
-  font-family: 'Gang of Three';
+  /* font-family: 'Gang of Three'; */
   font-size: 6vw;
   justify-content: center;
   align-items: center;
@@ -201,7 +235,7 @@
   margin: auto;
 }
 .heading-presentsYou{
-  font-family: 'Gang of Three';
+  /* font-family: 'Gang of Three'; */
   margin: 2% auto 1%;
   font-size: 50px;
   justify-content: center;
@@ -211,7 +245,7 @@
   color: white;
 }
 .heading-schedule{
-  font-family: 'Gang of Three';
+  /* font-family: 'Gang of Three'; */
   margin: 1rem 0 2rem 0;
   font-size: 40px;
   justify-content: center;
@@ -220,22 +254,33 @@
   color: #ffffff;
 }
 .heading-countdown{
-  font-family: 'Gang of Three';
-  margin: 12rem 0 6rem 0;
-  font-size: 40px;
+  /* font-family: 'Gang of Three'; */
+  /* margin: 2rem 0 0 0; */
+  margin: 8rem 0 0 0;
+  /* font-size: 50px; */
+  /* font-size: 60px; */
   justify-content: center;
   align-items: center;
   font-weight: bolder;
   color: #ffffff;
 }
+.countdown-text{
+  /* font-family: 'Gang of Three'; */
+  margin: 12rem 0 6rem 0;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  /* font-weight: bolder; */
+  color: #ffffff;
+}
 .heading-DaysHMS{
-  font-family: 'Gang of Three';
+  /* font-family: 'Gang of Three'; */
 }
 .heading-time{
-  font-family: 'Gang of Three';
+  /* font-family: 'Gang of Three'; */
 }
 .heading-our-team{
-  font-family: 'Gang of Three';
+  /* font-family: 'Gang of Three'; */
   margin: 10rem 0 1rem 0;
   font-size: 40px;
   justify-content: center;
@@ -426,7 +471,7 @@ iframe {
   margin-top: 2em;
 }
 .heading-container-cards h2 {
-  font-family: 'moteratoo';
+  /* font-family: 'moteratoo'; */
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 1000;

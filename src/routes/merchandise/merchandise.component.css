@@ -7,7 +7,7 @@
   /* height: 500px; */
 }
 .merchandise_data h3 {
-  font-family: "GOTSamar", sans-serif;
+  /* font-family: "GOTSamar", sans-serif; */
   font-size: 40px;
 }
 .merchandise_data h2 {
@@ -51,7 +51,7 @@
   );
 
   background-size: 200%;
-  font-family: "GOTSamar";
+  /* font-family: "GOTSamar"; */
   font-weight: bolder;
   color: transparent;
   background-clip: text;

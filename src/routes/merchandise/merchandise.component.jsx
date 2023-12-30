@@ -1,7 +1,10 @@
-import React from 'react';
+import {useEffect} from 'react';
 import chess from "../../Assets/Images/Marchen.jpg";
 import "./merchandise.component.css";
 function Merchandise() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return (
         <div className='containermar'>
             <div className="merchandise_data">

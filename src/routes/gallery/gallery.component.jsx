@@ -1,7 +1,10 @@
-import React from "react";
+import {useEffect} from "react";
 import "./style.css";
 
 function Gallery() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="gallery-page">
       <div className="gallery-page-container">

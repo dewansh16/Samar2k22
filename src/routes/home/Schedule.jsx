@@ -1,11 +1,16 @@
 import {useState} from 'react'
 import "./home.component.css";
-import pikachu from "../../Assets/Images/pikachu.jpg";
+// import pikachu from "../../Assets/Images/pikachu.jpg";
+// import scheduleBg from "../../Assets/Images/schedule-bg.jpeg";
+// import scheduleBg1 from "../../Assets/Images/schedule-bg1.webp";
+// import scheduleBg2 from "../../Assets/Images/schedule-bg2.webp";
 
 // import Swiper core and required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import StarWrapper from "../../hoc/StarWrapper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,8 +25,8 @@ const Schedule = () => {
 
   return (
     <>
-        <div data-aos="fade-down" className="heading-schedule"> 
-              SCHEDULE
+        <div data-aos="fade-down" className="heading-schedule" id='about' > 
+             <center> SCHEDULE  </center>
           </div>
 
 
@@ -30,7 +35,6 @@ const Schedule = () => {
         data-aos-duration="2000"
         className="page-banner">
           <div
-            style={{ backgroundImage: `url(${pikachu})` }}
             className="page-banner-bg"
           />
           {toggle ? (
@@ -1745,9 +1749,9 @@ const Schedule = () => {
         </div>
                                              
         {/* toggle  */}
-        <div data-aos="fade-up" className="home-toggle-button">
+        {/* <div data-aos="fade-up" className="home-toggle-button">
           <div className="flex justify-center items-center ">
-            {/*   Switch Container */}
+
             <div className="toggle-text-div">
               <p>Boys</p>
             </div>
@@ -1767,9 +1771,10 @@ const Schedule = () => {
               <p>Girls</p>
             </div>
           </div>
-        </div>
+        </div> */}
     </>
   )
 }
 
+// export default StarWrapper(Schedule,"about")
 export default Schedule

@@ -84,11 +84,6 @@ hr.li{
         --row-height:100px;
     }
 }
-@media (max-width : 768px){
-  .sponsor-first{
-    
-  }
-}
 
 
 .spo-main::-webkit-scrollbar {
@@ -97,18 +92,19 @@ hr.li{
 
 .spo-sidebar {
   width: 80%;
-  height: 30%;
+  --h: 30%;
+  height: var(--h);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   color: #ffffff;
 
-  
   padding-top: 2rem;
   padding-left: 0rem;
   margin-left: 0rem;
   margin-bottom: 20px;
 }
+
 
 .spo-heading1 {
   text-align: center;
@@ -124,8 +120,9 @@ hr.li{
 #sponsor-text {
   background: radial-gradient(
     circle,
-    rgb(236, 10, 10) 0%,
-    rgb(10, 2, 121) 100%
+    rgb(212, 5, 5) 0%,
+    
+    rgb(25, 4, 94) 100%
   );
   font-family: anime_body;
   background-size: 200%;
@@ -133,11 +130,19 @@ hr.li{
   color: transparent;
   background-clip: text;
   animation: animation 1.5s linear infinite;
-  --sise: 50px;
-  font-size: 3.5cm;
+  --sise: 3cm;
+  font-size: var(--sise);
    -webkit-text-stroke: #ffffff ;
-  -webkit-text-stroke-width: 3px;
+   --stroke: 3px;
+  -webkit-text-stroke-width:var(--stroke);
 }
+@media screen and (max-width : 1024px) {
+    #sponsor-text{
+--stroke: 1px;
+--sise: 50px;
+    }
+  }
+
 
 @keyframes animation {
   to {
@@ -169,27 +174,38 @@ hr.li{
   align-items: center;
   justify-content: center;
   flex-direction: column;
- 
-  padding: 10px;
+  --p: 10px;
+  padding: var(--p);
+  --m:0;
+  margin-block-end: var(--m);
 
   position: relative;
-    
+  --high: 100%;
+  height: var(--high);
   background-color: rgba(255, 255, 255, 0.1);  
   border-radius: 10px; 
   box-shadow: 0 0 20px rgb(255, 255, 255);
  
 }
+@media (max-width: 768px) {
+  .sponsor-first {
+    --high: 200%;
+    --m: 90px;
+ 
+  }
+}
 .sponsor-first:hover{
   box-shadow: 0 30px 35px rgba(71, 7, 135, 0.7);
   box-sizing: border-box;
 
-  bottom: 5%;
+  bottom: 10%;
   
   background-color: #302244;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-  border-image-slice: 5;
-  box-shadow: 0 0 25px rgb(255, 255, 255);
+  border-image-slice: 4;
+  border-image-repeat:space;
+  box-shadow: 0 0 16px rgb(255, 255, 255);
   
   margin: 20px auto;
   
@@ -208,8 +224,9 @@ hr.li{
     position: relative;
     padding: 1rem;
     margin-top: 20px;
+
+    --h: 360px;
   }
-  
 
   .spo-wrapper {
     display: flex;

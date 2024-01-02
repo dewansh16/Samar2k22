@@ -36,13 +36,14 @@
   text-align: center;
   background: radial-gradient(
     circle,
-    rgb(175, 223, 5) 0%,
+    rgba(63, 94, 251, 1) 0%,
     rgba(252, 70, 107, 1) 100%
   );
 
   background-size: 200%;
-  font-family: anime_body;
-  font-size: 8rem;
+  /* font-family: "GOTSamar"; */
+  /* font-family: "anime_body2"; */
+  font-size: 4rem;
   font-weight: bolder;
   color: transparent;
   background-clip: text;
@@ -56,8 +57,8 @@
 }
 
 .samar {
-  font-family: anime_body;
-  font-size: 4rem;
+  /* font-family: anime_body; */
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   border-bottom: 1px solid white;
@@ -82,7 +83,7 @@
   }
   #about-us-text-span {
     margin-top: 40px;
-    font-size: 6rem;
+    font-size: 3rem;
   }
 }
 

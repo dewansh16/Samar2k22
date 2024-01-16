@@ -20,15 +20,16 @@ const TeamCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] pt-4 pb-2 px-6 min-h-[280px] flex justify-evenly items-center flex-col'
+        // className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
           alt='Playing-teams'
-          className='object-contain'
+          className='object-contain rounded-[15px]'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-green-300 text-[20px] font-bold text-center pt-5 pb-3'>
           {title}
         </h3>
       </div>

@@ -124,25 +124,21 @@ hr.li{
   src: url(C:\Users\adity\Samar2k22\src\fonts\Bender.ttf);
 } */
 #sponsor-text {
+   text-align: center;
   background: radial-gradient(
     circle,
-    rgb(212, 5, 5) 0%,
-    
-    rgb(25, 4, 94) 100%
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
   );
-  font-family: anime_body;
+
   background-size: 200%;
-  /* font-weight: bolder; */
+  /* font-family: "GOTSamar"; */
+  /* font-family: "anime_body2"; */
+  font-size: 4rem;
+  font-weight: bolder;
   color: transparent;
   background-clip: text;
-  animation: animation 1.5s linear infinite;
-  --sise: 3cm;
-  font-size: var(--sise);
-   -webkit-text-stroke: #ffffff ;
-   --stroke: 2px;
-  -webkit-text-stroke-width:var(--stroke);
-  margin-top: 160px;
-  padding-top: 0px;
+  animation: animation 1.7s linear infinite;
 }
 @media screen and (max-width : 1024px) {
     #sponsor-text{

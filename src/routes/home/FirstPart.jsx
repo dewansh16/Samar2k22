@@ -24,7 +24,7 @@ const FirstPart = () => {
           </p>
           <h1 className={`${styles.heroHeadText} text-white`}>
           <span className='text-[#915EFF]'>SAMAR</span>
-          <p className={`${styles.heroSubText} text-white-100`}>
+          <p className={`${styles.heroSubText} text-white-100`} >
             &nbsp; The sports fest 
           </p>
           {/* <br /> <br /> */}

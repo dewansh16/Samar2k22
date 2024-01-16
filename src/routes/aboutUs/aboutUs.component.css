@@ -1,14 +1,7 @@
 @font-face {
   font-family: anime_body2;
-  src: url('../../fonts/anime_body2.ttf');
+  src: url('../../fonts/go3v2.ttf');
 }
-/* .about-us-container{
-  background: url("../../Assets/assets/herobg.png");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-} */
 
 .aboutus_first1,
 .aboutus_second {

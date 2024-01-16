@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import './footer.component.css'
 import styled from 'styled-components';
 import logo1 from "../../Assets/Images/home_logo1.png";
-
 import { NavbarContext } from '../../contexts/navbar.context';
-
 import {ReactComponent as InstaLogo} from '../../Assets/Icons/insta.svg'
 import {ReactComponent as FacebookLogo} from '../../Assets/Icons/facebook.svg'
 import {ReactComponent as LinkedInLogo} from '../../Assets/Icons/linkedIn.svg'
@@ -135,7 +133,7 @@ function Footer() {
                                 to='/WebDTeam'
                         >
                             {/* Contact Us */}
-                            <p>Crafted with code by Team Shaurya !</p>
+                            <p>Crafted with code by <span className='text-blue-400'>Team Shaurya !</span></p>
                         </NavLink>
             </div>
         </div>

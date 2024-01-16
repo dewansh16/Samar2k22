@@ -48,6 +48,8 @@ import tangi_vijayalakshmi from "../../Assets/Images/team/SC/VIJAYALAKSHMITangi.
 import mansi_dubey from "../../Assets/Images/team/WEB/MansiDubey.jpg";
 import Utkarsh from "../../Assets/Images/team/OC/UtkarshMittal.jpg";
 import Shubham from "../../Assets/Images/team/OC/ShubhamSonkar.jpg";
+import LuckyDewangan from "../../Assets/Images/team/WEB/LuckyDewangan.jpg";
+
 
 
 import "./ourTeam.component.css";
@@ -92,6 +94,44 @@ function OurTeam() {
       </main>
 
       {/* spons team */}
+      
+
+      <p class="overall" id="design">DESIGN</p>
+
+      <main class="page-content">
+        <div class="card" style={{ backgroundImage: `url(${ankur})` }}>
+          <div class="content">
+            <h2 class="title">ANKUR SHRIVASTAVA </h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${Mayank})` }}>
+          <div class="content">
+            <h2 class="title">Mayank Jaiswal</h2>
+            <p class="copy">4th year</p>
+          </div>
+        </div>
+      </main>
+
+      <p class="overall" id="webd">WEB DEVELOPER</p>
+
+      <main class="page-content">
+        <div class="card" style={{ backgroundImage: `url(${mansi_dubey})` }}>
+          <div class="content">
+            <h2 class="title">Mansi Dubey</h2>
+            <p class="copy">4th year</p>
+
+          </div>
+        </div>
+        <div class="card" style={{ backgroundImage: `url(${LuckyDewangan})` }}>
+          <div class="content">
+            <h2 class="title">Lucky Dewangan</h2>
+            <p class="copy">4th year</p>
+
+          </div>
+        </div>
+        
+      </main>
       <p class="overall" id="pr">SPONS</p>
 
       <main class="page-content">
@@ -138,37 +178,6 @@ function OurTeam() {
           </div>
         </div>
       </main>
-
-      <p class="overall" id="design">DESIGN</p>
-
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${ankur})` }}>
-          <div class="content">
-            <h2 class="title">ANKUR SHRIVASTAVA </h2>
-            <p class="copy">4th year</p>
-          </div>
-        </div>
-        <div class="card" style={{ backgroundImage: `url(${Mayank})` }}>
-          <div class="content">
-            <h2 class="title">Mayank Jaiswal</h2>
-            <p class="copy">4th year</p>
-          </div>
-        </div>
-      </main>
-
-      <p class="overall" id="webd">WEB DEVELOPER</p>
-
-      <main class="page-content">
-        <div class="card" style={{ backgroundImage: `url(${mansi_dubey})` }}>
-          <div class="content">
-            <h2 class="title">Mansi Dubey</h2>
-            <p class="copy">4th year</p>
-
-          </div>
-        </div>
-        
-      </main>
-
       <p class="overall" >SPORTS COORDINATOR</p>
 
       <main class="page-content" id="sc">
@@ -398,12 +407,7 @@ function OurTeam() {
             <p class="copy">4th year</p>
           </div>
         </div>
-        <div class="card" style={{ backgroundImage: `url(${roshan_tiwari})` }}>
-          <div class="content">
-            <h2 class="title">Roshan Tiwari</h2>
-            <p class="copy">4th year</p>
-          </div>
-        </div>
+        
         <div class="card" style={{ backgroundImage: `url(${sahil_dahat})` }}>
           <div class="content">
             <h2 class="title">Sahil Dahat</h2>

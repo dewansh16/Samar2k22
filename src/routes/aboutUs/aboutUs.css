@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,500&display=swap");
 @font-face {
   font-family: anime_body;
-  src: url('../../fonts/anime_body.ttf');
+  src: url('../../fonts/go3v2.ttf');
 }
 @font-face {
   font-family: anime_body2;
-  src: url('../../fonts/anime_body2.ttf');
+  src: url('../../fonts/go3v2.ttf');
 }
 .first {
   margin-left: 60px;
@@ -57,7 +57,7 @@
 }
 
 .samar {
-  /* font-family: anime_body; */
+  font-family: anime_body;
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;

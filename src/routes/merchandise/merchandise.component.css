@@ -47,17 +47,18 @@
 }
 
 #merch-text {
-  font-family: "anime_body";
-  text-align: center;
+   text-align: center;
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
     rgba(252, 70, 107, 1) 100%
   );
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+
   background-size: 200%;
-  /* font-weight: bolder; */
+  /* font-family: "GOTSamar"; */
+  /* font-family: "anime_body2"; */
+  font-size: 4rem;
+  font-weight: bolder;
   color: transparent;
   background-clip: text;
   animation: animation 1.7s linear infinite;

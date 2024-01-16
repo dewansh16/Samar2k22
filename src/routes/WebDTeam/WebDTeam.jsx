@@ -32,9 +32,9 @@ const ContributorsCard = ({ index, name, position, photo, linkedInLink, instagra
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
-          {name}
+        <u>  {name} </u>
         </h3>
-        <h3 className='text-white text-[15px] font-bold text-center'>
+        <h3 className='text-green-300 text-[15px] font-bold text-center'>
           {position}
         </h3>
         <h3 className='flex flex-row gap-8 text-white text-[15px] font-bold text-center mt-2'>
@@ -61,6 +61,7 @@ const WebDTeam = () => {
     <div>
         <motion.div variants={textVariant()}>
         <h2 className={styles.sectionHeadText} > <center>CONTRIBUTORS SPOTLIGHT</center></h2>
+        {/* <h2 className={styles.sectionHeadText} > <center className="text-red-500">CONTRIBUTORS SPOTLIGHT</center></h2> */}
       </motion.div>
 
       <div className="px-4 lg:px-20">

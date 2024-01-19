@@ -69,30 +69,30 @@ const Schedule = () => {
                           <tr>
                             <td>18 Jan</td>
                             <td className="mid_row1">
-                              STARK Vs TYRELL
+                              BLACK BULL Vs GREEN MANTIS
                             </td>
                             <td>19:00-20:00</td>
                           </tr>
                           <tr>
                             <td>18 Jan</td>
-                            <td className="mid_row1">TULLY Vs MARTELL</td>
+                            <td className="mid_row1">CRIMSON LION Vs MIDNIGHT SUN</td>
                             <td>20:30-21:30</td>
                           </tr>
                           <tr>
                             <td>18 Jan</td>
                             <td className="mid_row1">
-                              HIGH TOWER Vs TYRELL
+                              SILVER EAGLE Vs GREEN MANTIS
                             </td>
                             <td>22:00-23:00</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row1">LAMNISTER Vs TULLY</td>
+                            <td className="mid_row1">GOLDEN DAWN Vs CRIMSON LION</td>
                             <td>19:00-20:00</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row1">HIGH TOWER Vs STARK</td>
+                            <td className="mid_row1">SILVER EAGLE Vs BLACK BULL</td>
                             <td>20:30-21:30</td>
                           </tr>
                           
@@ -119,7 +119,7 @@ const Schedule = () => {
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row1">
-                              LAMNISTER Vs MARTELL
+                              GOLDEN DAWN Vs MIDNIGHT SUN
                             </td>
                             <td>22:00-23:00</td>
                           </tr>
@@ -168,30 +168,30 @@ const Schedule = () => {
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row1">
-                              STARK Vs TYRELL
+                              BLACK BULL Vs GREEN MANTIS
                             </td>
                             <td>19:00-20:00</td>
                           </tr>
                           <tr>
                             <td>18 Jan</td>
-                            <td className="mid_row1">TULLY Vs MARTELL</td>
+                            <td className="mid_row1">CRIMSON LION Vs MIDNIGHT SUN</td>
                             <td>20:30-21:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row1">
-                              HIGH TOWER Vs TYRELL
+                              SILVER EAGLE Vs GREEN MANTIS
                             </td>
                             <td>22:00-23:00</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row1">LAMNISTER Vs TULLY</td>
+                            <td className="mid_row1">GOLDEN DAWN Vs CRIMSON LION</td>
                             <td>19:00-20:00</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row1">HIGH TOWER Vs STARK</td>
+                            <td className="mid_row1">SILVER EAGLE Vs BLACK BULL</td>
                             <td>20:30-21:30</td>
                           </tr>
                         </table>
@@ -218,7 +218,7 @@ const Schedule = () => {
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row1">
-                              LAMNISTER Vs MARTELL
+                              GOLDEN DAWN Vs MIDNIGHT SUN
                             </td>
                             <td>22:00-23:00</td>
                           </tr>
@@ -266,31 +266,31 @@ const Schedule = () => {
                                              */}
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row">HIGH TOWER Vs LANMISTERS</td>
+                            <td className="mid_row">SILVER EAGLE Vs LANMISTERS</td>
                             <td>17:30-18:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row">
-                              TULLY vs TYRELL
+                              CRIMSON LION vs GREEN MANTIS
                             </td>
                             <td>18:30-19:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row">TULLY vs HIHG TOWER</td>
+                            <td className="mid_row">CRIMSON LION vs HIHG TOWER</td>
                             <td>19:30-20:30</td>
                           </tr>
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TULLY
+                              BLACK BULL vs CRIMSON LION
                             </td>
                             <td>17:30-18:30</td>
                           </tr>
                           <tr>
                             <td>20 Jan</td>
-                            <td className="mid_row">LANMISTERS Vs MARTELL</td>
+                            <td className="mid_row">LANMISTERS Vs MIDNIGHT SUN</td>
                             <td>18:30-19:30</td>
                           </tr>
                         </table>
@@ -318,7 +318,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -364,31 +364,31 @@ const Schedule = () => {
                                              */}
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row">HIGH TOWER Vs LANMISTERS</td>
+                            <td className="mid_row">SILVER EAGLE Vs LANMISTERS</td>
                             <td>17:30-18:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row">
-                              TULLY vs TYRELL
+                              CRIMSON LION vs GREEN MANTIS
                             </td>
                             <td>18:30-19:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row">TULLY vs HIHG TOWER</td>
+                            <td className="mid_row">CRIMSON LION vs HIHG TOWER</td>
                             <td>19:30-20:30</td>
                           </tr>
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TULLY
+                              BLACK BULL vs CRIMSON LION
                             </td>
                             <td>17:30-18:30</td>
                           </tr>
                           <tr>
                             <td>20 Jan</td>
-                            <td className="mid_row">LANMISTERS Vs MARTELL</td>
+                            <td className="mid_row">LANMISTERS Vs MIDNIGHT SUN</td>
                             <td>18:30-19:30</td>
                           </tr>
                         </table>
@@ -415,7 +415,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -461,31 +461,31 @@ const Schedule = () => {
                                              */}
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row">HIGH TOWER Vs LANMISTERS</td>
+                            <td className="mid_row">SILVER EAGLE Vs LANMISTERS</td>
                             <td>17:30-18:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
                             <td className="mid_row">
-                              TULLY vs TYRELL
+                              CRIMSON LION vs GREEN MANTIS
                             </td>
                             <td>18:30-19:30</td>
                           </tr>
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row">TULLY vs HIHG TOWER</td>
+                            <td className="mid_row">CRIMSON LION vs HIHG TOWER</td>
                             <td>19:30-20:30</td>
                           </tr>
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TULLY
+                              BLACK BULL vs CRIMSON LION
                             </td>
                             <td>17:30-18:30</td>
                           </tr>
                           <tr>
                             <td>20 Jan</td>
-                            <td className="mid_row">LANMISTERS Vs MARTELL</td>
+                            <td className="mid_row">LANMISTERS Vs MIDNIGHT SUN</td>
                             <td>18:30-19:30</td>
                           </tr>
                         </table>
@@ -512,7 +512,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -559,7 +559,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -604,7 +604,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -652,7 +652,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -697,7 +697,7 @@ const Schedule = () => {
                           <tr>
                             <td>20 Jan</td>
                             <td className="mid_row">
-                              STARK vs TYRELL
+                              BLACK BULL vs GREEN MANTIS
                             </td>
                             <td>19:30-20:30</td>
                           </tr>
@@ -748,17 +748,17 @@ const Schedule = () => {
 
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">HIGH TOWER vs LANNISTERS</td>
+                            <td className="mid_row">SILVER EAGLE vs LANNISTERS</td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
-                            <td className="mid_row">HIGH TOWER vs LANNISTERS</td>
+                            <td className="mid_row">SILVER EAGLE vs LANNISTERS</td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">LANNISTERS vs MARTELL</td>
+                            <td className="mid_row">LANNISTERS vs MIDNIGHT SUN</td>
                             <td>18:00</td>
                           </tr>
                         </table>
@@ -784,21 +784,21 @@ const Schedule = () => {
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                              STARK vs TULLY
+                              BLACK BULL vs CRIMSON LION
                             </td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
                             <td className="mid_row">
-                            STARK vs TULLY
+                            BLACK BULL vs CRIMSON LION
                             </td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                            TULLY vs TYRELL
+                            CRIMSON LION vs GREEN MANTIS
                             </td>
                             <td>18:00</td>
                           </tr>
@@ -831,17 +831,17 @@ const Schedule = () => {
 
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">TULLY vs TYRELL</td>
+                            <td className="mid_row">CRIMSON LION vs GREEN MANTIS</td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
-                            <td className="mid_row">STARK vs TYRELL</td>
+                            <td className="mid_row">BLACK BULL vs GREEN MANTIS</td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">STARK vs TYRELL</td>
+                            <td className="mid_row">BLACK BULL vs GREEN MANTIS</td>
                             <td>18:00</td>
                           </tr>
                         </table>
@@ -867,21 +867,21 @@ const Schedule = () => {
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                              LANNISTERS vs MARTELL
+                              LANNISTERS vs MIDNIGHT SUN
                             </td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
                             <td className="mid_row">
-                            HIGH TOWER vs MARTELL
+                            SILVER EAGLE vs MIDNIGHT SUN
                             </td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                            HIGH TOWER vs MARTELL
+                            SILVER EAGLE vs MIDNIGHT SUN
                             </td>
                             <td>18:00</td>
                           </tr>
@@ -905,7 +905,7 @@ const Schedule = () => {
                           
                           <tr>
                             <td>19 Jan</td>
-                            <td className="mid_row1">TYRELL vs Mining+Archi+Msc+Mtech</td>
+                            <td className="mid_row1">GREEN MANTIS vs Mining+Archi+Msc+Mtech</td>
                             <td>18:00-19:00</td>
                           </tr>
                           <tr>
@@ -918,7 +918,7 @@ const Schedule = () => {
                           </tr>
                           <tr>
                             <td>28 Jan</td>
-                            <td className="mid_row1">Mech+Elex vs TYRELL</td>
+                            <td className="mid_row1">Mech+Elex vs GREEN MANTIS</td>
                             <td>18:00-19:00</td>
                           </tr>
                           <tr>
@@ -957,21 +957,21 @@ const Schedule = () => {
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                              LANNISTERS vs MARTELL
+                              LANNISTERS vs MIDNIGHT SUN
                             </td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
                             <td className="mid_row">
-                            HIGH TOWER vs MARTELL
+                            SILVER EAGLE vs MIDNIGHT SUN
                             </td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                            HIGH TOWER vs MARTELL
+                            SILVER EAGLE vs MIDNIGHT SUN
                             </td>
                             <td>18:00</td>
                           </tr>
@@ -998,21 +998,21 @@ const Schedule = () => {
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                              STARK vs TULLY
+                              BLACK BULL vs CRIMSON LION
                             </td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
                             <td className="mid_row">
-                            STARK vs TULLY
+                            BLACK BULL vs CRIMSON LION
                             </td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
                             <td className="mid_row">
-                            TULLY vs TYRELL
+                            CRIMSON LION vs GREEN MANTIS
                             </td>
                             <td>18:00</td>
                           </tr>
@@ -1076,17 +1076,17 @@ const Schedule = () => {
                           <table>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">TULLY vs TYRELL</td>
+                            <td className="mid_row">CRIMSON LION vs GREEN MANTIS</td>
                             <td>16:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
-                            <td className="mid_row">STARK vs TYRELL</td>
+                            <td className="mid_row">BLACK BULL vs GREEN MANTIS</td>
                             <td>17:00</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">STARK vs TYRELL</td>
+                            <td className="mid_row">BLACK BULL vs GREEN MANTIS</td>
                             <td>18:00</td>
                           </tr>
                         </table>
@@ -1636,17 +1636,17 @@ const Schedule = () => {
 
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+TULLY</td>
+                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+CRIMSON LION</td>
                             <td>19:00</td>
                           </tr>
                           <tr>
                             <td>Doubles</td>
-                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+TULLY</td>
+                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+CRIMSON LION</td>
                             <td>16:20</td>
                           </tr>
                           <tr>
                             <td>Singles</td>
-                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+TULLY</td>
+                            <td className="mid_row">IT+Biotech+Civil+Mtech vs Elex+CRIMSON LION</td>
                             <td>16:40</td>
                           </tr>
                         </table>
@@ -1676,7 +1676,7 @@ const Schedule = () => {
                           <tr>
                             <td>19 JAN</td>
                             <td className="mid_row">
-                            Elex+TULLY vs Mech+Archi+Mca
+                            Elex+CRIMSON LION vs Mech+Archi+Mca
                             </td>
                             <td>19:00</td>
                           </tr>

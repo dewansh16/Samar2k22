@@ -156,9 +156,14 @@ hr.li{
 
 .spo-heading {
   margin-top: 1rem;
-  font-weight: 300;
-  /* font-size: x-large; */
-  
+  font-weight: 100;
+  --si: x-large;
+  font-size: var(--si);  
+}
+@media screen and (max-width : 1024px) {
+  .spo-heading{
+    --si: medium;
+  }
 }
 
 .spo-text {

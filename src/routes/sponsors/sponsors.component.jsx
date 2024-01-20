@@ -15,8 +15,6 @@ import FoodPartner from '../../Assets/Images/Sponsor@24/FoodPartner.jpg'
 import AbroadStudy from '../../Assets/Images/Sponsor@24/AbroadStudy.jpg'
 import HindiPrint from '../../Assets/Images/Sponsor@24/HindiPrintMedia.jpg'
 
-
-
 function Sponsors() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,7 +22,7 @@ function Sponsors() {
   return (
     <div class="spo-wrapper">
       <div class="spo-sidebar">
-        <h3 id="sponsor-wrap" className="spo-heading1 mt-10" ><span id="sponsor-text">Sponsors</span></h3>
+        <h3 id="sponsor-wrap" className="spo-heading1 mt-10" ><span id="sponsor-text">SPONSORS</span></h3>
         <p  className="spo-text " >
           SAMAR success is unmatched and this
           is due to renowned partners we have who have always provided

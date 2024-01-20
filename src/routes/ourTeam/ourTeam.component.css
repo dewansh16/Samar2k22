@@ -21,6 +21,7 @@
 }
 #ot-text {
   text-align: center;
+  font-family: anime_body2;
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
@@ -45,8 +46,9 @@
 }
 
 .overall {
-  font-size: 25px;
+  font-size: 45px;
   font-weight: 400;
+  font-family: "Gang of Three";
   text-align: center;
   padding: 20px 0;
   width: 30%;
@@ -105,7 +107,7 @@
   /* max-width: 100%; */
   align-items: center;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 55px auto;
   /* font-family: var(--font-sans); */
 }
 

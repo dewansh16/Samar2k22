@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  /* font-family: Montserrat, sans-serif; */
+  font-family: Dragon;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
@@ -31,39 +31,17 @@ a {
   color: white;
 }
 
+
 @font-face {
   font-family: "Dragon";
   src: local("Lato"),
-    url(./fonts/HouseOfTheDragon_PERSONAL_USE_ONLY.otf) format("opentype");
+    url(./fonts/go3v2.ttf) format("opentype");
+}
+@font-face {
+  font-family: anime_body;
+  src: url('./fonts/go3v2.ttf');
 }
 
-@font-face {
-  font-family: "DragonBold";
-  font-weight: 900;
-  src: local("Lato"),
-    url(./fonts/HouseOfTheDragonBold_PERSONAL_USE_ONLY.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "DragonDeco";
-  font-weight: 900;
-  src: local("Lato"),
-    url(./fonts/HouseOfTheDragonDeco_PERSONAL_USE_ONLY.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "DragonOutline";
-  font-weight: 900;
-  src: local("Lato"),
-    url(./fonts/HouseOfTheDragonOutline_PERSONAL_USE_ONLY.otf)
-      format("opentype");
-}
-
-@font-face {
-  font-family: "GOTSamar";
-  src: local("Game of Thrones"),
-    url(./fonts/Game\ of\ Thrones.ttf) format("truetype");
-}
 
 @tailwind base;
 @tailwind components;

@@ -1,15 +1,8 @@
 @font-face {
   font-family: anime_body2;
-  src: url('../../fonts/anime_body2.ttf');
+  src: url('../../fonts/go3v2.ttf');
 }
-.about-us-container{
-  background: url("../../Assets/assets/herobg.png");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 
-}
 .aboutus_first1,
 .aboutus_second {
   display: flex;
@@ -19,6 +12,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .aboutus_image1{
   width: 40%;
   display: flex;
@@ -34,7 +28,6 @@
 }
 
 .aboutus_data1 {
-  font-family: anime_body2;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px; 
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
@@ -45,7 +38,7 @@
   padding: 10px;
   margin: 30px;
   width: 60%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .aboutus_data1 p{
@@ -73,9 +66,7 @@
   to {
     transform: rotate(360deg);
   }
-  
 }
-
 @media screen and (max-width: 1128px) {
   .aboutus_second {
     display: flex;

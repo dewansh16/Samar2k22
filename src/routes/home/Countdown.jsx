@@ -137,7 +137,8 @@ const Countdown = () => {
               >
 
                 <h3 className='text-white text-[4vh] lg:text-[8vh] font-bold text-center'>
-                  {days}
+                  {/* {days} */}
+                  0
                 </h3>
                 <h3 className='text-white text-[1.5vh] lg:text-[2.5vh] font-bold text-center'>
                   Days
@@ -161,7 +162,8 @@ const Countdown = () => {
               >
 
                 <h3 className='text-white text-[4vh] lg:text-[8vh] font-bold text-center'>
-                  {hours}
+                  {/* {hours} */}
+                  0
                 </h3>
                 <h3 className='text-white text-[1.5vh] lg:text-[2.5vh] font-bold text-center'>
                   Hours
@@ -185,7 +187,8 @@ const Countdown = () => {
               >
 
                 <h3 className='text-white text-[4vh] lg:text-[8vh] font-bold text-center'>
-                  {minutes}
+                  {/* {minutes} */}
+                  0
                 </h3>
                 <h3 className='text-white text-[1.5vh] lg:text-[2.5vh] font-bold text-center'>
                   Minutes
@@ -209,7 +212,8 @@ const Countdown = () => {
               >
 
                 <h3 className='text-white text-[4vh] lg:text-[8vh] font-bold text-center'>
-                  {seconds}
+                  {/* {seconds} */}
+                  0
                 </h3>
                 <h3 className='text-white text-[1.5vh] lg:text-[2.5vh] font-bold text-center'>
                   Seconds

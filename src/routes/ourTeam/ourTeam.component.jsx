@@ -20,7 +20,7 @@ import kunal_chandrakar from "../../Assets/Images/team/PR/kunalchandrakar.jpg";
 import roshan_tiwari from "../../Assets/Images/team/PR/RoshanTiwari.jpg";
 import sahil_dahat from "../../Assets/Images/team/PR/SahilDahat.jpg";
 import surya_dev_singh from "../../Assets/Images/team/PR/SURYADEVSINGH.jpg";
-import harsh_ranjan from "../../Assets/Images/team/DOC/HarshRanjanSinha.jpg";
+import harsh_ranjan from "../../Assets/Images/team/DOC/HarshRanjanSinha.jpeg";
 import Samyukta from "../../Assets/Images/team/DOC/SamyuktaShaji.jpg";
 import Mayank from "../../Assets/Images/team/DESIGN/MayankJaiswal2.png";
 import kareena_bhaskar from "../../Assets/Images/team/SPONS/KareenaBhaskar.jpg";
